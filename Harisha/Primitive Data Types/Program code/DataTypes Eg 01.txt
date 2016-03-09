@@ -1,0 +1,100 @@
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+   NSLog (@"hello world");
+   //Declaring Boolean variable
+   BOOL isbool = YES;
+   //printing the default vaue of bool
+   NSLog(@"%d",isbool);
+   //Printing the value of isbool
+   NSLog(@"%@",isbool ? @"YES":@"NO");
+   
+   //Declaring boolean variable
+   BOOL a = NO;
+   //printing the vale of bool
+   NSLog(@"%d",a);
+   //printing the vlaue of a
+   NSLog(@"%@",a ? @"YES":@"NO");
+   
+   //Declaring a character variable
+   char achar = 'a';
+   //Printing the value of char variable
+   NSLog(@"the value of char is %c",achar);
+   //Printing the ascii value of a
+   NSLog(@"The ASCII value of a is %hhd",achar);
+   
+   
+   //Declaring unsigned char
+   unsigned char uchar = 225;
+   //printinh the value of unsigned char
+   NSLog(@"The value of unsigned char is %hhu",uchar);
+   
+   //Declaring the short variable
+   short ashort = -2345;
+   //printing the value of short
+   NSLog(@"The value of short is %hd",ashort);
+   
+   //declaring the unsigned short
+   unsigned ushort = 2345;
+   //printing the value of unsigned integer
+   NSLog(@"The value unsigned short is %hu",ushort);
+   
+   //Declaring the integer variable
+   int aint = 10001;
+   //Printing the value of int
+   NSLog(@"The value of integer variable is %d",aint);
+   
+   
+   //Declaring the unsigned integer variable
+   unsigned int uint = -2718;
+   //Printing the value of unsigned int
+   NSLog(@"The value of unsigned integer is %u",uint);
+   
+   //Declaring the long variable
+   long along = -98754322;
+   //printing the value of long varaible
+   NSLog(@"the value of long variable is %ld",along);
+   
+   //Declaring the unsigned long varaible
+   unsigned long ulong = -100;
+   //printing the value of unsigned long
+   NSLog(@"The value of unsigned long is %lu",ulong);
+   
+   //Declring Long long variable
+   long long alonglong = 97654321234;
+   //printing the value of long long variable
+   NSLog(@"The value of long long variable is %lld",alonglong);
+   
+   //Declaring the unsigned long long variable
+   unsigned long long ulonglong = -90876453244;
+   //Printing the value of unsigned long long variable
+   NSLog(@"The value of unsigned long long is %llu",ulonglong);
+   
+   //Declaring the floating point variable
+   float afloat = 23.56677f;
+   //printing the value of floating point variable
+    NSLog(@"The value of floating varible is %f",afloat);
+    float bFloat = -21.09f;
+    NSLog(@"%f", bFloat);
+    NSLog(@"%8.2f", bFloat);
+    
+    //Declaring the Double variable
+    double adouble = 21.012;
+    //Printing the value of double in exponetial form
+    NSLog(@"The value of double is %e",adouble);
+    //printing the value of double 3 values after point
+    NSLog(@"%1.3f",adouble);
+
+   //declaring lond double variable
+   long double alongdouble = 2156.34567f;
+   //printing the value of long double variable
+   NSLog(@"The value of long double is %Lf",alongdouble);
+   NSLog(@"The value of long double is %le",alongdouble);
+   NSLog(@"The value of long double is %8.3f",alongdouble);
+   
+   [pool drain];
+   return 0;
+}
