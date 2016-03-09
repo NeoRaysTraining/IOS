@@ -1,0 +1,22 @@
+#import <Foundation/Foundation.h>
+
+int main (int argc, const char * argv[])
+{
+   NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+
+   NSLog (@"hello world");
+   
+   //declare variable
+   
+   int aintequ=200;
+ 
+  // checking for equality
+   if(aintequ==200)
+   {
+   NSLog(@"the number is equal");
+   }
+   
+   
+   [pool drain];
+   return 0;
+}
