@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() {
+    
+    int scount=0,ecount=0,hcount=0,acount=0,lcount=0,i;
+    char str[200]="SHE SELLS SEA SHELLS ON THE SEA SHORE";
+    
+    int length =strlen(str);
+    
+    for(i=0;i<length;i++)
+    {
+        
+        if(str[i]=='S')
+        {
+            scount++;
+        }
+        else if(str[i]=='E')
+        {
+         ecount++;
+        }
+        else if(str[i]=='H')
+        {
+            hcount++;
+        }
+       
+        else if(str[i]=='A')
+        {
+            acount++;
+        }
+       
+       else if(str[i]=='L')
+        {
+            lcount++;
+        }
+    }
+
+       printf("No of S: %d\n",scount);
+       printf("No of E: %d\n",ecount);
+       printf("No of H: %d\n",hcount);
+       printf("No of A: %d\n",acount);
+       printf("No of L: %d\n",lcount);
+    
+   return 0;
+}
