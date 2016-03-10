@@ -1,0 +1,66 @@
+#include <stdio.h>
+int main()
+{
+
+//declare and initialize the variables of type int to store the score of the student
+
+    int score=60;
+	
+//dclare a variable of type char to hold the grade of a student
+    char ch;
+    
+	printf("*************RESULT OF A STUDENT****************\n");
+//	scanf("%d",&score);
+	
+    if(score >= 90 && score <= 100)
+    {
+        ch='S';
+    }
+   else  if(score >= 75 && score <= 90)
+    {
+        ch='A';
+    }
+   else  if(score >= 65 && score <= 75)
+    {
+        ch='B';
+    }
+   else  if(score >= 55 && score <= 65)
+    {
+        ch='C';
+    }
+   else  if(score >= 40 && score <= 55)
+    {
+        ch='D';
+    }
+   else  if(score >= 0 && score <= 40)
+    {
+        ch='F';
+    }
+
+   
+   
+   switch(ch)
+{
+    case 'S' : printf("S grade");
+            break;
+            
+    case 'A' : printf("A grade");
+            break;
+   
+    case 'B' : printf("B grade");
+            break;
+   
+    case 'C' : printf("C grade");
+            break;
+   
+    case 'D' : printf("D grade");
+            break;
+   
+    case 'F' : printf("FAIL");
+            break;
+            
+     default : printf("ABSENT");
+            break;
+}
+    
+}
