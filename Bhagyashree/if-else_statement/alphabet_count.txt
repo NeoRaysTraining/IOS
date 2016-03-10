@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    
+	//initializing the counters to zero
+    int scount=0,ecount=0,hcount=0,acount=0,lcount=0,i;
+	
+	//initializing the char array
+    char str[200]="SHE SELLS SEA SHELLS ON THE SEA SHORE";
+    
+	//initializing the variable length to the size string length
+    int length =strlen(str);
+    
+    for(i=0;i<length;i++)
+    {
+       //checks whether the alphabet is 'S'
+        if(str[i]=='S')
+        {
+			//increment the counter to count the alphabet 'S'
+            scount++;
+        }
+		//checks whether the alphabet is 'E'
+        else if(str[i]=='E')
+        {
+		//increment the counter to count the alphabet 'E'
+         ecount++;
+        }
+		//checks whether the alphabet is 'H'
+        else if(str[i]=='H')
+        {
+			//increment the counter to count the alphabet 'H'
+            hcount++;
+        }
+       
+	   //checks whether the alphabet is 'A'
+        else if(str[i]=='A')
+        {
+            //increment the counter to count the alphabet 'A'
+			acount++;
+        }
+       
+	   //checks whether the alphabet is 'L'
+       else if(str[i]=='L')
+        {
+            //increment the counter to count the alphabet 'L'
+			lcount++;
+        }
+    }
+		
+	   //Prints the number of 'S' in the given string
+       printf("No of S: %d\n",scount);
+	   
+	   //Prints the number of 'E' in the given string
+       printf("No of E: %d\n",ecount);
+	   
+	   //Prints the number of 'H' in the given string
+       printf("No of H: %d\n",hcount);
+	   
+	   //Prints the number of 'A' in the given string
+       printf("No of A: %d\n",acount);
+	   
+	   //Prints the number of 'L' in the given string
+       printf("No of L: %d\n",lcount);
+    
+   return 0;
+}
