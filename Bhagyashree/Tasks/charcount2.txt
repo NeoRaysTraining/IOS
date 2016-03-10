@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    
+    int H=0,B=0,U=0,T=0,E=0,R=0,S=0,i;
+    char str[200]="BETTY BOUGHT SOME BUTTER WHICH WAS BITTER SO SHE BOUGHT SOME MORE BUTTER TO MAKE THE BITTER BUTTER BETTER BUTTER";
+    
+    int length =strlen(str);
+    
+    for(i=0;i<length;i++)
+    {
+        
+        if(str[i]=='H')
+        {
+            H++;
+        }
+        else if(str[i]=='B')
+        {
+         B++;
+        }
+        else if(str[i]=='U')
+        {
+            U++;
+        }
+       
+        else if(str[i]=='T')
+        {
+            T++;
+        }
+       
+       else if(str[i]=='E')
+        {
+            E++;
+        }
+        
+        else if(str[i]=='R')
+        {
+            R++;
+        }
+       
+       else if(str[i]=='S')
+        {
+            S++;
+        }
+}
+       printf("No of H: %d\n",H);
+       printf("No of B: %d\n",B);
+       printf("No of U: %d\n",U);
+       printf("No of T: %d\n",T);
+       printf("No of E: %d\n",E);
+	   printf("No of R: %d\n",R);
+	   printf("No of S: %d\n",S);
+    
+   return 0;
+}
