@@ -24,10 +24,18 @@ int main(int argc, const char * argv[]) {
             NSLog(@"The string starts at %lu and is of length %lu is found",result.location,result.length);
         }
         
-        NSLog(@"%@",[employee substringFromIndex:8]);
+        NSLog(@"%@",[employee substringFromIndex:6]);
         NSLog(@"%@",[company substringToIndex:2]);
-        NSRange range =NSMakeRange(3, 13);
+        NSRange range = NSMakeRange(6, 5);
+        NSLog(@"%@",[employee substringWithRange:range]);
         
+        //Replacing substring
+        
+        NSString *newName = [employee stringByReplacingCharactersInRange:range withString:@"shri"];
+        NSLog(@"%@",newName);
+        
+        NSString *newName2 = [employee stringByReplacingOccurrencesOfString:@"shri" withString:@"Shree"];
+        NSLog(@"%@",newName2);
     }
     return 0;
 }
