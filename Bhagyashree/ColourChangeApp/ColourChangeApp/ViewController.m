@@ -59,7 +59,7 @@
         [_colourDisplayLabel setText:nil];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Colours over" message:@"Please run the App again" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
-      
+        count=0;
     }
 }
 @end
