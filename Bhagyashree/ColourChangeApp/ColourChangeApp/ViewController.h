@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *colourDisplayLabel;
 - (IBAction)pressButton:(id)sender;
 
+- (IBAction)previousButton:(id)sender;
 
 @end
 
