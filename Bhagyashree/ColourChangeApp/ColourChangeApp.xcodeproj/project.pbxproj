@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FA18761CABDBC800F64674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA18751CABDBC800F64674 /* main.m */; };
+		52FA18791CABDBC800F64674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA18781CABDBC800F64674 /* AppDelegate.m */; };
+		52FA187C1CABDBC800F64674 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA187B1CABDBC800F64674 /* ViewController.m */; };
+		52FA187F1CABDBC800F64674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA187D1CABDBC800F64674 /* Main.storyboard */; };
+		52FA18811CABDBC800F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FA18801CABDBC800F64674 /* Assets.xcassets */; };
+		52FA18841CABDBC800F64674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA18821CABDBC800F64674 /* LaunchScreen.storyboard */; };
+		52FA188F1CABDBC800F64674 /* ColourChangeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA188E1CABDBC800F64674 /* ColourChangeAppTests.m */; };
+		52FA189A1CABDBC900F64674 /* ColourChangeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA18991CABDBC900F64674 /* ColourChangeAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FA188B1CABDBC800F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FA18691CABDBC800F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FA18701CABDBC800F64674;
+			remoteInfo = ColourChangeApp;
+		};
+		52FA18961CABDBC900F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FA18691CABDBC800F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FA18701CABDBC800F64674;
+			remoteInfo = ColourChangeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52FA18711CABDBC800F64674 /* ColourChangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColourChangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA18751CABDBC800F64674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52FA18771CABDBC800F64674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52FA18781CABDBC800F64674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52FA187A1CABDBC800F64674 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52FA187B1CABDBC800F64674 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52FA187E1CABDBC800F64674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FA18801CABDBC800F64674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FA18831CABDBC800F64674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FA18851CABDBC800F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FA188A1CABDBC800F64674 /* ColourChangeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColourChangeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA188E1CABDBC800F64674 /* ColourChangeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColourChangeAppTests.m; sourceTree = "<group>"; };
+		52FA18901CABDBC900F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FA18951CABDBC900F64674 /* ColourChangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColourChangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA18991CABDBC900F64674 /* ColourChangeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColourChangeAppUITests.m; sourceTree = "<group>"; };
+		52FA189B1CABDBC900F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FA186E1CABDBC800F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18871CABDBC800F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18921CABDBC900F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FA18681CABDBC800F64674 = {
+			isa = PBXGroup;
+			children = (
+				52FA18731CABDBC800F64674 /* ColourChangeApp */,
+				52FA188D1CABDBC800F64674 /* ColourChangeAppTests */,
+				52FA18981CABDBC900F64674 /* ColourChangeAppUITests */,
+				52FA18721CABDBC800F64674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FA18721CABDBC800F64674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18711CABDBC800F64674 /* ColourChangeApp.app */,
+				52FA188A1CABDBC800F64674 /* ColourChangeAppTests.xctest */,
+				52FA18951CABDBC900F64674 /* ColourChangeAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FA18731CABDBC800F64674 /* ColourChangeApp */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18771CABDBC800F64674 /* AppDelegate.h */,
+				52FA18781CABDBC800F64674 /* AppDelegate.m */,
+				52FA187A1CABDBC800F64674 /* ViewController.h */,
+				52FA187B1CABDBC800F64674 /* ViewController.m */,
+				52FA187D1CABDBC800F64674 /* Main.storyboard */,
+				52FA18801CABDBC800F64674 /* Assets.xcassets */,
+				52FA18821CABDBC800F64674 /* LaunchScreen.storyboard */,
+				52FA18851CABDBC800F64674 /* Info.plist */,
+				52FA18741CABDBC800F64674 /* Supporting Files */,
+			);
+			path = ColourChangeApp;
+			sourceTree = "<group>";
+		};
+		52FA18741CABDBC800F64674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18751CABDBC800F64674 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52FA188D1CABDBC800F64674 /* ColourChangeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FA188E1CABDBC800F64674 /* ColourChangeAppTests.m */,
+				52FA18901CABDBC900F64674 /* Info.plist */,
+			);
+			path = ColourChangeAppTests;
+			sourceTree = "<group>";
+		};
+		52FA18981CABDBC900F64674 /* ColourChangeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18991CABDBC900F64674 /* ColourChangeAppUITests.m */,
+				52FA189B1CABDBC900F64674 /* Info.plist */,
+			);
+			path = ColourChangeAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FA18701CABDBC800F64674 /* ColourChangeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA189E1CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeApp" */;
+			buildPhases = (
+				52FA186D1CABDBC800F64674 /* Sources */,
+				52FA186E1CABDBC800F64674 /* Frameworks */,
+				52FA186F1CABDBC800F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColourChangeApp;
+			productName = ColourChangeApp;
+			productReference = 52FA18711CABDBC800F64674 /* ColourChangeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FA18891CABDBC800F64674 /* ColourChangeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA18A11CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeAppTests" */;
+			buildPhases = (
+				52FA18861CABDBC800F64674 /* Sources */,
+				52FA18871CABDBC800F64674 /* Frameworks */,
+				52FA18881CABDBC800F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FA188C1CABDBC800F64674 /* PBXTargetDependency */,
+			);
+			name = ColourChangeAppTests;
+			productName = ColourChangeAppTests;
+			productReference = 52FA188A1CABDBC800F64674 /* ColourChangeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FA18941CABDBC900F64674 /* ColourChangeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA18A41CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeAppUITests" */;
+			buildPhases = (
+				52FA18911CABDBC900F64674 /* Sources */,
+				52FA18921CABDBC900F64674 /* Frameworks */,
+				52FA18931CABDBC900F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FA18971CABDBC900F64674 /* PBXTargetDependency */,
+			);
+			name = ColourChangeAppUITests;
+			productName = ColourChangeAppUITests;
+			productReference = 52FA18951CABDBC900F64674 /* ColourChangeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FA18691CABDBC800F64674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					52FA18701CABDBC800F64674 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					52FA18891CABDBC800F64674 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52FA18701CABDBC800F64674;
+					};
+					52FA18941CABDBC900F64674 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52FA18701CABDBC800F64674;
+					};
+				};
+			};
+			buildConfigurationList = 52FA186C1CABDBC800F64674 /* Build configuration list for PBXProject "ColourChangeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FA18681CABDBC800F64674;
+			productRefGroup = 52FA18721CABDBC800F64674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FA18701CABDBC800F64674 /* ColourChangeApp */,
+				52FA18891CABDBC800F64674 /* ColourChangeAppTests */,
+				52FA18941CABDBC900F64674 /* ColourChangeAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FA186F1CABDBC800F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA18841CABDBC800F64674 /* LaunchScreen.storyboard in Resources */,
+				52FA18811CABDBC800F64674 /* Assets.xcassets in Resources */,
+				52FA187F1CABDBC800F64674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18881CABDBC800F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18931CABDBC900F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FA186D1CABDBC800F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA187C1CABDBC800F64674 /* ViewController.m in Sources */,
+				52FA18791CABDBC800F64674 /* AppDelegate.m in Sources */,
+				52FA18761CABDBC800F64674 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18861CABDBC800F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA188F1CABDBC800F64674 /* ColourChangeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18911CABDBC900F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA189A1CABDBC900F64674 /* ColourChangeAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FA188C1CABDBC800F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FA18701CABDBC800F64674 /* ColourChangeApp */;
+			targetProxy = 52FA188B1CABDBC800F64674 /* PBXContainerItemProxy */;
+		};
+		52FA18971CABDBC900F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FA18701CABDBC800F64674 /* ColourChangeApp */;
+			targetProxy = 52FA18961CABDBC900F64674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52FA187D1CABDBC800F64674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FA187E1CABDBC800F64674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FA18821CABDBC800F64674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FA18831CABDBC800F64674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52FA189C1CABDBC900F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52FA189D1CABDBC900F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FA189F1CABDBC900F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColourChangeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52FA18A01CABDBC900F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ColourChangeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52FA18A21CABDBC900F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColourChangeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColourChangeApp.app/ColourChangeApp";
+			};
+			name = Debug;
+		};
+		52FA18A31CABDBC900F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ColourChangeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColourChangeApp.app/ColourChangeApp";
+			};
+			name = Release;
+		};
+		52FA18A51CABDBC900F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColourChangeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColourChangeApp;
+			};
+			name = Debug;
+		};
+		52FA18A61CABDBC900F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ColourChangeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.ColourChangeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ColourChangeApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FA186C1CABDBC800F64674 /* Build configuration list for PBXProject "ColourChangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA189C1CABDBC900F64674 /* Debug */,
+				52FA189D1CABDBC900F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FA189E1CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA189F1CABDBC900F64674 /* Debug */,
+				52FA18A01CABDBC900F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FA18A11CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA18A21CABDBC900F64674 /* Debug */,
+				52FA18A31CABDBC900F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FA18A41CABDBC900F64674 /* Build configuration list for PBXNativeTarget "ColourChangeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA18A51CABDBC900F64674 /* Debug */,
+				52FA18A61CABDBC900F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FA18691CABDBC800F64674 /* Project object */;
+}
