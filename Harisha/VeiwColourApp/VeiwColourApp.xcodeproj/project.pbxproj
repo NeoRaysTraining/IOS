@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52FA18371CABB36500F64674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA18361CABB36500F64674 /* main.m */; };
+		52FA183A1CABB36500F64674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA18391CABB36500F64674 /* AppDelegate.m */; };
+		52FA183D1CABB36500F64674 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA183C1CABB36500F64674 /* ViewController.m */; };
+		52FA18401CABB36500F64674 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA183E1CABB36500F64674 /* Main.storyboard */; };
+		52FA18421CABB36500F64674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52FA18411CABB36500F64674 /* Assets.xcassets */; };
+		52FA18451CABB36500F64674 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52FA18431CABB36500F64674 /* LaunchScreen.storyboard */; };
+		52FA18501CABB36600F64674 /* VeiwColourAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA184F1CABB36600F64674 /* VeiwColourAppTests.m */; };
+		52FA185B1CABB36600F64674 /* VeiwColourAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FA185A1CABB36600F64674 /* VeiwColourAppUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52FA184C1CABB36600F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FA182A1CABB36500F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FA18311CABB36500F64674;
+			remoteInfo = VeiwColourApp;
+		};
+		52FA18571CABB36600F64674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52FA182A1CABB36500F64674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52FA18311CABB36500F64674;
+			remoteInfo = VeiwColourApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52FA18321CABB36500F64674 /* VeiwColourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeiwColourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA18361CABB36500F64674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52FA18381CABB36500F64674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52FA18391CABB36500F64674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52FA183B1CABB36500F64674 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52FA183C1CABB36500F64674 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52FA183F1CABB36500F64674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52FA18411CABB36500F64674 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52FA18441CABB36500F64674 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52FA18461CABB36500F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FA184B1CABB36600F64674 /* VeiwColourAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeiwColourAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA184F1CABB36600F64674 /* VeiwColourAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeiwColourAppTests.m; sourceTree = "<group>"; };
+		52FA18511CABB36600F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52FA18561CABB36600F64674 /* VeiwColourAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeiwColourAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA185A1CABB36600F64674 /* VeiwColourAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeiwColourAppUITests.m; sourceTree = "<group>"; };
+		52FA185C1CABB36600F64674 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52FA182F1CABB36500F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18481CABB36600F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18531CABB36600F64674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52FA18291CABB36500F64674 = {
+			isa = PBXGroup;
+			children = (
+				52FA18341CABB36500F64674 /* VeiwColourApp */,
+				52FA184E1CABB36600F64674 /* VeiwColourAppTests */,
+				52FA18591CABB36600F64674 /* VeiwColourAppUITests */,
+				52FA18331CABB36500F64674 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52FA18331CABB36500F64674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18321CABB36500F64674 /* VeiwColourApp.app */,
+				52FA184B1CABB36600F64674 /* VeiwColourAppTests.xctest */,
+				52FA18561CABB36600F64674 /* VeiwColourAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52FA18341CABB36500F64674 /* VeiwColourApp */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18381CABB36500F64674 /* AppDelegate.h */,
+				52FA18391CABB36500F64674 /* AppDelegate.m */,
+				52FA183B1CABB36500F64674 /* ViewController.h */,
+				52FA183C1CABB36500F64674 /* ViewController.m */,
+				52FA183E1CABB36500F64674 /* Main.storyboard */,
+				52FA18411CABB36500F64674 /* Assets.xcassets */,
+				52FA18431CABB36500F64674 /* LaunchScreen.storyboard */,
+				52FA18461CABB36500F64674 /* Info.plist */,
+				52FA18351CABB36500F64674 /* Supporting Files */,
+			);
+			path = VeiwColourApp;
+			sourceTree = "<group>";
+		};
+		52FA18351CABB36500F64674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52FA18361CABB36500F64674 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52FA184E1CABB36600F64674 /* VeiwColourAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				52FA184F1CABB36600F64674 /* VeiwColourAppTests.m */,
+				52FA18511CABB36600F64674 /* Info.plist */,
+			);
+			path = VeiwColourAppTests;
+			sourceTree = "<group>";
+		};
+		52FA18591CABB36600F64674 /* VeiwColourAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52FA185A1CABB36600F64674 /* VeiwColourAppUITests.m */,
+				52FA185C1CABB36600F64674 /* Info.plist */,
+			);
+			path = VeiwColourAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52FA18311CABB36500F64674 /* VeiwColourApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA185F1CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourApp" */;
+			buildPhases = (
+				52FA182E1CABB36500F64674 /* Sources */,
+				52FA182F1CABB36500F64674 /* Frameworks */,
+				52FA18301CABB36500F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeiwColourApp;
+			productName = VeiwColourApp;
+			productReference = 52FA18321CABB36500F64674 /* VeiwColourApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52FA184A1CABB36600F64674 /* VeiwColourAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA18621CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourAppTests" */;
+			buildPhases = (
+				52FA18471CABB36600F64674 /* Sources */,
+				52FA18481CABB36600F64674 /* Frameworks */,
+				52FA18491CABB36600F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FA184D1CABB36600F64674 /* PBXTargetDependency */,
+			);
+			name = VeiwColourAppTests;
+			productName = VeiwColourAppTests;
+			productReference = 52FA184B1CABB36600F64674 /* VeiwColourAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52FA18551CABB36600F64674 /* VeiwColourAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52FA18651CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourAppUITests" */;
+			buildPhases = (
+				52FA18521CABB36600F64674 /* Sources */,
+				52FA18531CABB36600F64674 /* Frameworks */,
+				52FA18541CABB36600F64674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52FA18581CABB36600F64674 /* PBXTargetDependency */,
+			);
+			name = VeiwColourAppUITests;
+			productName = VeiwColourAppUITests;
+			productReference = 52FA18561CABB36600F64674 /* VeiwColourAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52FA182A1CABB36500F64674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					52FA18311CABB36500F64674 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					52FA184A1CABB36600F64674 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52FA18311CABB36500F64674;
+					};
+					52FA18551CABB36600F64674 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52FA18311CABB36500F64674;
+					};
+				};
+			};
+			buildConfigurationList = 52FA182D1CABB36500F64674 /* Build configuration list for PBXProject "VeiwColourApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52FA18291CABB36500F64674;
+			productRefGroup = 52FA18331CABB36500F64674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52FA18311CABB36500F64674 /* VeiwColourApp */,
+				52FA184A1CABB36600F64674 /* VeiwColourAppTests */,
+				52FA18551CABB36600F64674 /* VeiwColourAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52FA18301CABB36500F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA18451CABB36500F64674 /* LaunchScreen.storyboard in Resources */,
+				52FA18421CABB36500F64674 /* Assets.xcassets in Resources */,
+				52FA18401CABB36500F64674 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18491CABB36600F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18541CABB36600F64674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52FA182E1CABB36500F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA183D1CABB36500F64674 /* ViewController.m in Sources */,
+				52FA183A1CABB36500F64674 /* AppDelegate.m in Sources */,
+				52FA18371CABB36500F64674 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18471CABB36600F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA18501CABB36600F64674 /* VeiwColourAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FA18521CABB36600F64674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52FA185B1CABB36600F64674 /* VeiwColourAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52FA184D1CABB36600F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FA18311CABB36500F64674 /* VeiwColourApp */;
+			targetProxy = 52FA184C1CABB36600F64674 /* PBXContainerItemProxy */;
+		};
+		52FA18581CABB36600F64674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52FA18311CABB36500F64674 /* VeiwColourApp */;
+			targetProxy = 52FA18571CABB36600F64674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52FA183E1CABB36500F64674 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FA183F1CABB36500F64674 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52FA18431CABB36500F64674 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52FA18441CABB36500F64674 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52FA185D1CABB36600F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52FA185E1CABB36600F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52FA18601CABB36600F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VeiwColourApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52FA18611CABB36600F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VeiwColourApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52FA18631CABB36600F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VeiwColourAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeiwColourApp.app/VeiwColourApp";
+			};
+			name = Debug;
+		};
+		52FA18641CABB36600F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VeiwColourAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeiwColourApp.app/VeiwColourApp";
+			};
+			name = Release;
+		};
+		52FA18661CABB36600F64674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VeiwColourAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VeiwColourApp;
+			};
+			name = Debug;
+		};
+		52FA18671CABB36600F64674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VeiwColourAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.VeiwColourAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VeiwColourApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52FA182D1CABB36500F64674 /* Build configuration list for PBXProject "VeiwColourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA185D1CABB36600F64674 /* Debug */,
+				52FA185E1CABB36600F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52FA185F1CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA18601CABB36600F64674 /* Debug */,
+				52FA18611CABB36600F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FA18621CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA18631CABB36600F64674 /* Debug */,
+				52FA18641CABB36600F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52FA18651CABB36600F64674 /* Build configuration list for PBXNativeTarget "VeiwColourAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52FA18661CABB36600F64674 /* Debug */,
+				52FA18671CABB36600F64674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52FA182A1CABB36500F64674 /* Project object */;
+}
