@@ -68,27 +68,29 @@
                                                                                            @"Raghu":@"PW4",
                                                                                            @"Harish":@"PW5"}];
     
-//    if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]])
+    //CODE FOR VALIDATING USER NAME AND PASSWORD TO LOGIN AND ALSO CHANGES VIEW COLOUR
+    
+//    if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:@"Bhagya"]])
 //    {
 //        [self.view setBackgroundColor:[UIColor purpleColor]];
 //               _messageLabel.text=@"LOGIN SUCCESSFUL";
 //    }
-//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]])
+//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:@"Bhaskar"]])
 //    {
 //        [self.view setBackgroundColor:[UIColor orangeColor]];
 //               _messageLabel.text=@"LOGIN SUCCESSFUL";
 //    }
-//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]])
+//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:@"Nadaf"]])
 //    {
 //        [self.view setBackgroundColor:[UIColor greenColor]];
 //               _messageLabel.text=@"LOGIN SUCCESSFUL";
 //    }
-//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]])
+//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:@"Raghu"]])
 //    {
 //        [self.view setBackgroundColor:[UIColor blueColor]];
 //               _messageLabel.text=@"LOGIN SUCCESSFUL";
 //    }
-//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]])
+//    else if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:@"Harish"]])
 //    {
 //        [self.view setBackgroundColor:[UIColor brownColor]];
 //        _messageLabel.text=@"LOGIN SUCCESSFUL";
@@ -98,6 +100,9 @@
 //        _messageLabel.text=@"LOGIN UNSUCCESSFUL";
 //    }
 //
+    
+    
+    //REDUCED CODE TO VALIDATE USERNAME AND PASSWORD AND DISPLAYS THE LOGIN MESSAGE
         if([_passwordTextField.text isEqualToString:[employeeDetails objectForKey:_usernameTextField.text]]){
             
             _messageLabel.text=@"LOGIN SUCCESSFUL";
