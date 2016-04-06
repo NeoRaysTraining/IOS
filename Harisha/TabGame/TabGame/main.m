@@ -1,6 +1,6 @@
 //
 //  main.m
-//  gitDemo
+//  TabGame
 //
 //  Created by test on 4/6/16.
 //  Copyright © 2016 test. All rights reserved.

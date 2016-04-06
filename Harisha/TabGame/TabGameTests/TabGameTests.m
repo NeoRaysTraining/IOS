@@ -1,6 +1,6 @@
 //
-//  gitDemoTests.m
-//  gitDemoTests
+//  TabGameTests.m
+//  TabGameTests
 //
 //  Created by test on 4/6/16.
 //  Copyright © 2016 test. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface gitDemoTests : XCTestCase
+@interface TabGameTests : XCTestCase
 
 @end
 
-@implementation gitDemoTests
+@implementation TabGameTests
 
 - (void)setUp {
     [super setUp];
