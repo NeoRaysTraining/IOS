@@ -52,6 +52,7 @@
     }else{
         [self.diplayLabel setText:@"ONE"];
         self.flag=false;
+        NSLog(@"Loading the image..");
     }
   }
 @end
