@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  ImageViewApp
+//  ImageView2Example
 //
 //  Created by test on 4/5/16.
 //  Copyright © 2016 test. All rights reserved.
@@ -11,9 +11,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
 @property (nonatomic,strong) NSString *info;
--(NSString*)getInfo;
--(void) setInfoValue:(NSString *) infoValue;
+-(void) setStringValue:(NSString *) value;
+-(NSString*) getStringValue;
 
 @end
 
