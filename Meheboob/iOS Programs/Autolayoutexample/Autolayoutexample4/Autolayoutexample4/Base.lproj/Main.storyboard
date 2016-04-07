@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-8K-89a">
+                                <rect key="frame" x="20" y="61" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.28815526229999999" green="1" blue="0.20768587250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-OF-7S1">
+                                <rect key="frame" x="20" y="156" width="560" height="21"/>
+                                <color key="backgroundColor" red="0.79232780629999999" green="1" blue="0.59869948169999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEZ-W1-7qh">
+                                <rect key="frame" x="250" y="216" width="101" height="58"/>
+                                <color key="backgroundColor" red="1" green="0.12663151459999999" blue="0.24858957139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="A4G-5s-26u"/>
+                                    <constraint firstAttribute="width" constant="101" id="Ocl-Jm-4hq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-18-2vb">
+                                <rect key="frame" x="20" y="350" width="560" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rsi-18-2vb" secondAttribute="trailing" id="52i-gU-2AH"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Rsi-18-2vb" secondAttribute="leading" id="6hm-Qt-0vs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vY2-8K-89a" secondAttribute="trailing" id="6me-r5-O3s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AJL-OF-7S1" secondAttribute="trailing" id="ZVR-4A-tIv"/>
+                            <constraint firstItem="Rsi-18-2vb" firstAttribute="top" secondItem="vY2-8K-89a" secondAttribute="bottom" constant="259" id="a6G-jV-Qf5"/>
+                            <constraint firstItem="CEZ-W1-7qh" firstAttribute="centerX" secondItem="AJL-OF-7S1" secondAttribute="centerX" id="byW-2C-1EE"/>
+                            <constraint firstItem="AJL-OF-7S1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="136" id="d7k-aa-Rr5"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AJL-OF-7S1" secondAttribute="leading" id="dWO-9L-Vas"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="vY2-8K-89a" secondAttribute="leading" id="lY3-1Q-eah"/>
+                            <constraint firstItem="CEZ-W1-7qh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="196" id="myc-XB-QXn"/>
+                            <constraint firstItem="vY2-8K-89a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="qYu-Ge-asK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="304"/>
+        </scene>
+    </scenes>
+</document>
