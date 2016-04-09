@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBT-E7-ENf">
+                                <rect key="frame" x="20" y="251" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="dzw-HB-fXt"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="100" height="50"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FrL-am-D4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZs-Sw-udd">
+                                <rect key="frame" x="534" y="251" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fP6-Hc-4Ri"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="100" height="50"/>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="loadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cR5-aI-H9O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHw-jB-JGq">
+                                <rect key="frame" x="183" y="328" width="234" height="21"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="234" id="A3B-m8-ok3"/>
+                                    <constraint firstAttribute="height" constant="21" id="NjR-Zf-U77"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two" translatesAutoresizingMaskIntoConstraints="NO" id="glN-HF-Ie5">
+                                <rect key="frame" x="200" y="28" width="200" height="200"/>
+                                <color key="tintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9tP-nJ-0Ys"/>
+                                    <constraint firstAttribute="height" constant="200" id="yzO-kt-1z0"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="glN-HF-Ie5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="8RP-iE-IDc"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="IBT-E7-ENf" secondAttribute="leading" id="FPM-Gg-aPX"/>
+                            <constraint firstItem="CHw-jB-JGq" firstAttribute="top" secondItem="glN-HF-Ie5" secondAttribute="bottom" constant="100" id="J5P-Rs-yBh"/>
+                            <constraint firstItem="DZs-Sw-udd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="231" id="MXJ-RJ-vGF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="glN-HF-Ie5" secondAttribute="trailing" constant="180" id="NLp-CF-y2B"/>
+                            <constraint firstItem="IBT-E7-ENf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="231" id="NRG-1X-P16"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DZs-Sw-udd" secondAttribute="trailing" id="Pon-a0-fVX"/>
+                            <constraint firstItem="glN-HF-Ie5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R3U-zu-ATI"/>
+                            <constraint firstItem="glN-HF-Ie5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="XTU-aJ-KWu"/>
+                            <constraint firstItem="CHw-jB-JGq" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="kOy-HG-J7Z"/>
+                            <constraint firstItem="DZs-Sw-udd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="v44-Wj-yd0"/>
+                            <constraint firstItem="CHw-jB-JGq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wiF-CH-6Of"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8RP-iE-IDc"/>
+                                <exclude reference="NLp-CF-y2B"/>
+                                <exclude reference="kOy-HG-J7Z"/>
+                                <exclude reference="v44-Wj-yd0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="imageViewdisp" destination="glN-HF-Ie5" id="TlQ-J4-urX"/>
+                        <outlet property="messagedisplayLabel" destination="CHw-jB-JGq" id="o3b-02-TdN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1961" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="two" width="600" height="600"/>
+    </resources>
+</document>
