@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oh6-2T-eUi">
+                                <rect key="frame" x="20" y="364" width="560" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="j3K-J7-mu0"/>
+                                    <constraint firstAttribute="height" constant="216" id="z5z-wk-cL6"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="482044256.68891001">
+                                    <!--2016-04-11 05:10:56 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="hi_IN"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njS-Ex-Gzs">
+                                <rect key="frame" x="176" y="28" width="249" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="JnT-yc-X90"/>
+                                    <constraint firstAttribute="height" constant="21" id="Mh7-Wq-575"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQ4-Mj-k0D">
+                                <rect key="frame" x="34" y="326" width="57" height="30"/>
+                                <state key="normal" title="GetDate"/>
+                                <connections>
+                                    <action selector="getDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xUv-Kk-LFh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="njS-Ex-Gzs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="2At-cD-csf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oh6-2T-eUi" secondAttribute="bottom" constant="20" id="Ip7-lB-fGH"/>
+                            <constraint firstItem="oh6-2T-eUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSR-Cq-P0J"/>
+                            <constraint firstItem="njS-Ex-Gzs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e1v-Ea-yve"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="oh6-2T-eUi" id="RvG-QR-czB"/>
+                        <outlet property="showDate" destination="njS-Ex-Gzs" id="3H0-Va-Vo3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3555" y="-511"/>
+        </scene>
+    </scenes>
+</document>
