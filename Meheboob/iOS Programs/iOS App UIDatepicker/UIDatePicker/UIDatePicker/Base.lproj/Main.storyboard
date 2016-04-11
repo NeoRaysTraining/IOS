@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy7-kL-V7c">
+                                <rect key="frame" x="20" y="28" width="560" height="36"/>
+                                <color key="backgroundColor" red="0.95674905139999999" green="1" blue="0.7948125748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="W9O-2o-ALv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qsG-RX-LrA">
+                                <rect key="frame" x="0.0" y="329" width="600" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="482057462.71040899">
+                                    <!--2016-04-11 08:51:02 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-oe-YdB">
+                                <rect key="frame" x="20" y="215" width="108" height="55"/>
+                                <color key="backgroundColor" red="0.95674905139999999" green="1" blue="0.7948125748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="Q35-6u-Kwx"/>
+                                    <constraint firstAttribute="height" constant="55" id="cCH-RX-bkH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-BoldItalic" family="Verdana" pointSize="20"/>
+                                <state key="normal" title="Get Date"/>
+                                <connections>
+                                    <action selector="getDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PpI-rq-0H6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88340901670000005" green="0.90442973670000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="qsG-RX-LrA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5Fc-Dt-Qo1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qsG-RX-LrA" secondAttribute="bottom" constant="55" id="EYx-Of-F63"/>
+                            <constraint firstItem="Asf-oe-YdB" firstAttribute="top" secondItem="zy7-kL-V7c" secondAttribute="bottom" constant="151" id="Ef8-Dk-l3d"/>
+                            <constraint firstItem="qsG-RX-LrA" firstAttribute="top" secondItem="Asf-oe-YdB" secondAttribute="bottom" constant="59" id="Ofs-bL-Y52"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qsG-RX-LrA" secondAttribute="trailing" constant="-20" id="R8X-GX-k2B"/>
+                            <constraint firstItem="zy7-kL-V7c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="RkI-9J-K9b"/>
+                            <constraint firstItem="zy7-kL-V7c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dBa-NU-Trt"/>
+                            <constraint firstItem="zy7-kL-V7c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m6v-df-4B1"/>
+                            <constraint firstItem="Asf-oe-YdB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xpr-Ic-ohe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="qsG-RX-LrA" id="sfu-JR-UTQ"/>
+                        <outlet property="labelField" destination="zy7-kL-V7c" id="Ehe-0c-Nb7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="303"/>
+        </scene>
+    </scenes>
+</document>
