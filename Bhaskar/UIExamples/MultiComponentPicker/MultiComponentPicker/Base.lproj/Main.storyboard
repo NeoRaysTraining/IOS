@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mem-kM-CEB">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-VT-ic6">
+                                <rect key="frame" x="20" y="85" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FL2-8C-zKX">
+                                <rect key="frame" x="0.0" y="364" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="M87-EZ-OBU"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vLd-In-U9w"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfK-wp-z8C">
+                                <rect key="frame" x="20" y="142" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mem-kM-CEB" firstAttribute="leading" secondItem="WdM-VT-ic6" secondAttribute="leading" id="16q-Qm-14n"/>
+                            <constraint firstItem="mem-kM-CEB" firstAttribute="trailing" secondItem="WdM-VT-ic6" secondAttribute="trailing" id="9Kx-nc-3qd"/>
+                            <constraint firstItem="WdM-VT-ic6" firstAttribute="top" secondItem="mem-kM-CEB" secondAttribute="bottom" constant="36" id="CED-X8-uks"/>
+                            <constraint firstItem="WdM-VT-ic6" firstAttribute="trailing" secondItem="tfK-wp-z8C" secondAttribute="trailing" id="FRR-Hc-ocR"/>
+                            <constraint firstItem="tfK-wp-z8C" firstAttribute="centerX" secondItem="FL2-8C-zKX" secondAttribute="centerX" id="JeE-WO-uDt"/>
+                            <constraint firstAttribute="bottom" secondItem="FL2-8C-zKX" secondAttribute="bottom" constant="20" symbolic="YES" id="Uf7-lL-PjI"/>
+                            <constraint firstAttribute="trailing" secondItem="FL2-8C-zKX" secondAttribute="trailing" id="Uk2-zq-fr7"/>
+                            <constraint firstItem="mem-kM-CEB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wu4-4D-ceD"/>
+                            <constraint firstItem="WdM-VT-ic6" firstAttribute="leading" secondItem="tfK-wp-z8C" secondAttribute="leading" id="Y28-Dp-xY1"/>
+                            <constraint firstItem="FL2-8C-zKX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hwz-h0-VdN"/>
+                            <constraint firstItem="mem-kM-CEB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="uZ6-pn-sDO"/>
+                            <constraint firstItem="tfK-wp-z8C" firstAttribute="top" secondItem="WdM-VT-ic6" secondAttribute="bottom" constant="36" id="wan-0n-PFf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="designationLabel" destination="WdM-VT-ic6" id="kY8-RI-Gnb"/>
+                        <outlet property="nameLabel" destination="mem-kM-CEB" id="oqZ-4Y-N3b"/>
+                        <outlet property="phoneNoLabel" destination="tfK-wp-z8C" id="pRi-FL-OrQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="309"/>
+        </scene>
+    </scenes>
+</document>

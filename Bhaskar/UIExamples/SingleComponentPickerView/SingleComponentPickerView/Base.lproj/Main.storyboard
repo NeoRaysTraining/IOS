@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbG-mK-val">
+                                <rect key="frame" x="20" y="348" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="Glo-n4-WAI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-sL-bey">
+                                <rect key="frame" x="98" y="28" width="404" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="299" id="ND4-qL-aFO"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vix-To-MMC">
+                                <rect key="frame" x="0.0" y="364" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="5uB-6s-p8a"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Yhh-jF-1xF"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3hm-7J-aSV"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DTU-sL-bey" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="1NR-K6-4fT"/>
+                            <constraint firstItem="KbG-mK-val" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J81-JT-NPO"/>
+                            <constraint firstItem="Vix-To-MMC" firstAttribute="top" secondItem="KbG-mK-val" secondAttribute="bottom" constant="-5" id="VeS-6d-f5s"/>
+                            <constraint firstItem="DTU-sL-bey" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="78" id="qEs-lU-JyY"/>
+                            <constraint firstItem="KbG-mK-val" firstAttribute="top" secondItem="DTU-sL-bey" secondAttribute="bottom" constant="21" id="qTR-2E-Ab8"/>
+                            <constraint firstItem="DTU-sL-bey" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tg4-J3-GbX"/>
+                            <constraint firstItem="Vix-To-MMC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zHC-3Z-80r"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showFruitNameLabel" destination="KbG-mK-val" id="D2e-zJ-gB3"/>
+                        <outlet property="showImg" destination="DTU-sL-bey" id="Wtz-eF-I72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="309"/>
+        </scene>
+    </scenes>
+</document>
