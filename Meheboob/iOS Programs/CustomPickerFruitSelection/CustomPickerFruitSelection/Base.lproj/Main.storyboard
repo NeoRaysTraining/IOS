@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dz3-a7-mo6">
+                                <rect key="frame" x="200" y="44" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Hrm-l1-EfS"/>
+                                    <constraint firstAttribute="height" constant="200" id="xFL-9h-dje"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsD-5D-Nfs">
+                                <rect key="frame" x="20" y="282" width="560" height="36"/>
+                                <color key="backgroundColor" red="0.95200443899504494" green="0.80125282094159922" blue="0.98541666666666672" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="6Yv-jz-2Vt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="20"/>
+                                <color key="textColor" red="0.98541666666666672" green="0.75074108791462879" blue="0.18467054460140594" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Es1-fg-QqX">
+                                <rect key="frame" x="0.0" y="357" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JXa-do-66E"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2nt-4Q-We1"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qsD-5D-Nfs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4h3-Qs-Htd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Es1-fg-QqX" secondAttribute="bottom" constant="27" id="LyJ-EO-mqJ"/>
+                            <constraint firstItem="dz3-a7-mo6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="ZXn-BM-I32"/>
+                            <constraint firstItem="qsD-5D-Nfs" firstAttribute="top" secondItem="dz3-a7-mo6" secondAttribute="bottom" constant="38" id="brh-Xo-kmp"/>
+                            <constraint firstItem="qsD-5D-Nfs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="c5v-1z-go3"/>
+                            <constraint firstItem="dz3-a7-mo6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCK-xj-6nR"/>
+                            <constraint firstItem="Es1-fg-QqX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="eW1-vS-DYG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Es1-fg-QqX" secondAttribute="trailing" constant="-20" id="sql-23-xb8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ImageViewForDisplayImage" destination="dz3-a7-mo6" id="fdk-cm-LG5"/>
+                        <outlet property="labelField" destination="qsD-5D-Nfs" id="Zcy-Il-Ozj"/>
+                        <outlet property="selectedFriutFromView" destination="Es1-fg-QqX" id="6LU-xo-VKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="305"/>
+        </scene>
+    </scenes>
+</document>

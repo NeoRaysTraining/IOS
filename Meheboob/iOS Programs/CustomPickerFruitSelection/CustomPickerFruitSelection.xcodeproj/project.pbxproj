@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52E3D3311CBCF8440034BB97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D3301CBCF8440034BB97 /* main.m */; };
+		52E3D3341CBCF8440034BB97 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D3331CBCF8440034BB97 /* AppDelegate.m */; };
+		52E3D3371CBCF8440034BB97 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D3361CBCF8440034BB97 /* ViewController.m */; };
+		52E3D33A1CBCF8440034BB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3381CBCF8440034BB97 /* Main.storyboard */; };
+		52E3D33C1CBCF8440034BB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D33B1CBCF8440034BB97 /* Assets.xcassets */; };
+		52E3D33F1CBCF8440034BB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D33D1CBCF8440034BB97 /* LaunchScreen.storyboard */; };
+		52E3D34A1CBCF8440034BB97 /* CustomPickerFruitSelectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D3491CBCF8440034BB97 /* CustomPickerFruitSelectionTests.m */; };
+		52E3D3551CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E3D3541CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.m */; };
+		52E3D3671CBD02800034BB97 /* Apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3621CBD02800034BB97 /* Apple.jpg */; };
+		52E3D3681CBD02800034BB97 /* Mango.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3631CBD02800034BB97 /* Mango.jpg */; };
+		52E3D3691CBD02800034BB97 /* Banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3641CBD02800034BB97 /* Banana.jpg */; };
+		52E3D36A1CBD02800034BB97 /* Grapes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3651CBD02800034BB97 /* Grapes.jpg */; };
+		52E3D36B1CBD02800034BB97 /* Orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52E3D3661CBD02800034BB97 /* Orange.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52E3D3461CBCF8440034BB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E3D3241CBCF8440034BB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E3D32B1CBCF8440034BB97;
+			remoteInfo = CustomPickerFruitSelection;
+		};
+		52E3D3511CBCF8440034BB97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52E3D3241CBCF8440034BB97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52E3D32B1CBCF8440034BB97;
+			remoteInfo = CustomPickerFruitSelection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52E3D32C1CBCF8440034BB97 /* CustomPickerFruitSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPickerFruitSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E3D3301CBCF8440034BB97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52E3D3321CBCF8440034BB97 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52E3D3331CBCF8440034BB97 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52E3D3351CBCF8440034BB97 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52E3D3361CBCF8440034BB97 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52E3D3391CBCF8440034BB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52E3D33B1CBCF8440034BB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52E3D33E1CBCF8440034BB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52E3D3401CBCF8440034BB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E3D3451CBCF8440034BB97 /* CustomPickerFruitSelectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPickerFruitSelectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E3D3491CBCF8440034BB97 /* CustomPickerFruitSelectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerFruitSelectionTests.m; sourceTree = "<group>"; };
+		52E3D34B1CBCF8440034BB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E3D3501CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPickerFruitSelectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E3D3541CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerFruitSelectionUITests.m; sourceTree = "<group>"; };
+		52E3D3561CBCF8440034BB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E3D3621CBD02800034BB97 /* Apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple.jpg; sourceTree = "<group>"; };
+		52E3D3631CBD02800034BB97 /* Mango.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mango.jpg; sourceTree = "<group>"; };
+		52E3D3641CBD02800034BB97 /* Banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Banana.jpg; sourceTree = "<group>"; };
+		52E3D3651CBD02800034BB97 /* Grapes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Grapes.jpg; sourceTree = "<group>"; };
+		52E3D3661CBD02800034BB97 /* Orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Orange.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52E3D3291CBCF8440034BB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D3421CBCF8440034BB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D34D1CBCF8440034BB97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52E3D3231CBCF8440034BB97 = {
+			isa = PBXGroup;
+			children = (
+				52E3D32E1CBCF8440034BB97 /* CustomPickerFruitSelection */,
+				52E3D3481CBCF8440034BB97 /* CustomPickerFruitSelectionTests */,
+				52E3D3531CBCF8440034BB97 /* CustomPickerFruitSelectionUITests */,
+				52E3D32D1CBCF8440034BB97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52E3D32D1CBCF8440034BB97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52E3D32C1CBCF8440034BB97 /* CustomPickerFruitSelection.app */,
+				52E3D3451CBCF8440034BB97 /* CustomPickerFruitSelectionTests.xctest */,
+				52E3D3501CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52E3D32E1CBCF8440034BB97 /* CustomPickerFruitSelection */ = {
+			isa = PBXGroup;
+			children = (
+				52E3D3321CBCF8440034BB97 /* AppDelegate.h */,
+				52E3D3331CBCF8440034BB97 /* AppDelegate.m */,
+				52E3D3351CBCF8440034BB97 /* ViewController.h */,
+				52E3D3361CBCF8440034BB97 /* ViewController.m */,
+				52E3D3381CBCF8440034BB97 /* Main.storyboard */,
+				52E3D33B1CBCF8440034BB97 /* Assets.xcassets */,
+				52E3D33D1CBCF8440034BB97 /* LaunchScreen.storyboard */,
+				52E3D3401CBCF8440034BB97 /* Info.plist */,
+				52E3D32F1CBCF8440034BB97 /* Supporting Files */,
+			);
+			path = CustomPickerFruitSelection;
+			sourceTree = "<group>";
+		};
+		52E3D32F1CBCF8440034BB97 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52E3D3621CBD02800034BB97 /* Apple.jpg */,
+				52E3D3631CBD02800034BB97 /* Mango.jpg */,
+				52E3D3641CBD02800034BB97 /* Banana.jpg */,
+				52E3D3651CBD02800034BB97 /* Grapes.jpg */,
+				52E3D3661CBD02800034BB97 /* Orange.jpg */,
+				52E3D3301CBCF8440034BB97 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52E3D3481CBCF8440034BB97 /* CustomPickerFruitSelectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				52E3D3491CBCF8440034BB97 /* CustomPickerFruitSelectionTests.m */,
+				52E3D34B1CBCF8440034BB97 /* Info.plist */,
+			);
+			path = CustomPickerFruitSelectionTests;
+			sourceTree = "<group>";
+		};
+		52E3D3531CBCF8440034BB97 /* CustomPickerFruitSelectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52E3D3541CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.m */,
+				52E3D3561CBCF8440034BB97 /* Info.plist */,
+			);
+			path = CustomPickerFruitSelectionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52E3D32B1CBCF8440034BB97 /* CustomPickerFruitSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E3D3591CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelection" */;
+			buildPhases = (
+				52E3D3281CBCF8440034BB97 /* Sources */,
+				52E3D3291CBCF8440034BB97 /* Frameworks */,
+				52E3D32A1CBCF8440034BB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPickerFruitSelection;
+			productName = CustomPickerFruitSelection;
+			productReference = 52E3D32C1CBCF8440034BB97 /* CustomPickerFruitSelection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52E3D3441CBCF8440034BB97 /* CustomPickerFruitSelectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E3D35C1CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelectionTests" */;
+			buildPhases = (
+				52E3D3411CBCF8440034BB97 /* Sources */,
+				52E3D3421CBCF8440034BB97 /* Frameworks */,
+				52E3D3431CBCF8440034BB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E3D3471CBCF8440034BB97 /* PBXTargetDependency */,
+			);
+			name = CustomPickerFruitSelectionTests;
+			productName = CustomPickerFruitSelectionTests;
+			productReference = 52E3D3451CBCF8440034BB97 /* CustomPickerFruitSelectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52E3D34F1CBCF8440034BB97 /* CustomPickerFruitSelectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52E3D35F1CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelectionUITests" */;
+			buildPhases = (
+				52E3D34C1CBCF8440034BB97 /* Sources */,
+				52E3D34D1CBCF8440034BB97 /* Frameworks */,
+				52E3D34E1CBCF8440034BB97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52E3D3521CBCF8440034BB97 /* PBXTargetDependency */,
+			);
+			name = CustomPickerFruitSelectionUITests;
+			productName = CustomPickerFruitSelectionUITests;
+			productReference = 52E3D3501CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52E3D3241CBCF8440034BB97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					52E3D32B1CBCF8440034BB97 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					52E3D3441CBCF8440034BB97 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52E3D32B1CBCF8440034BB97;
+					};
+					52E3D34F1CBCF8440034BB97 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52E3D32B1CBCF8440034BB97;
+					};
+				};
+			};
+			buildConfigurationList = 52E3D3271CBCF8440034BB97 /* Build configuration list for PBXProject "CustomPickerFruitSelection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52E3D3231CBCF8440034BB97;
+			productRefGroup = 52E3D32D1CBCF8440034BB97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52E3D32B1CBCF8440034BB97 /* CustomPickerFruitSelection */,
+				52E3D3441CBCF8440034BB97 /* CustomPickerFruitSelectionTests */,
+				52E3D34F1CBCF8440034BB97 /* CustomPickerFruitSelectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52E3D32A1CBCF8440034BB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E3D33F1CBCF8440034BB97 /* LaunchScreen.storyboard in Resources */,
+				52E3D33C1CBCF8440034BB97 /* Assets.xcassets in Resources */,
+				52E3D3671CBD02800034BB97 /* Apple.jpg in Resources */,
+				52E3D33A1CBCF8440034BB97 /* Main.storyboard in Resources */,
+				52E3D36A1CBD02800034BB97 /* Grapes.jpg in Resources */,
+				52E3D36B1CBD02800034BB97 /* Orange.jpg in Resources */,
+				52E3D3691CBD02800034BB97 /* Banana.jpg in Resources */,
+				52E3D3681CBD02800034BB97 /* Mango.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D3431CBCF8440034BB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D34E1CBCF8440034BB97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52E3D3281CBCF8440034BB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E3D3371CBCF8440034BB97 /* ViewController.m in Sources */,
+				52E3D3341CBCF8440034BB97 /* AppDelegate.m in Sources */,
+				52E3D3311CBCF8440034BB97 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D3411CBCF8440034BB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E3D34A1CBCF8440034BB97 /* CustomPickerFruitSelectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52E3D34C1CBCF8440034BB97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E3D3551CBCF8440034BB97 /* CustomPickerFruitSelectionUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52E3D3471CBCF8440034BB97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E3D32B1CBCF8440034BB97 /* CustomPickerFruitSelection */;
+			targetProxy = 52E3D3461CBCF8440034BB97 /* PBXContainerItemProxy */;
+		};
+		52E3D3521CBCF8440034BB97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52E3D32B1CBCF8440034BB97 /* CustomPickerFruitSelection */;
+			targetProxy = 52E3D3511CBCF8440034BB97 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52E3D3381CBCF8440034BB97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E3D3391CBCF8440034BB97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52E3D33D1CBCF8440034BB97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52E3D33E1CBCF8440034BB97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52E3D3571CBCF8440034BB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52E3D3581CBCF8440034BB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52E3D35A1CBCF8440034BB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomPickerFruitSelection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52E3D35B1CBCF8440034BB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomPickerFruitSelection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52E3D35D1CBCF8440034BB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomPickerFruitSelectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPickerFruitSelection.app/CustomPickerFruitSelection";
+			};
+			name = Debug;
+		};
+		52E3D35E1CBCF8440034BB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomPickerFruitSelectionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPickerFruitSelection.app/CustomPickerFruitSelection";
+			};
+			name = Release;
+		};
+		52E3D3601CBCF8440034BB97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomPickerFruitSelectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomPickerFruitSelection;
+			};
+			name = Debug;
+		};
+		52E3D3611CBCF8440034BB97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomPickerFruitSelectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CustomPickerFruitSelectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomPickerFruitSelection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52E3D3271CBCF8440034BB97 /* Build configuration list for PBXProject "CustomPickerFruitSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E3D3571CBCF8440034BB97 /* Debug */,
+				52E3D3581CBCF8440034BB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52E3D3591CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E3D35A1CBCF8440034BB97 /* Debug */,
+				52E3D35B1CBCF8440034BB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52E3D35C1CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E3D35D1CBCF8440034BB97 /* Debug */,
+				52E3D35E1CBCF8440034BB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52E3D35F1CBCF8440034BB97 /* Build configuration list for PBXNativeTarget "CustomPickerFruitSelectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52E3D3601CBCF8440034BB97 /* Debug */,
+				52E3D3611CBCF8440034BB97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52E3D3241CBCF8440034BB97 /* Project object */;
+}
