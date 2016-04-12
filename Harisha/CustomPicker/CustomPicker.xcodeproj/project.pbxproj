@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5222ECF51CBCBCEE003E3806 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222ECF41CBCBCEE003E3806 /* main.m */; };
+		5222ECF81CBCBCEE003E3806 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222ECF71CBCBCEE003E3806 /* AppDelegate.m */; };
+		5222ECFB1CBCBCEF003E3806 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222ECFA1CBCBCEF003E3806 /* ViewController.m */; };
+		5222ECFE1CBCBCEF003E3806 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5222ECFC1CBCBCEF003E3806 /* Main.storyboard */; };
+		5222ED001CBCBCEF003E3806 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5222ECFF1CBCBCEF003E3806 /* Assets.xcassets */; };
+		5222ED031CBCBCEF003E3806 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5222ED011CBCBCEF003E3806 /* LaunchScreen.storyboard */; };
+		5222ED0E1CBCBCEF003E3806 /* CustomPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222ED0D1CBCBCEF003E3806 /* CustomPickerTests.m */; };
+		5222ED191CBCBCEF003E3806 /* CustomPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222ED181CBCBCEF003E3806 /* CustomPickerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5222ED0A1CBCBCEF003E3806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5222ECE81CBCBCEE003E3806 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5222ECEF1CBCBCEE003E3806;
+			remoteInfo = CustomPicker;
+		};
+		5222ED151CBCBCEF003E3806 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5222ECE81CBCBCEE003E3806 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5222ECEF1CBCBCEE003E3806;
+			remoteInfo = CustomPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5222ECF01CBCBCEE003E3806 /* CustomPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222ECF41CBCBCEE003E3806 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5222ECF61CBCBCEE003E3806 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5222ECF71CBCBCEE003E3806 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5222ECF91CBCBCEF003E3806 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5222ECFA1CBCBCEF003E3806 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5222ECFD1CBCBCEF003E3806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5222ECFF1CBCBCEF003E3806 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5222ED021CBCBCEF003E3806 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5222ED041CBCBCEF003E3806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5222ED091CBCBCEF003E3806 /* CustomPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222ED0D1CBCBCEF003E3806 /* CustomPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerTests.m; sourceTree = "<group>"; };
+		5222ED0F1CBCBCEF003E3806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5222ED141CBCBCEF003E3806 /* CustomPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222ED181CBCBCEF003E3806 /* CustomPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerUITests.m; sourceTree = "<group>"; };
+		5222ED1A1CBCBCEF003E3806 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5222ECED1CBCBCEE003E3806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED061CBCBCEF003E3806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED111CBCBCEF003E3806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5222ECE71CBCBCEE003E3806 = {
+			isa = PBXGroup;
+			children = (
+				5222ECF21CBCBCEE003E3806 /* CustomPicker */,
+				5222ED0C1CBCBCEF003E3806 /* CustomPickerTests */,
+				5222ED171CBCBCEF003E3806 /* CustomPickerUITests */,
+				5222ECF11CBCBCEE003E3806 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5222ECF11CBCBCEE003E3806 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5222ECF01CBCBCEE003E3806 /* CustomPicker.app */,
+				5222ED091CBCBCEF003E3806 /* CustomPickerTests.xctest */,
+				5222ED141CBCBCEF003E3806 /* CustomPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5222ECF21CBCBCEE003E3806 /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5222ECF61CBCBCEE003E3806 /* AppDelegate.h */,
+				5222ECF71CBCBCEE003E3806 /* AppDelegate.m */,
+				5222ECF91CBCBCEF003E3806 /* ViewController.h */,
+				5222ECFA1CBCBCEF003E3806 /* ViewController.m */,
+				5222ECFC1CBCBCEF003E3806 /* Main.storyboard */,
+				5222ECFF1CBCBCEF003E3806 /* Assets.xcassets */,
+				5222ED011CBCBCEF003E3806 /* LaunchScreen.storyboard */,
+				5222ED041CBCBCEF003E3806 /* Info.plist */,
+				5222ECF31CBCBCEE003E3806 /* Supporting Files */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
+		5222ECF31CBCBCEE003E3806 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5222ECF41CBCBCEE003E3806 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5222ED0C1CBCBCEF003E3806 /* CustomPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5222ED0D1CBCBCEF003E3806 /* CustomPickerTests.m */,
+				5222ED0F1CBCBCEF003E3806 /* Info.plist */,
+			);
+			path = CustomPickerTests;
+			sourceTree = "<group>";
+		};
+		5222ED171CBCBCEF003E3806 /* CustomPickerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5222ED181CBCBCEF003E3806 /* CustomPickerUITests.m */,
+				5222ED1A1CBCBCEF003E3806 /* Info.plist */,
+			);
+			path = CustomPickerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5222ECEF1CBCBCEE003E3806 /* CustomPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5222ED1D1CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPicker" */;
+			buildPhases = (
+				5222ECEC1CBCBCEE003E3806 /* Sources */,
+				5222ECED1CBCBCEE003E3806 /* Frameworks */,
+				5222ECEE1CBCBCEE003E3806 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPicker;
+			productName = CustomPicker;
+			productReference = 5222ECF01CBCBCEE003E3806 /* CustomPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5222ED081CBCBCEF003E3806 /* CustomPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5222ED201CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPickerTests" */;
+			buildPhases = (
+				5222ED051CBCBCEF003E3806 /* Sources */,
+				5222ED061CBCBCEF003E3806 /* Frameworks */,
+				5222ED071CBCBCEF003E3806 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5222ED0B1CBCBCEF003E3806 /* PBXTargetDependency */,
+			);
+			name = CustomPickerTests;
+			productName = CustomPickerTests;
+			productReference = 5222ED091CBCBCEF003E3806 /* CustomPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5222ED131CBCBCEF003E3806 /* CustomPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5222ED231CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPickerUITests" */;
+			buildPhases = (
+				5222ED101CBCBCEF003E3806 /* Sources */,
+				5222ED111CBCBCEF003E3806 /* Frameworks */,
+				5222ED121CBCBCEF003E3806 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5222ED161CBCBCEF003E3806 /* PBXTargetDependency */,
+			);
+			name = CustomPickerUITests;
+			productName = CustomPickerUITests;
+			productReference = 5222ED141CBCBCEF003E3806 /* CustomPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5222ECE81CBCBCEE003E3806 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					5222ECEF1CBCBCEE003E3806 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5222ED081CBCBCEF003E3806 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5222ECEF1CBCBCEE003E3806;
+					};
+					5222ED131CBCBCEF003E3806 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5222ECEF1CBCBCEE003E3806;
+					};
+				};
+			};
+			buildConfigurationList = 5222ECEB1CBCBCEE003E3806 /* Build configuration list for PBXProject "CustomPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5222ECE71CBCBCEE003E3806;
+			productRefGroup = 5222ECF11CBCBCEE003E3806 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5222ECEF1CBCBCEE003E3806 /* CustomPicker */,
+				5222ED081CBCBCEF003E3806 /* CustomPickerTests */,
+				5222ED131CBCBCEF003E3806 /* CustomPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5222ECEE1CBCBCEE003E3806 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5222ED031CBCBCEF003E3806 /* LaunchScreen.storyboard in Resources */,
+				5222ED001CBCBCEF003E3806 /* Assets.xcassets in Resources */,
+				5222ECFE1CBCBCEF003E3806 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED071CBCBCEF003E3806 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED121CBCBCEF003E3806 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5222ECEC1CBCBCEE003E3806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5222ECFB1CBCBCEF003E3806 /* ViewController.m in Sources */,
+				5222ECF81CBCBCEE003E3806 /* AppDelegate.m in Sources */,
+				5222ECF51CBCBCEE003E3806 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED051CBCBCEF003E3806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5222ED0E1CBCBCEF003E3806 /* CustomPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222ED101CBCBCEF003E3806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5222ED191CBCBCEF003E3806 /* CustomPickerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5222ED0B1CBCBCEF003E3806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5222ECEF1CBCBCEE003E3806 /* CustomPicker */;
+			targetProxy = 5222ED0A1CBCBCEF003E3806 /* PBXContainerItemProxy */;
+		};
+		5222ED161CBCBCEF003E3806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5222ECEF1CBCBCEE003E3806 /* CustomPicker */;
+			targetProxy = 5222ED151CBCBCEF003E3806 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5222ECFC1CBCBCEF003E3806 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5222ECFD1CBCBCEF003E3806 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5222ED011CBCBCEF003E3806 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5222ED021CBCBCEF003E3806 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5222ED1B1CBCBCEF003E3806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5222ED1C1CBCBCEF003E3806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5222ED1E1CBCBCEF003E3806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5222ED1F1CBCBCEF003E3806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CustomPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5222ED211CBCBCEF003E3806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPicker.app/CustomPicker";
+			};
+			name = Debug;
+		};
+		5222ED221CBCBCEF003E3806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CustomPickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPicker.app/CustomPicker";
+			};
+			name = Release;
+		};
+		5222ED241CBCBCEF003E3806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomPicker;
+			};
+			name = Debug;
+		};
+		5222ED251CBCBCEF003E3806 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CustomPickerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = harish.CustomPickerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomPicker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5222ECEB1CBCBCEE003E3806 /* Build configuration list for PBXProject "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222ED1B1CBCBCEF003E3806 /* Debug */,
+				5222ED1C1CBCBCEF003E3806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5222ED1D1CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222ED1E1CBCBCEF003E3806 /* Debug */,
+				5222ED1F1CBCBCEF003E3806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5222ED201CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222ED211CBCBCEF003E3806 /* Debug */,
+				5222ED221CBCBCEF003E3806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5222ED231CBCBCEF003E3806 /* Build configuration list for PBXNativeTarget "CustomPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222ED241CBCBCEF003E3806 /* Debug */,
+				5222ED251CBCBCEF003E3806 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5222ECE81CBCBCEE003E3806 /* Project object */;
+}
