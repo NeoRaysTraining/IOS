@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5hR-lg-gRn">
+                                <rect key="frame" x="171" y="20" width="259" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="odH-Ow-2Aa"/>
+                                    <constraint firstAttribute="height" constant="128" id="v2u-tk-E73"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEm-E1-Wh4">
+                                <rect key="frame" x="171" y="178" width="259" height="21"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Kud-OM-cPt"/>
+                                    <constraint firstAttribute="width" constant="259" id="cur-iL-t2d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4D-AN-ubC">
+                                <rect key="frame" x="51" y="364" width="499" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="9L4-Ip-r4J"/>
+                                    <constraint firstAttribute="width" constant="499" id="kWD-bF-SPS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="i6h-Fb-YfS"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3df-dC-Zgg"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="rEm-E1-Wh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1NO-dV-wrk"/>
+                            <constraint firstItem="n4D-AN-ubC" firstAttribute="top" secondItem="rEm-E1-Wh4" secondAttribute="bottom" constant="165" id="5Ig-af-mxh"/>
+                            <constraint firstItem="rEm-E1-Wh4" firstAttribute="top" secondItem="5hR-lg-gRn" secondAttribute="bottom" constant="30" id="6TC-KP-bhh"/>
+                            <constraint firstItem="n4D-AN-ubC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DVy-xr-T0V"/>
+                            <constraint firstItem="5hR-lg-gRn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Udg-42-4Dg"/>
+                            <constraint firstItem="5hR-lg-gRn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XLG-ae-ivk"/>
+                            <constraint firstItem="rEm-E1-Wh4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozE-gs-EsM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="rEm-E1-Wh4" id="iw1-FL-uKD"/>
+                        <outlet property="imageDisplay" destination="5hR-lg-gRn" id="sK9-9C-v6S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1773" y="15"/>
+        </scene>
+    </scenes>
+</document>
