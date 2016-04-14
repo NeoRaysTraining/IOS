@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-RQ-cV9">
+                                <rect key="frame" x="20" y="283" width="560" height="224"/>
+                                <color key="backgroundColor" red="1" green="0.96488202570000003" blue="0.99594248129999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="2l5-3Y-7fQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-Wy-Uba">
+                                <rect key="frame" x="250" y="195" width="101" height="37"/>
+                                <color key="backgroundColor" red="0.90628326950000004" green="0.90628326950000004" blue="0.90628326950000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="4Hw-Mc-gtk"/>
+                                    <constraint firstAttribute="width" constant="101" id="kCH-Xb-Bev"/>
+                                </constraints>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OE9-SF-6rd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6F-jF-YEZ">
+                                <rect key="frame" x="20" y="97" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.15964439655172413" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="Mvg-RQ-cV9" secondAttribute="leading" id="AaS-oR-aOG"/>
+                            <constraint firstItem="Mvg-RQ-cV9" firstAttribute="top" secondItem="aZw-Wy-Uba" secondAttribute="bottom" constant="51" id="NWd-sO-fcj"/>
+                            <constraint firstItem="g6F-jF-YEZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="77" id="VrX-vv-waa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="g6F-jF-YEZ" secondAttribute="leading" id="dfV-dK-oqW"/>
+                            <constraint firstItem="aZw-Wy-Uba" firstAttribute="top" secondItem="g6F-jF-YEZ" secondAttribute="bottom" constant="68" id="j80-pc-FPp"/>
+                            <constraint firstItem="aZw-Wy-Uba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jg1-HA-VRw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mvg-RQ-cV9" secondAttribute="trailing" id="oNP-65-By7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g6F-jF-YEZ" secondAttribute="trailing" id="w87-cQ-dCD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="enterTextField" destination="g6F-jF-YEZ" id="o4b-DZ-qkh"/>
+                        <outlet property="textView" destination="Mvg-RQ-cV9" id="2hh-lk-YiS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="304"/>
+        </scene>
+    </scenes>
+</document>
