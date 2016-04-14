@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="V3p-jb-qhS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Download-->
+        <scene sceneID="gAE-np-bVk">
+            <objects>
+                <viewController id="Bde-c0-A1X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cii-fg-YSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hjZ-T7-2Pg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ce6-YB-hhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.961652313584209" blue="0.88036041631869977" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Download" id="Qz0-gD-FHh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WS1-nI-IEb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="422"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USE-qh-CYw">
+                                <rect key="frame" x="531" y="77" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchActions:" destination="BYZ-38-t0r" eventType="valueChanged" id="SZc-0a-5em"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="obk-QZ-3Hh">
+                                <rect key="frame" x="20" y="77" width="433" height="29"/>
+                                <color key="backgroundColor" red="0.86251642269999995" green="1" blue="0.88214241469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentActions:" destination="BYZ-38-t0r" eventType="valueChanged" id="1i5-Yz-aCh"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.73273337279999995" blue="0.72344254210000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="obk-QZ-3Hh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="1gh-qt-rdI"/>
+                            <constraint firstItem="USE-qh-CYw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="N90-wE-u24"/>
+                            <constraint firstItem="USE-qh-CYw" firstAttribute="leading" secondItem="obk-QZ-3Hh" secondAttribute="trailing" constant="78" id="Vxa-IR-ya8"/>
+                            <constraint firstItem="obk-QZ-3Hh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="juH-Kq-FCG"/>
+                            <constraint firstItem="USE-qh-CYw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="tWy-EI-E66"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contacts" id="KNm-GA-9lX"/>
+                    <connections>
+                        <outlet property="segmentBarOutlet" destination="obk-QZ-3Hh" id="JPZ-tr-Pb9"/>
+                        <outlet property="switchOutletOnOff" destination="USE-qh-CYw" id="7u0-vc-zKo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="297"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tjW-vZ-Ust">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="V3p-jb-qhS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="50J-Vi-3MH">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="V4z-BS-Tit"/>
+                        <segue destination="YCb-cP-OEL" kind="relationship" relationship="viewControllers" id="uNS-JP-BZR"/>
+                        <segue destination="YCb-cP-OEL" kind="relationship" relationship="viewControllers" id="K8B-vX-fT7"/>
+                        <segue destination="Bde-c0-A1X" kind="relationship" relationship="viewControllers" id="a1g-FL-xyy"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xil-y2-58A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="316"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="ggT-MJ-afM">
+            <objects>
+                <viewController id="YCb-cP-OEL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h4w-Sc-5Z2"/>
+                        <viewControllerLayoutGuide type="bottom" id="tH4-VN-euZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x1w-3i-8Fd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14519687140000001" green="0.88639152489999995" blue="0.1877934127" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" id="RKK-Jq-mFo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2o-fk-PBB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="802"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="uNS-JP-BZR"/>
+    </inferredMetricsTieBreakers>
+</document>
