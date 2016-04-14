@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="n41-g1-7PE">
+                                <rect key="frame" x="20" y="364" width="560" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="482053699.43539298">
+                                    <!--2016-04-11 07:48:19 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvn-Op-Ipb">
+                                <rect key="frame" x="20" y="272" width="134" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="4zi-Or-mbU"/>
+                                    <constraint firstAttribute="height" constant="40" id="Oo3-G0-MHy"/>
+                                </constraints>
+                                <state key="normal" title="getDate"/>
+                                <connections>
+                                    <action selector="getDateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4t-MP-8yT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biE-Aa-vAO">
+                                <rect key="frame" x="108" y="80" width="384" height="48"/>
+                                <color key="backgroundColor" red="0.90628326950000004" green="0.90628326950000004" blue="0.90628326950000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="LEX-OU-fJz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlE-6L-uMF">
+                                <rect key="frame" x="448" y="272" width="132" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="mFz-St-YBp"/>
+                                </constraints>
+                                <state key="normal" title="getTime"/>
+                                <connections>
+                                    <action selector="getTimeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUv-cy-lii"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wlE-6L-uMF" firstAttribute="trailing" secondItem="n41-g1-7PE" secondAttribute="trailing" id="8VY-dF-Zeu"/>
+                            <constraint firstItem="wlE-6L-uMF" firstAttribute="baseline" secondItem="hvn-Op-Ipb" secondAttribute="firstBaseline" id="F9D-9j-f1U"/>
+                            <constraint firstItem="wlE-6L-uMF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HSw-LF-IhL"/>
+                            <constraint firstItem="biE-Aa-vAO" firstAttribute="centerX" secondItem="n41-g1-7PE" secondAttribute="centerX" id="HWp-O7-OYf"/>
+                            <constraint firstItem="n41-g1-7PE" firstAttribute="top" secondItem="hvn-Op-Ipb" secondAttribute="bottom" constant="52" id="Oek-RR-aUf"/>
+                            <constraint firstItem="biE-Aa-vAO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="e8U-Hh-qzS"/>
+                            <constraint firstItem="hvn-Op-Ipb" firstAttribute="leading" secondItem="n41-g1-7PE" secondAttribute="leading" id="g4S-eR-ZIX"/>
+                            <constraint firstItem="hvn-Op-Ipb" firstAttribute="baseline" secondItem="wlE-6L-uMF" secondAttribute="firstBaseline" id="hWN-Dc-vkK"/>
+                            <constraint firstAttribute="bottom" secondItem="n41-g1-7PE" secondAttribute="bottom" constant="20" symbolic="YES" id="nVN-7D-3Vs"/>
+                            <constraint firstItem="hvn-Op-Ipb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ngM-AM-Rjb"/>
+                            <constraint firstItem="hvn-Op-Ipb" firstAttribute="top" secondItem="wlE-6L-uMF" secondAttribute="top" id="qfI-xV-z0W"/>
+                            <constraint firstItem="biE-Aa-vAO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="uxl-Hu-DWe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="n41-g1-7PE" id="cHC-Oh-QvW"/>
+                        <outlet property="displayLabel" destination="biE-Aa-vAO" id="Sgh-Tb-o4B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="294"/>
+        </scene>
+    </scenes>
+</document>
