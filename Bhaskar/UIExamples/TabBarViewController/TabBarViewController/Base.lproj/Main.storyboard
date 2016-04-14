@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5db-8v-rfl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Date-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="om4-TL-3F5">
+                                <rect key="frame" x="0.0" y="335" width="600" height="216"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <date key="date" timeIntervalSinceReferenceDate="482311719.148224">
+                                    <!--2016-04-14 07:28:39 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGn-db-gNV">
+                                <rect key="frame" x="20" y="62" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56819753419999997" green="0.60000002379999995" blue="0.57141529369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="om4-TL-3F5" secondAttribute="bottom" id="6wb-RU-e8T"/>
+                            <constraint firstItem="lGn-db-gNV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="FZY-eO-QT7"/>
+                            <constraint firstItem="om4-TL-3F5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RQN-BE-GpJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="lGn-db-gNV" secondAttribute="leading" id="nJg-pv-9T0"/>
+                            <constraint firstItem="lGn-db-gNV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tya-nl-UAe"/>
+                            <constraint firstItem="om4-TL-3F5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zI1-LB-uuB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Date" id="piQ-N8-XfR"/>
+                    <connections>
+                        <outlet property="datePickerName" destination="om4-TL-3F5" id="fgt-7w-7Xc"/>
+                        <outlet property="displayDateLabel" destination="lGn-db-gNV" id="ASN-KB-fd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="408"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ucs-c5-9LQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5db-8v-rfl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="oXh-E0-EeG">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="yQG-3L-zsA"/>
+                        <segue destination="6rr-MO-5w3" kind="relationship" relationship="viewControllers" id="iLT-Kf-gxa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M9r-eK-6Q3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="342"/>
+        </scene>
+        <!--Time-->
+        <scene sceneID="8eD-Q1-U3W">
+            <objects>
+                <viewController id="6rr-MO-5w3" customClass="TimeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DL7-lg-q25"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJs-w4-ONl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTh-ha-MtI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4W-DB-v0Y">
+                                <rect key="frame" x="20" y="54" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="8Zl-sD-827"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MD2-at-w1b">
+                                <rect key="frame" x="0.0" y="335" width="600" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="gWh-bV-2N7"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="482320081.679353">
+                                    <!--2016-04-14 09:48:01 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MD2-at-w1b" firstAttribute="centerX" secondItem="aTh-ha-MtI" secondAttribute="centerX" id="8qW-O9-c1g"/>
+                            <constraint firstItem="Q4W-DB-v0Y" firstAttribute="centerX" secondItem="aTh-ha-MtI" secondAttribute="centerX" id="kpT-XS-MNV"/>
+                            <constraint firstItem="mJs-w4-ONl" firstAttribute="top" secondItem="MD2-at-w1b" secondAttribute="bottom" id="ld2-lS-HF4"/>
+                            <constraint firstItem="Q4W-DB-v0Y" firstAttribute="top" secondItem="DL7-lg-q25" secondAttribute="bottom" constant="34" id="olr-An-SAR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Time" id="vWU-ac-LpU"/>
+                    <connections>
+                        <outlet property="selectedTime" destination="Q4W-DB-v0Y" id="zuz-m3-KHm"/>
+                        <outlet property="timePicker" destination="MD2-at-w1b" id="TQh-Zr-ig8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CC2-JS-w3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="1145"/>
+        </scene>
+    </scenes>
+</document>
