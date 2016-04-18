@@ -1,0 +1,14 @@
+//
+//  GestureViewController.h
+//  UIGestureDemo
+//
+//  Created by test on 4/15/16.
+//  Copyright © 2016 test. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface GestureViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIView *tempView;
+
+@end
