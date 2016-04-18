@@ -10,7 +10,14 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
-@property NSNumber* addition;
+@property (assign,nonatomic) NSNumber *num1;
+@property (assign,nonatomic) NSNumber *temp;
+@property (strong,nonatomic) NSString *fun;
+@property (strong,nonatomic)NSMutableString * stringval;
+@property (strong,nonatomic)NSNumber *num2;
+
+@property(strong,nonatomic)NSString *firstnum;
+@property(strong,nonatomic)NSString *secondnum;
 
 
 
@@ -21,6 +28,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.stringval = [[NSMutableString alloc]init];
+    
+    
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,34 +41,123 @@
 }
 - (IBAction)inputButton:(UIButton *)sender
 {
-    self.displayLabel.text = [NSString stringWithFormat:@"%ld",sender.tag];
-    if (sender.tag == 30)
+   if (sender.tag == 10||sender.tag == 20 || sender.tag == 30 || sender.tag == 40 || sender.tag == 50 || sender.tag==60)
+   {
+       
+   }
+   else{
+    //self.displayLabel.text= [NSString stringWithFormat:@"%ld",sender.tag];
+       
+       NSString *incomingNo=[NSString stringWithFormat:@"%ld",sender.tag];
+//       self.displayLabel.text=incomingNo;
+       self.displayLabel.text=[self.displayLabel.text stringByAppendingString:incomingNo];
+       
+   }
+    if (sender.tag == 10||sender.tag == 20 || sender.tag == 30 || sender.tag == 40 || sender.tag == 50 || sender.tag==60)
     {
-        self.displayLabel.text = [NSString stringWithFormat:@"inside addition loop"];
+        if(sender.tag == 60)
+        {
+            if(self.temp != nil && self.num1 != nil)
+            {
+                [self performFunctionality:self.fun];
+            }
+            
+        }
+        else if(sender.tag == 10)
+        {
+            [self clearData];
+        }
+        else
+        {
+            [self decideFunc:sender.tag];
+            
+            self.displayLabel.text=@" ";
+            
+            self.temp = self.num1;
+            
+            self.num1 = nil;
+        }
         
         
     }
-    else if (sender.tag == 20)
+    else
     {
-        self.displayLabel.text = [NSString stringWithFormat:@"subtraction"];
-    }
-    else if(sender.tag ==40)
-    {
-        self.displayLabel.text = [NSString stringWithFormat:@"division"];
-    }
-    else if(sender.tag==50)
-    {
-        self.displayLabel.text = [NSString stringWithFormat:@"multiplication"];
+       // self.stringval = [[NSString alloc]init];
+        self.num1 = [NSNumber numberWithInt:self.displayLabel.text.intValue];
+        
+        
+        
+        
+        
     }
 }
-- (IBAction)adiitionButton:(id)sender
+-(void)performFunctionality:(NSString *)functionality
 {
-    
+    if([functionality isEqualToString:@"add"])
+    {
+        int outputvalue = self.temp.intValue + self.num1.intValue;
+        self.displayLabel.text = [NSString stringWithFormat:@"%d",outputvalue];
+        
+        self.num1=[NSNumber numberWithInteger:self.displayLabel.text.integerValue];
+       // NSLog(@"%d",outputvalue);
+       
+        //[self clearData];
+       
+    }
+    else if ([functionality isEqualToString:@"sub"])
+    {
+        int outputval = self.temp.intValue - self.num1.intValue;
+        
+        self.displayLabel.text = [NSString stringWithFormat:@"%d",outputval];
+          self.num1=[NSNumber numberWithInteger:self.displayLabel.text.integerValue];
+        //[self clearData];
+       
+    }
+    else if ([functionality isEqualToString:@"divide"])
+    {
+        int outputval = self.temp.intValue / self.num1.intValue;
+        
+        self.displayLabel.text = [NSString stringWithFormat:@"%d",outputval];
+       self.num1=[NSNumber numberWithInteger:self.displayLabel.text.integerValue];
+        //[self clearData];
+        
+       
+    }
+    else if ([functionality isEqualToString:@"mul"])
+    {
+        int outputval = self.temp.intValue * self.num1.intValue;
+        
+        self.displayLabel.text = [NSString stringWithFormat:@"%d",outputval];
+          self.num1=[NSNumber numberWithInteger:self.displayLabel.text.integerValue];
+        //[self clearData];
+    }
     
 }
-- (IBAction)clearButton:(id)sender
+-(void)decideFunc:(NSInteger)tags
 {
-    self.displayLabel.text = @"0";
+    switch (tags) {
+        case 20:
+            self.fun=@"sub";
+            break;
+        case 30:
+            self.fun =@"add";
+            break;
+            case 40:
+            self.fun = @"divide";
+            break;
+            case 50:
+            self.fun = @"mul";
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)clearData
+{
+    self.displayLabel.text = @" ";
+    self.temp = nil;
+    self.num1 = nil;
 }
 
 @end
