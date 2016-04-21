@@ -42,4 +42,14 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+-(void)setStrVlaue:(NSString *)str
+{
+    self.enteredStr=str;
+}
+
+-(NSString *)getStrValue
+{
+    return  _enteredStr;
+}
 @end

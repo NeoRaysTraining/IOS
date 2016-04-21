@@ -14,7 +14,6 @@
 
 @property (nonatomic,strong) NSArray *fruits;
 
--(void) afterDone:(NSMutableString*)entredStr;
 
 @end
 

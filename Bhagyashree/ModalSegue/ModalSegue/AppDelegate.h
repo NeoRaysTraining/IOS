@@ -11,7 +11,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong,nonatomic) NSString* enteredStr;
+-(NSString*) getStrValue;
+-(void) setStrVlaue:(NSString*)str;
 
 @end
 

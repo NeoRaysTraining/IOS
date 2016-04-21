@@ -7,6 +7,7 @@
 //
 
 #import "ViewController2.h"
+#import "AppDelegate.h"
 
 @interface ViewController2 ()
 @property (nonatomic,strong) NSString * string;
@@ -14,8 +15,9 @@
 @property(nonatomic,strong) NSString* itemName;
 @property (weak, nonatomic) IBOutlet UITextField *enterFiled;
 
+@property (strong,nonatomic) NSMutableString *stringEntered;
+
 @end
-NSMutableString *entredStr;
 
 @implementation ViewController2
 
@@ -38,8 +40,6 @@ NSMutableString *entredStr;
     {
         self.imageView.image = [UIImage imageNamed:@"mango"];
     }
-    entredStr = [NSMutableString stringWithFormat:@"%@",self.enterFiled.text];
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,16 +52,15 @@ NSMutableString *entredStr;
     self.itemName=item;
 }
 
-- (IBAction)doneAction:(id)sender {
-  //  [self performSegueWithIdentifier: sender:<#(nullable id)#>]
+- (IBAction)doneAction:(id)sender
+{
+    self.stringEntered=self.enterFiled.text;
+    
+    AppDelegate *app=[UIApplication sharedApplication].delegate;
+    [app setStrVlaue:self.stringEntered];
+    
     
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    ViewController *VC = [segue destinationViewController];
-    [VC afterDone:entredStr];
 }
 
 

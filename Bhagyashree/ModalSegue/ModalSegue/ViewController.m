@@ -7,13 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
-//@property (nonatomic,strong) NSArray *fruits;
 @property (nonatomic,strong) NSString *item;
-@property (nonatomic,strong) NSMutableString *fromScn2;
 @end
 
 
@@ -22,9 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _fruits=@[@"Apple",@"Orange",@"Mango",@"Grapes"];
-    
 }
 
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    AppDelegate *app=[UIApplication sharedApplication].delegate;
+    NSString *displayStr=[app getStrValue];
+    self.displayLabel.text=displayStr;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -58,15 +63,6 @@
 {
     ViewController2 *VC2 = [segue destinationViewController];
     [VC2 receiveData :self.fruits:self.item];
-}
-
--(void) afterDone:(NSMutableString*)entredStr
-{
-   _fromScn2 =entredStr;
-}
--(void)viewWillAppear:(BOOL)animated
-{
-    self.displayLabel.text=_fromScn2;
 }
 
 @end
