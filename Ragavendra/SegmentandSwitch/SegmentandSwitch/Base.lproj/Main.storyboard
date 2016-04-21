@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tWF-6a-yLk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ql-8e-yPE">
+                                <rect key="frame" x="20" y="79" width="482" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segementControlBotton:" destination="BYZ-38-t0r" eventType="valueChanged" id="267-de-aGk"/>
+                                </connections>
+                            </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5uz-bQ-nPz">
+                                <rect key="frame" x="531" y="76" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="7dF-wS-06G"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="switchButton:" destination="BYZ-38-t0r" eventType="valueChanged" id="s2t-FV-gkE"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5uz-bQ-nPz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="56" id="ZZY-kN-7IO"/>
+                            <constraint firstItem="5uz-bQ-nPz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cNi-xH-SMk"/>
+                            <constraint firstItem="1ql-8e-yPE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="ubq-79-CKN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ql-8e-yPE" secondAttribute="trailing" constant="78" id="vmG-Ye-ucx"/>
+                            <constraint firstItem="1ql-8e-yPE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ybG-Tu-LLi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="downloads" id="s8s-Ud-ldB"/>
+                    <connections>
+                        <outlet property="segmentcontrolOutlet" destination="1ql-8e-yPE" id="gYV-sm-7qO"/>
+                        <outlet property="switchOutlet" destination="5uz-bQ-nPz" id="t56-pj-Orn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-169"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="duu-rZ-3PV">
+            <objects>
+                <viewController id="Y2u-Xg-29r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YFq-9U-6AP"/>
+                        <viewControllerLayoutGuide type="bottom" id="JP9-Ud-xQB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Iux-bh-E2R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.031908068805932999" green="0.9771081805229187" blue="0.0040424447506666183" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="qb2-u0-eUs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OC0-3P-NMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="618"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Krm-bT-KPS">
+            <objects>
+                <viewController id="ckY-4I-8lu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DTW-ZE-evF"/>
+                        <viewControllerLayoutGuide type="bottom" id="tdZ-Ny-ORx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NVU-jU-5yd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.25435364729999999" green="0.52646272189999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="H3T-a8-ppf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSJ-A9-MRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-662" y="618"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Lup-T0-Dfh">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tWF-6a-yLk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fXY-ht-BQ7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FCN-V0-dKz"/>
+                        <segue destination="ckY-4I-8lu" kind="relationship" relationship="viewControllers" id="vJY-nA-FP3"/>
+                        <segue destination="Y2u-Xg-29r" kind="relationship" relationship="viewControllers" id="mGe-yy-JzG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCX-lS-oxf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-693" y="-169"/>
+        </scene>
+    </scenes>
+</document>
