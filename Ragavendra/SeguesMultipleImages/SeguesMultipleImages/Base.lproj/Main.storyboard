@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0CA-oY-enI">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-fe-QF9">
+                                <rect key="frame" x="20" y="291" width="53" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95448702409999997" blue="0.31504908380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="LCM-z6-iKq"/>
+                                    <constraint firstAttribute="height" constant="30" id="vfo-eo-RFX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Click3"/>
+                                <connections>
+                                    <action selector="click3Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0d-j6-XUn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT5-21-Zdw">
+                                <rect key="frame" x="519" y="291" width="61" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95448702409999997" blue="0.31504908380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Zm-9R-bK0"/>
+                                    <constraint firstAttribute="width" constant="61" id="Mhc-N7-8S9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="Click4"/>
+                                <connections>
+                                    <action selector="Click4Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1y0-hL-Q2L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-jw-zAE">
+                                <rect key="frame" x="519" y="94" width="61" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95448702409999997" blue="0.31504908380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61" id="MRv-Tb-bsQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="RUR-ol-Bp8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Click2"/>
+                                <connections>
+                                    <action selector="Click2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrW-Fm-tod"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-bo-85h">
+                                <rect key="frame" x="20" y="94" width="53" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.95448702409999997" blue="0.31504908380000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="f9z-3E-aXq"/>
+                                    <constraint firstAttribute="height" constant="30" id="gtR-pn-Lth"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Click1"/>
+                                <connections>
+                                    <action selector="Click1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vj-P1-Ypq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96679908037185669" green="0.87706214189529419" blue="0.893909752368927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4SH-bo-85h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Iux-Fl-0p7"/>
+                            <constraint firstItem="PT5-21-Zdw" firstAttribute="top" secondItem="P7b-jw-zAE" secondAttribute="bottom" constant="167" id="VPx-U3-rAo"/>
+                            <constraint firstItem="cdb-fe-QF9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cV4-Kr-lgH"/>
+                            <constraint firstItem="PT5-21-Zdw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="d8A-bT-vxH"/>
+                            <constraint firstItem="P7b-jw-zAE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fb2-mB-h9A"/>
+                            <constraint firstItem="cdb-fe-QF9" firstAttribute="top" secondItem="4SH-bo-85h" secondAttribute="bottom" constant="167" id="lDA-j2-dSi"/>
+                            <constraint firstItem="P7b-jw-zAE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="o7A-am-F3Q"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4SH-bo-85h" secondAttribute="leading" id="tUV-yp-tG9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="806-2x-RfX"/>
+                    <connections>
+                        <segue destination="dmO-T5-YWm" kind="show" identifier="apj" id="Cap-2M-IfJ"/>
+                        <segue destination="0P6-vY-Oks" kind="show" identifier="srm" id="gPB-xG-x5g"/>
+                        <segue destination="awr-c1-ydC" kind="show" identifier="sachin" id="7c2-rq-ncJ"/>
+                        <segue destination="dcu-gP-Ylf" kind="show" identifier="steve" id="hrf-RV-Fv9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2780" y="-1400"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ee6-br-Zvz">
+            <objects>
+                <viewController id="awr-c1-ydC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Myg-05-Ze2"/>
+                        <viewControllerLayoutGuide type="bottom" id="4H8-I3-QBR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SyL-SG-cpN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sachin" translatesAutoresizingMaskIntoConstraints="NO" id="dq9-iF-N9J">
+                                <rect key="frame" x="180" y="101" width="240" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="m9G-v3-pB0"/>
+                                    <constraint firstAttribute="width" constant="240" id="xjr-uJ-TOl"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KeT-to-R9w">
+                                <rect key="frame" x="20" y="310" width="560" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Ozc-fz-MQ0"/>
+                                    <constraint firstAttribute="width" constant="560" id="oyb-Lv-CoM"/>
+                                </constraints>
+                                <string key="text">Sachin Tendulkar was born April 24, 1973, in Bombay, India. Introduced to cricket at age 11, Tendulkar was just 16 when he became India's youngest Test cricketer. In 2005, he became the first cricketer to score 35 centuries (100 runs in a single inning) in Test play. In 2008, he reached another major milestone by surpassing Brian Lara's mark of 11,953 Test runs. Tendulkar took home the World Cup with his team in 2011, and wrapped up his record-breaking career in 2013.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46056887075540376" green="1" blue="0.3203910547979737" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KeT-to-R9w" firstAttribute="leading" secondItem="SyL-SG-cpN" secondAttribute="leadingMargin" id="6dj-fb-Mya"/>
+                            <constraint firstItem="KeT-to-R9w" firstAttribute="trailing" secondItem="SyL-SG-cpN" secondAttribute="trailingMargin" id="pNJ-DY-lTf"/>
+                            <constraint firstItem="dq9-iF-N9J" firstAttribute="centerX" secondItem="SyL-SG-cpN" secondAttribute="centerX" id="r3x-cw-cX7"/>
+                            <constraint firstItem="dq9-iF-N9J" firstAttribute="top" secondItem="Myg-05-Ze2" secondAttribute="bottom" constant="37" id="wyb-ss-6tZ"/>
+                            <constraint firstItem="KeT-to-R9w" firstAttribute="top" secondItem="dq9-iF-N9J" secondAttribute="bottom" constant="73" id="xKb-Px-pjc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0O-NE-Ma5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2238" y="-573"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rMH-1l-nAr">
+            <objects>
+                <viewController id="dcu-gP-Ylf" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fn5-Wk-0QQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5sS-3N-zzb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b2c-ON-FUv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VHs-lG-GLy">
+                                <rect key="frame" x="20" y="225" width="560" height="243"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="57u-gm-Nr2"/>
+                                    <constraint firstAttribute="height" constant="243" id="bev-Vn-csY"/>
+                                </constraints>
+                                <string key="text">Steve Jobs, the American businessman and technology visionary who is best known as the co-founder, chairman, and chief executive officer of Apple Inc, was born on February 24, 1955. His parents were two University of Wisconsin graduate students, Joanne Carole Schieble and Syrian-born Abdulfattah Jandali. They were both unmarried at the time. Jandali, who was teaching in Wisconsin when Steve was born, said he had no choice but to put the baby up for adoption because his girlfriend's family objected to their relationship.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stevejobs" translatesAutoresizingMaskIntoConstraints="NO" id="ZLA-8W-bzX">
+                                <rect key="frame" x="171" y="28" width="259" height="137"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="5HL-Do-qT0"/>
+                                    <constraint firstAttribute="width" constant="259" id="Gcd-O7-psm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZLA-8W-bzX" firstAttribute="top" secondItem="Fn5-Wk-0QQ" secondAttribute="bottom" constant="8" id="9Rt-V1-GZA"/>
+                            <constraint firstItem="VHs-lG-GLy" firstAttribute="top" secondItem="ZLA-8W-bzX" secondAttribute="bottom" constant="60" id="Fe3-59-d9V"/>
+                            <constraint firstItem="ZLA-8W-bzX" firstAttribute="centerX" secondItem="b2c-ON-FUv" secondAttribute="centerX" id="MFR-aZ-GwG"/>
+                            <constraint firstItem="VHs-lG-GLy" firstAttribute="trailing" secondItem="b2c-ON-FUv" secondAttribute="trailingMargin" id="qpS-XQ-JR5"/>
+                            <constraint firstItem="VHs-lG-GLy" firstAttribute="leading" secondItem="b2c-ON-FUv" secondAttribute="leadingMargin" id="uZQ-VA-lKD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myx-lI-trM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2087" y="-1393"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="al8-mu-M3k">
+            <objects>
+                <viewController id="0P6-vY-Oks" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QRP-1r-r8m"/>
+                        <viewControllerLayoutGuide type="bottom" id="NcQ-5w-9nH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Nsw-ka-X4f">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SyU-ny-dcF">
+                                <rect key="frame" x="20" y="261" width="560" height="306"/>
+                                <color key="backgroundColor" name="selectedTextBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="YPy-T4-vy4"/>
+                                    <constraint firstAttribute="height" constant="306" id="kxv-dG-8A1"/>
+                                </constraints>
+                                <string key="text">Born: September 15, 1860 Died: April 14, 1962 Achievements: Architect of Krishnarajasagar Dam; devised steel doors to stop the wasteful flow of water in dams; honored with Bharat Ratna. Sir Mokshagundam Visvesvaraya was an eminent engineer and statesman and played a key role in building of modern India.Visvesvaraya completed his early education in Chikkaballapur and then went to Bangalore for higher education. He cleared his B.A. Examination in 1881. He got some assistance from the Government of Mysore and joined the Science College in Poona to study Engineering. In 1883 he ranked first in the L.C.E. and the F.C.E. Examinations (equivalent to B.E. Examination of today).</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sir MV" translatesAutoresizingMaskIntoConstraints="NO" id="BJX-u7-0go">
+                                <rect key="frame" x="180" y="95" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ELV-hv-4pN"/>
+                                    <constraint firstAttribute="width" constant="240" id="cXO-8m-1Dl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91508102416992188" green="0.31727704405784607" blue="0.35489481687545776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SyU-ny-dcF" firstAttribute="trailing" secondItem="Nsw-ka-X4f" secondAttribute="trailingMargin" id="2jC-NY-mWU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SyU-ny-dcF" secondAttribute="trailing" id="7S3-qy-6xF"/>
+                            <constraint firstItem="SyU-ny-dcF" firstAttribute="leading" secondItem="Nsw-ka-X4f" secondAttribute="leadingMargin" id="ABP-7q-wpU"/>
+                            <constraint firstItem="SyU-ny-dcF" firstAttribute="top" secondItem="QRP-1r-r8m" secondAttribute="bottom" constant="196" id="QUk-55-7Ad"/>
+                            <constraint firstItem="BJX-u7-0go" firstAttribute="centerX" secondItem="Nsw-ka-X4f" secondAttribute="centerX" id="bK5-I5-ukf"/>
+                            <constraint firstItem="BJX-u7-0go" firstAttribute="top" secondItem="QRP-1r-r8m" secondAttribute="bottom" constant="31" id="tZF-pB-eGf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbW-hF-qmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2832" y="-591"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1Mf-sr-ZMG">
+            <objects>
+                <viewController id="dmO-T5-YWm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fNh-mH-YZC"/>
+                        <viewControllerLayoutGuide type="bottom" id="A8n-qQ-azc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aD7-nx-Di5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="obS-AP-DNT">
+                                <rect key="frame" x="20" y="291" width="560" height="248"/>
+                                <color key="backgroundColor" red="0.87756472826004028" green="0.75901424884796143" blue="0.9414222240447998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="24m-vw-xAg"/>
+                                </constraints>
+                                <string key="text">Bharat Ratna Avul Pakir Jainulabdeen Abdul Kalam, generally known as Dr. A.P.J. Abdul Kalam, was the 11th President of India (2002-07). He was elected against Lakshmi Sehgal in 2002 and had support from both the Bharatiya Janata Party and the Indian National Congress, the two leading parties of Indian politics. By profession he was a scientist and an administrator in India. He worked with Indian Space Research Organisation (ISRO) and Defense Research and Development Organisation (DRDO) as an aerospace engineer before becoming the President of India. His work on the development of launch vehicle and ballistic missile technology had earned him the name of the 'Missile Man of India role.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A.P.J" translatesAutoresizingMaskIntoConstraints="NO" id="bPP-AW-cJg">
+                                <rect key="frame" x="175" y="95" width="250" height="128"/>
+                                <color key="backgroundColor" red="0.91508102416992188" green="0.31727704405784607" blue="0.35489481687545776" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9Ox-PV-M7a"/>
+                                    <constraint firstAttribute="height" constant="128" id="Ngb-Kc-AUQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83368676408225229" blue="0.22331912760775263" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bPP-AW-cJg" firstAttribute="top" secondItem="fNh-mH-YZC" secondAttribute="bottom" constant="31" id="9xp-Ba-dje"/>
+                            <constraint firstItem="obS-AP-DNT" firstAttribute="leading" secondItem="aD7-nx-Di5" secondAttribute="leadingMargin" id="G7T-xC-9bB"/>
+                            <constraint firstItem="bPP-AW-cJg" firstAttribute="centerX" secondItem="aD7-nx-Di5" secondAttribute="centerX" id="PI1-6X-uII"/>
+                            <constraint firstItem="obS-AP-DNT" firstAttribute="trailing" secondItem="aD7-nx-Di5" secondAttribute="trailingMargin" id="ffP-bI-s18"/>
+                            <constraint firstItem="obS-AP-DNT" firstAttribute="top" secondItem="bPP-AW-cJg" secondAttribute="bottom" constant="68" id="t23-H9-EDA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUD-wJ-3hI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3492" y="-608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yBe-3z-0ox">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0CA-oY-enI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FUJ-16-oSI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wR8-vA-XtA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pjl-Ot-CPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3483" y="-1400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A.P.J" width="192" height="120"/>
+        <image name="Sachin" width="183" height="122"/>
+        <image name="sir MV" width="189" height="266"/>
+        <image name="stevejobs" width="227" height="222"/>
+    </resources>
+</document>
