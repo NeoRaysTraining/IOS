@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="xHP-02-LGe">
+                                <rect key="frame" x="282" y="281" width="37" height="37"/>
+                                <color key="color" red="0.14519687140000001" green="0.88639152489999995" blue="0.1877934127" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RjB-cZ-9dw">
+                                <rect key="frame" x="20" y="24" width="560" height="44"/>
+                                <gestureRecognizers/>
+                                <items>
+                                    <navigationItem id="a2V-CA-wvw">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Pur-gv-bf3"/>
+                                        <barButtonItem key="rightBarButtonItem" title="&gt;" id="6M7-zc-wdR"/>
+                                    </navigationItem>
+                                </items>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hrJ-eK-4NH" appends="YES" id="g34-Dv-RLJ"/>
+                                </connections>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3W5-ac-yib">
+                                <rect key="frame" x="20" y="24" width="560" height="552"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <gestureRecognizers/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8S2-bR-wPi"/>
+                                    <outletCollection property="gestureRecognizers" destination="9tC-9g-yEt" appends="YES" id="ecp-Hg-eG4"/>
+                                    <outletCollection property="gestureRecognizers" destination="hrJ-eK-4NH" appends="YES" id="HIP-KX-uaz"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="7CF-H2-cU5"/>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7dH-Ha-b5r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3W5-ac-yib" secondAttribute="bottom" constant="24" id="AyY-0W-VRi"/>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R7Y-90-Pyc"/>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="VEA-m8-oet"/>
+                            <constraint firstItem="xHP-02-LGe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gKW-GO-djP"/>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="4" id="l0a-fY-h7n"/>
+                            <constraint firstItem="3W5-ac-yib" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tMP-Cq-LAB"/>
+                            <constraint firstItem="xHP-02-LGe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xoX-8e-M7v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activity" destination="xHP-02-LGe" id="Ai3-pL-Idt"/>
+                        <outlet property="webView" destination="3W5-ac-yib" id="xDB-0P-UjG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="9tC-9g-yEt">
+                    <connections>
+                        <action selector="leftSwife:" destination="BYZ-38-t0r" id="OYH-Zn-1td"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hrJ-eK-4NH">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="hGV-QN-aNh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="390" y="307"/>
+        </scene>
+    </scenes>
+</document>
