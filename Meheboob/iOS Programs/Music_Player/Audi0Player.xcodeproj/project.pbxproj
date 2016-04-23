@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52CB68ED1CC9EE5200782472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB68EC1CC9EE5200782472 /* main.m */; };
+		52CB68F01CC9EE5200782472 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB68EF1CC9EE5200782472 /* AppDelegate.m */; };
+		52CB68F31CC9EE5200782472 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB68F21CC9EE5200782472 /* ViewController.m */; };
+		52CB68F61CC9EE5200782472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB68F41CC9EE5200782472 /* Main.storyboard */; };
+		52CB68F81CC9EE5200782472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CB68F71CC9EE5200782472 /* Assets.xcassets */; };
+		52CB68FB1CC9EE5200782472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB68F91CC9EE5200782472 /* LaunchScreen.storyboard */; };
+		52CB69061CC9EE5200782472 /* Audi0PlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB69051CC9EE5200782472 /* Audi0PlayerTests.m */; };
+		52CB69111CC9EE5200782472 /* Audi0PlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CB69101CC9EE5200782472 /* Audi0PlayerUITests.m */; };
+		52CB691F1CC9EE6600782472 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CB691E1CC9EE6600782472 /* AVFoundation.framework */; };
+		52CB69231CC9F3BA00782472 /* mysong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB69221CC9F3BA00782472 /* mysong.mp3 */; };
+		52CB69251CC9F9E700782472 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CB69241CC9F9E700782472 /* MediaPlayer.framework */; };
+		52CB69281CCA2EE100782472 /* 02 Tu Zaroori - Zid 320kbps .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB69271CCA2EE100782472 /* 02 Tu Zaroori - Zid 320kbps .mp3 */; };
+		52CB692A1CCA2F2100782472 /* 01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB69291CCA2F2100782472 /* 01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3 */; };
+		52CB692C1CCA2F2A00782472 /* 05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB692B1CCA2F2A00782472 /* 05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3 */; };
+		52CB692E1CCA2F5600782472 /* 03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB692D1CCA2F5600782472 /* 03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3 */; };
+		52CB69301CCA2F9C00782472 /* 06 - Piya Aaye Na [PublicMasti].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB692F1CCA2F9C00782472 /* 06 - Piya Aaye Na [PublicMasti].mp3 */; };
+		52CB69321CCA528F00782472 /* Muskurane (Citylights) Arijit Singh -19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB69311CCA528F00782472 /* Muskurane (Citylights) Arijit Singh -19.mp3 */; };
+		52CB69341CCA52D200782472 /* Modala Notadalli [KannadaMasti.Net].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB69331CCA52D200782472 /* Modala Notadalli [KannadaMasti.Net].mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52CB69021CC9EE5200782472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CB68E01CC9EE5200782472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CB68E71CC9EE5200782472;
+			remoteInfo = Audi0Player;
+		};
+		52CB690D1CC9EE5200782472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52CB68E01CC9EE5200782472 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52CB68E71CC9EE5200782472;
+			remoteInfo = Audi0Player;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52CB68E81CC9EE5200782472 /* Audi0Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audi0Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB68EC1CC9EE5200782472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52CB68EE1CC9EE5200782472 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52CB68EF1CC9EE5200782472 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52CB68F11CC9EE5200782472 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52CB68F21CC9EE5200782472 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52CB68F51CC9EE5200782472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52CB68F71CC9EE5200782472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52CB68FA1CC9EE5200782472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52CB68FC1CC9EE5200782472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CB69011CC9EE5200782472 /* Audi0PlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Audi0PlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB69051CC9EE5200782472 /* Audi0PlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audi0PlayerTests.m; sourceTree = "<group>"; };
+		52CB69071CC9EE5200782472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CB690C1CC9EE5200782472 /* Audi0PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Audi0PlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB69101CC9EE5200782472 /* Audi0PlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Audi0PlayerUITests.m; sourceTree = "<group>"; };
+		52CB69121CC9EE5200782472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CB691E1CC9EE6600782472 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		52CB69221CC9F3BA00782472 /* mysong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mysong.mp3; sourceTree = "<group>"; };
+		52CB69241CC9F9E700782472 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		52CB69261CC9FB2C00782472 /* myVidio.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myVidio.mp4; sourceTree = "<group>"; };
+		52CB69271CCA2EE100782472 /* 02 Tu Zaroori - Zid 320kbps .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Tu Zaroori - Zid 320kbps .mp3"; sourceTree = "<group>"; };
+		52CB69291CCA2F2100782472 /* 01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3"; sourceTree = "<group>"; };
+		52CB692B1CCA2F2A00782472 /* 05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3"; sourceTree = "<group>"; };
+		52CB692D1CCA2F5600782472 /* 03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3"; sourceTree = "<group>"; };
+		52CB692F1CCA2F9C00782472 /* 06 - Piya Aaye Na [PublicMasti].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Piya Aaye Na [PublicMasti].mp3"; sourceTree = "<group>"; };
+		52CB69311CCA528F00782472 /* Muskurane (Citylights) Arijit Singh -19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Muskurane (Citylights) Arijit Singh -19.mp3"; sourceTree = "<group>"; };
+		52CB69331CCA52D200782472 /* Modala Notadalli [KannadaMasti.Net].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Modala Notadalli [KannadaMasti.Net].mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52CB68E51CC9EE5200782472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB69251CC9F9E700782472 /* MediaPlayer.framework in Frameworks */,
+				52CB691F1CC9EE6600782472 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB68FE1CC9EE5200782472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB69091CC9EE5200782472 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52CB68DF1CC9EE5200782472 = {
+			isa = PBXGroup;
+			children = (
+				52CB69241CC9F9E700782472 /* MediaPlayer.framework */,
+				52CB691E1CC9EE6600782472 /* AVFoundation.framework */,
+				52CB68EA1CC9EE5200782472 /* Audi0Player */,
+				52CB69041CC9EE5200782472 /* Audi0PlayerTests */,
+				52CB690F1CC9EE5200782472 /* Audi0PlayerUITests */,
+				52CB68E91CC9EE5200782472 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52CB68E91CC9EE5200782472 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52CB68E81CC9EE5200782472 /* Audi0Player.app */,
+				52CB69011CC9EE5200782472 /* Audi0PlayerTests.xctest */,
+				52CB690C1CC9EE5200782472 /* Audi0PlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52CB68EA1CC9EE5200782472 /* Audi0Player */ = {
+			isa = PBXGroup;
+			children = (
+				52CB68EE1CC9EE5200782472 /* AppDelegate.h */,
+				52CB68EF1CC9EE5200782472 /* AppDelegate.m */,
+				52CB68F11CC9EE5200782472 /* ViewController.h */,
+				52CB68F21CC9EE5200782472 /* ViewController.m */,
+				52CB68F41CC9EE5200782472 /* Main.storyboard */,
+				52CB68F71CC9EE5200782472 /* Assets.xcassets */,
+				52CB68F91CC9EE5200782472 /* LaunchScreen.storyboard */,
+				52CB68FC1CC9EE5200782472 /* Info.plist */,
+				52CB68EB1CC9EE5200782472 /* Supporting Files */,
+			);
+			path = Audi0Player;
+			sourceTree = "<group>";
+		};
+		52CB68EB1CC9EE5200782472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52CB692D1CCA2F5600782472 /* 03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3 */,
+				52CB692F1CCA2F9C00782472 /* 06 - Piya Aaye Na [PublicMasti].mp3 */,
+				52CB692B1CCA2F2A00782472 /* 05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3 */,
+				52CB69331CCA52D200782472 /* Modala Notadalli [KannadaMasti.Net].mp3 */,
+				52CB69311CCA528F00782472 /* Muskurane (Citylights) Arijit Singh -19.mp3 */,
+				52CB69291CCA2F2100782472 /* 01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3 */,
+				52CB69271CCA2EE100782472 /* 02 Tu Zaroori - Zid 320kbps .mp3 */,
+				52CB69261CC9FB2C00782472 /* myVidio.mp4 */,
+				52CB69221CC9F3BA00782472 /* mysong.mp3 */,
+				52CB68EC1CC9EE5200782472 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52CB69041CC9EE5200782472 /* Audi0PlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				52CB69051CC9EE5200782472 /* Audi0PlayerTests.m */,
+				52CB69071CC9EE5200782472 /* Info.plist */,
+			);
+			path = Audi0PlayerTests;
+			sourceTree = "<group>";
+		};
+		52CB690F1CC9EE5200782472 /* Audi0PlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52CB69101CC9EE5200782472 /* Audi0PlayerUITests.m */,
+				52CB69121CC9EE5200782472 /* Info.plist */,
+			);
+			path = Audi0PlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52CB68E71CC9EE5200782472 /* Audi0Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CB69151CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0Player" */;
+			buildPhases = (
+				52CB68E41CC9EE5200782472 /* Sources */,
+				52CB68E51CC9EE5200782472 /* Frameworks */,
+				52CB68E61CC9EE5200782472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audi0Player;
+			productName = Audi0Player;
+			productReference = 52CB68E81CC9EE5200782472 /* Audi0Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52CB69001CC9EE5200782472 /* Audi0PlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CB69181CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0PlayerTests" */;
+			buildPhases = (
+				52CB68FD1CC9EE5200782472 /* Sources */,
+				52CB68FE1CC9EE5200782472 /* Frameworks */,
+				52CB68FF1CC9EE5200782472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CB69031CC9EE5200782472 /* PBXTargetDependency */,
+			);
+			name = Audi0PlayerTests;
+			productName = Audi0PlayerTests;
+			productReference = 52CB69011CC9EE5200782472 /* Audi0PlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52CB690B1CC9EE5200782472 /* Audi0PlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52CB691B1CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0PlayerUITests" */;
+			buildPhases = (
+				52CB69081CC9EE5200782472 /* Sources */,
+				52CB69091CC9EE5200782472 /* Frameworks */,
+				52CB690A1CC9EE5200782472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52CB690E1CC9EE5200782472 /* PBXTargetDependency */,
+			);
+			name = Audi0PlayerUITests;
+			productName = Audi0PlayerUITests;
+			productReference = 52CB690C1CC9EE5200782472 /* Audi0PlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52CB68E01CC9EE5200782472 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					52CB68E71CC9EE5200782472 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					52CB69001CC9EE5200782472 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52CB68E71CC9EE5200782472;
+					};
+					52CB690B1CC9EE5200782472 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52CB68E71CC9EE5200782472;
+					};
+				};
+			};
+			buildConfigurationList = 52CB68E31CC9EE5200782472 /* Build configuration list for PBXProject "Audi0Player" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52CB68DF1CC9EE5200782472;
+			productRefGroup = 52CB68E91CC9EE5200782472 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52CB68E71CC9EE5200782472 /* Audi0Player */,
+				52CB69001CC9EE5200782472 /* Audi0PlayerTests */,
+				52CB690B1CC9EE5200782472 /* Audi0PlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52CB68E61CC9EE5200782472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB692C1CCA2F2A00782472 /* 05 Yaara Re (KK) Roy - 190Kbps (PagalWorld.com).mp3 in Resources */,
+				52CB692A1CCA2F2100782472 /* 01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps.mp3 in Resources */,
+				52CB68FB1CC9EE5200782472 /* LaunchScreen.storyboard in Resources */,
+				52CB69281CCA2EE100782472 /* 02 Tu Zaroori - Zid 320kbps .mp3 in Resources */,
+				52CB69321CCA528F00782472 /* Muskurane (Citylights) Arijit Singh -19.mp3 in Resources */,
+				52CB69341CCA52D200782472 /* Modala Notadalli [KannadaMasti.Net].mp3 in Resources */,
+				52CB68F81CC9EE5200782472 /* Assets.xcassets in Resources */,
+				52CB692E1CCA2F5600782472 /* 03  - Zaroorat- Ek Villain[FreshMaza.Info].mp3 in Resources */,
+				52CB69231CC9F3BA00782472 /* mysong.mp3 in Resources */,
+				52CB68F61CC9EE5200782472 /* Main.storyboard in Resources */,
+				52CB69301CCA2F9C00782472 /* 06 - Piya Aaye Na [PublicMasti].mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB68FF1CC9EE5200782472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB690A1CC9EE5200782472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52CB68E41CC9EE5200782472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB68F31CC9EE5200782472 /* ViewController.m in Sources */,
+				52CB68F01CC9EE5200782472 /* AppDelegate.m in Sources */,
+				52CB68ED1CC9EE5200782472 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB68FD1CC9EE5200782472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB69061CC9EE5200782472 /* Audi0PlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52CB69081CC9EE5200782472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CB69111CC9EE5200782472 /* Audi0PlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52CB69031CC9EE5200782472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CB68E71CC9EE5200782472 /* Audi0Player */;
+			targetProxy = 52CB69021CC9EE5200782472 /* PBXContainerItemProxy */;
+		};
+		52CB690E1CC9EE5200782472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52CB68E71CC9EE5200782472 /* Audi0Player */;
+			targetProxy = 52CB690D1CC9EE5200782472 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52CB68F41CC9EE5200782472 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CB68F51CC9EE5200782472 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52CB68F91CC9EE5200782472 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52CB68FA1CC9EE5200782472 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52CB69131CC9EE5200782472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52CB69141CC9EE5200782472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52CB69161CC9EE5200782472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audi0Player/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0Player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52CB69171CC9EE5200782472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Audi0Player/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0Player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52CB69191CC9EE5200782472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Audi0PlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0PlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audi0Player.app/Audi0Player";
+			};
+			name = Debug;
+		};
+		52CB691A1CC9EE5200782472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Audi0PlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0PlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audi0Player.app/Audi0Player";
+			};
+			name = Release;
+		};
+		52CB691C1CC9EE5200782472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Audi0PlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0PlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Audi0Player;
+			};
+			name = Debug;
+		};
+		52CB691D1CC9EE5200782472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Audi0PlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Audi0PlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Audi0Player;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52CB68E31CC9EE5200782472 /* Build configuration list for PBXProject "Audi0Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB69131CC9EE5200782472 /* Debug */,
+				52CB69141CC9EE5200782472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52CB69151CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB69161CC9EE5200782472 /* Debug */,
+				52CB69171CC9EE5200782472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52CB69181CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0PlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB69191CC9EE5200782472 /* Debug */,
+				52CB691A1CC9EE5200782472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52CB691B1CC9EE5200782472 /* Build configuration list for PBXNativeTarget "Audi0PlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CB691C1CC9EE5200782472 /* Debug */,
+				52CB691D1CC9EE5200782472 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52CB68E01CC9EE5200782472 /* Project object */;
+}
