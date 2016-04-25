@@ -11,6 +11,8 @@
 
 @interface ViewController : UIViewController<AVAudioPlayerDelegate>
 @property(strong, nonatomic) AVAudioPlayer * audioPlayer;
-
+-(NSString*)getAudioDuration;
+@property (nonatomic,assign )float count;
+@property BOOL ispaused;
 @end
 
