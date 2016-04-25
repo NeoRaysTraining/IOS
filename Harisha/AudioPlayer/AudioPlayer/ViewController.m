@@ -22,6 +22,7 @@
 
 @property(strong,nonatomic) NSMutableArray* songList;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UILabel *songNameLabel;
 
@@ -30,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *playOrPauseImage;
 
 @property (assign,nonatomic)BOOL playAndPause;
+
+@property (strong,nonatomic) NSArray* imageList;
 @end
 
 @implementation ViewController
@@ -39,16 +42,19 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.count = 0;
     self.playAndPause = true;
+    
+    self.imageList = [[NSArray alloc]initWithObjects:@"ekvillan",@"jubtak",@"kahani2",@"zid",@"badlpur",@"kahani",@"ekvillan",nil];
+    
     self.songList = [[NSMutableArray alloc]initWithObjects:@"03  - Zaroorat- Ek Villain[FreshMaza.Info]",@"02---Saans-[FreshMaza.Com]",@"02 Tu Zaroori - Zid 320kbps ",@"02 Jeena Jeena - Badlapur. 320 kbps",@"01 Hamari Adhuri Kahani (Title Song) Arijit Singh 320Kbps",@"01 - Sooraj Dooba Hain - DownloadMing.SE",@"01 - Galliyan (Ek Villain) - 190Kbps  FreshMaza.Info ", nil];
     
     NSString *filePath = [[NSBundle mainBundle]pathForResource:@"02---Saans-[FreshMaza.Com]" ofType:@"mp3"];
     
-    
-    
+    self.songNameLabel.text = [NSString stringWithFormat:@"02---Saans-[FreshMaza.Com]"];
+    self.imageOutlet.image = [UIImage imageNamed:@"ekvillan"];
     
     NSError *error = nil;
-    self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL URLWithString:filePath] error:&error];
-    self.player.delegate = self;
+    self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:&error];
+
     
     
     
@@ -60,43 +66,23 @@
 }
 - (IBAction)play:(id)sender
 {
-    self.count++;
     
-    if(self.count == 1)
-    {
-        //self.playOrPauseImage.
-        UIImage *buttonImage = [UIImage imageNamed:@"play"];
-        [self.playOrPauseImage setBackgroundImage:buttonImage forState:UIControlStateNormal];
-        [self.view addSubview:self.playOrPauseImage];
-        [self.player play];
-        self.toatalDuration.text = [self totalDuration];
-        [self startTimer];
-    }
-    else if (self.count == 2)
-    {
-        UIImage *buttonImage = [UIImage imageNamed:@"pause"];
-        [self.playOrPauseImage setBackgroundImage:buttonImage forState:UIControlStateNormal];
-        [self.view addSubview:self.playOrPauseImage];
-        [self.player pause];
-        
-        self.count =0;
-    }
-    
-    //[self playAndPauseButton];
-}
--(void)playAndPauseButton
-{
-    //self.count++;
     
     if(self.playAndPause == true)
     {
-        //self.playOrPauseImage.
+               self.player.delegate = self;
+        self.toatalDuration.text = [self totalDuration];
+        [self startTimer];
+
         UIImage *buttonImage = [UIImage imageNamed:@"play"];
         [self.playOrPauseImage setBackgroundImage:buttonImage forState:UIControlStateNormal];
         [self.view addSubview:self.playOrPauseImage];
         [self.player play];
         self.toatalDuration.text = [self totalDuration];
         [self startTimer];
+        [self.player delegate];
+        [self.player play];
+        self.playAndPause = false;
     }
     else if (self.playAndPause == false)
     {
@@ -107,9 +93,8 @@
         
         self.playAndPause = true;
     }
-    
-}
 
+}
 - (IBAction)sliderButton:(id)sender
 {
     [self.player setVolume:self.sliderCount.value];
@@ -117,63 +102,57 @@
 }
 - (IBAction)forward:(id)sender
 {
+    NSLog(@"%d",self.count);
+    
+    
+    
+   if(self.count==6)
+   {
+       self.count = 0;
+   
+   }
     
     self.count++;
-    
-        //int i=(int)[self.songList count];
-    if(self.playAndPause == true)
-    {
-        
-        //self.playOrPauseImage.
-        UIImage *buttonImage = [UIImage imageNamed:@"play"];
-        [self.playOrPauseImage setBackgroundImage:buttonImage forState:UIControlStateNormal];
-        [self.view addSubview:self.playOrPauseImage];
     NSString *songName=[self.songList objectAtIndex:self.count];
     NSString *filePath = [[NSBundle mainBundle]pathForResource:songName ofType:@"mp3"];
     
-    NSLog(@"%@",[self.songList objectAtIndex:self.count]);
+   
     self.songNameLabel.text = [NSString stringWithFormat:@"%@",[self.songList objectAtIndex:self.count]];
+    
+    self.imageOutlet.image = [UIImage imageNamed:[self.imageList objectAtIndex:self.count]];
     NSError *error = nil;
-    self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:&error];
+    
+   self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:&error];
     self.player.delegate = self;
         [self.player play];
-        //[self playAndPauseButton];
+    
         self.toatalDuration.text = [self totalDuration];
         [self startTimer];
-    }
-    else if (self.playAndPause == false)
+    if(_count == 7)
     {
-        UIImage *buttonImage = [UIImage imageNamed:@"pause"];
-        [self.playOrPauseImage setBackgroundImage:buttonImage forState:UIControlStateNormal];
-        [self.view addSubview:self.playOrPauseImage];
-        [self.player pause];
-        
-        self.playAndPause = true;
-    
-
+        self.count = 0;
     }
- 
-    
-    
 }
+
 - (IBAction)backward:(id)sender
 {
     self.count--;
     int i = 0;
+    
     if(i == self.count)
     {
         self.count++;
     }
-    NSString *songName=[self.songList objectAtIndex:self.count];
+   NSString *songName=[self.songList objectAtIndex:self.count];
     NSString *filePath = [[NSBundle mainBundle]pathForResource:songName ofType:@"mp3"];
     
     NSLog(@"%@",[self.songList objectAtIndex:self.count]);
     self.songNameLabel.text = [NSString stringWithFormat:@"%@",[self.songList objectAtIndex:self.count]];
     NSError *error = nil;
-    self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:&error];
+   self.player = [[AVAudioPlayer alloc]initWithContentsOfURL:[NSURL fileURLWithPath:filePath] error:&error];
     self.player.delegate = self;
     
-    [self playAndPauseButton];
+    [self.player play];
     
 
 }
