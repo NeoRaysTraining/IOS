@@ -77,17 +77,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oMn-mY-86Y">
-                                <rect key="frame" x="20" y="447" width="125" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="125" id="ffd-dy-mad"/>
-                                    <constraint firstAttribute="height" constant="125" id="fkm-iv-e1i"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90628326950000004" green="0.90628326950000004" blue="0.90628326950000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="oMn-mY-86Y" secondAttribute="leading" id="1v5-3a-F0O"/>
                             <constraint firstItem="yQ4-1h-TGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3dA-Gh-cSh"/>
                             <constraint firstItem="VCy-bh-KVg" firstAttribute="top" secondItem="To3-Qp-rVI" secondAttribute="bottom" constant="40" id="9oo-1x-OfL"/>
                             <constraint firstItem="To3-Qp-rVI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="EFd-Dz-a46"/>
@@ -95,7 +87,6 @@
                             <constraint firstItem="QYm-U5-kX7" firstAttribute="top" secondItem="VCy-bh-KVg" secondAttribute="bottom" constant="51" id="IMh-28-8nE"/>
                             <constraint firstItem="QYm-U5-kX7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JE3-Ca-bhl"/>
                             <constraint firstItem="To3-Qp-rVI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JoX-0d-VyD"/>
-                            <constraint firstItem="oMn-mY-86Y" firstAttribute="top" secondItem="QYm-U5-kX7" secondAttribute="bottom" constant="20" id="NAU-uv-UIc"/>
                             <constraint firstItem="To3-Qp-rVI" firstAttribute="top" secondItem="kuN-bA-aJ4" secondAttribute="bottom" constant="52" id="UD9-29-gAP"/>
                             <constraint firstItem="kuN-bA-aJ4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wgb-zK-Hxg"/>
                             <constraint firstItem="oal-1f-xYk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="mbw-JC-Z8U"/>
@@ -113,7 +104,6 @@
                     <connections>
                         <outlet property="desigOutlet" destination="VCy-bh-KVg" id="dRt-po-f8b"/>
                         <outlet property="eidOutlet" destination="To3-Qp-rVI" id="YJX-zR-4I2"/>
-                        <outlet property="logoImage" destination="oMn-mY-86Y" id="7Bt-nI-FUr"/>
                         <outlet property="nameOutlet" destination="kuN-bA-aJ4" id="qpB-Ep-Hfb"/>
                         <outlet property="placeOutlet" destination="QYm-U5-kX7" id="MAU-To-dCl"/>
                         <segue destination="7HM-6D-CsI" kind="show" identifier="Segue1" id="E0o-Fn-puX"/>

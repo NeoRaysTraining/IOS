@@ -1,25 +1,23 @@
 //
 //  ViewController2.m
-//  CustomTableViewWithSegue
+//  PersonDetailsUsingTableView
 //
-//  Created by test on 4/26/16.
+//  Created by test on 4/27/16.
 //  Copyright © 2016 test. All rights reserved.
 //
 
 #import "ViewController2.h"
-#import "CustomCellTableViewCell.h"
+#import "TableViewCell.h"
 
-@interface ViewController2 ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController2 ()
 
-@property(nonatomic,strong) UIImage* logoImg;
 @end
 
 @implementation ViewController2
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,9 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void) receiveData:(NSArray *)employee
+-(void) receiveData:(NSArray*) sendArray
 {
-    self.rcvArray=employee;
+    self.rcvArray=sendArray;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -39,19 +37,13 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CustomCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.nameLbl.text=_rcvArray[0];
-    cell.idLbl.text=_rcvArray[1];
-    cell.desigLbl.text=_rcvArray[2];
-    cell.plcLbl.text=_rcvArray[3];
+    cell.ageLbl.text=_rcvArray[1];
+    cell.genderLbl.text=_rcvArray[2];
+    cell.countryLbl.text=_rcvArray[3];
     return cell;
-    
 }
-
-
-
-
 
 /*
 #pragma mark - Navigation

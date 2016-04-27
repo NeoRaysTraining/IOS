@@ -19,7 +19,7 @@
 @property (nonatomic,strong) NSString* displayId;
 @property (nonatomic,strong) NSString* displayDesig;
 @property (nonatomic,strong) NSString* displayPlace;
-@property (weak, nonatomic) IBOutlet UIImageView *logoImage;
+
 
 @end
 
