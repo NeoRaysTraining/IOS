@@ -24,6 +24,7 @@
 @property (nonatomic,strong)NSString* country;
 @property NSUInteger flag;
 @property (nonatomic,strong) NSArray * sendArray;
+@property (weak, nonatomic) IBOutlet UIButton *nextOutlet;
 
 @end
 
@@ -39,14 +40,11 @@
     _genderField.inputView = _select;
     _countryField.inputView = _select;
     
-    _genderField.tag=1;
-    _countryField.tag=2;
-    
-    
     _genders = [[NSArray alloc] initWithObjects:@"Male",@"Female", nil];
     _countries = [[NSArray alloc] initWithObjects:@"India",@"USA",@"Australia",@"UK", nil];
     
-    
+    self.nextOutlet.hidden=YES;
+
 }
 - (IBAction)tapGesture:(id)sender {
     [self.nameFiled resignFirstResponder];
@@ -103,13 +101,24 @@
 
 - (IBAction)switchAction:(id)sender {
     
-    self.name=self.nameFiled.text;
-    self.age=self.ageField.text;
-    _sendArray=@[_name,_age,_gender,_country];
+    
     if([_switchButton isOn])
     {
-        [self performSegueWithIdentifier:@"Segue1" sender:self];
+        
+        self.name=self.nameFiled.text;
+        self.age=self.ageField.text;
+        _sendArray=@[_name,_age,_gender,_country];
+
+        self.nextOutlet.hidden=NO;
     }
+    else
+    {
+    }
+}
+- (IBAction)nextButton:(id)sender {
+    
+    [self performSegueWithIdentifier:@"Segue1" sender:self];
+
 }
 
 

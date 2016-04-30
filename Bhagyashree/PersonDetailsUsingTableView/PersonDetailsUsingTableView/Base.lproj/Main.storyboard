@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Personal Details-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -64,6 +64,29 @@
                                     <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="cq3-8y-eTp"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2n-bR-SgU">
+                                <rect key="frame" x="244" y="434" width="113" height="54"/>
+                                <color key="backgroundColor" red="1" green="0.80615203759999998" blue="0.90282785639999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="6zs-Uz-ndf"/>
+                                    <constraint firstAttribute="width" constant="113" id="Tpw-V8-ySa"/>
+                                </constraints>
+                                <state key="normal" title="Next-----&gt;"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fAI-9R-x1b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Agree..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cu-PY-ME8">
+                                <rect key="frame" x="120" y="309" width="361" height="31"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="0dW-rv-scI"/>
+                                    <constraint firstAttribute="height" constant="31" id="gp6-vY-h9e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -72,28 +95,34 @@
                             <constraint firstItem="tMP-6J-Phg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Pm-Cw-cLr"/>
                             <constraint firstItem="VhP-gG-ynt" firstAttribute="top" secondItem="hMP-lh-wz8" secondAttribute="bottom" constant="20" id="9ZP-aD-qEW"/>
                             <constraint firstItem="3mC-GX-kPy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9yi-kc-5eY"/>
+                            <constraint firstItem="w2n-bR-SgU" firstAttribute="top" secondItem="0cu-PY-ME8" secondAttribute="bottom" constant="94" id="Cdh-j8-pOt"/>
                             <constraint firstItem="3mC-GX-kPy" firstAttribute="top" secondItem="tMP-6J-Phg" secondAttribute="bottom" constant="18" id="Dfj-79-7ru"/>
                             <constraint firstItem="tMP-6J-Phg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="Dke-2B-D3P"/>
                             <constraint firstItem="4OG-dI-wNX" firstAttribute="top" secondItem="VhP-gG-ynt" secondAttribute="bottom" constant="39" id="KIN-hm-D0l"/>
                             <constraint firstItem="hMP-lh-wz8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MGq-FH-Bu7"/>
+                            <constraint firstItem="0cu-PY-ME8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mg0-ak-OPD"/>
                             <constraint firstItem="hMP-lh-wz8" firstAttribute="top" secondItem="3mC-GX-kPy" secondAttribute="bottom" constant="18" id="S4k-L9-Fkc"/>
+                            <constraint firstItem="w2n-bR-SgU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U18-Y7-Iga"/>
                             <constraint firstItem="hMP-lh-wz8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xnb-32-zcJ"/>
                             <constraint firstItem="tMP-6J-Phg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="YFg-nZ-SE3"/>
                             <constraint firstItem="tMP-6J-Phg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cCg-B3-8iD"/>
                             <constraint firstItem="VhP-gG-ynt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jZI-cW-haP"/>
                             <constraint firstItem="VhP-gG-ynt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kjk-F8-HCQ"/>
+                            <constraint firstItem="0cu-PY-ME8" firstAttribute="leading" secondItem="4OG-dI-wNX" secondAttribute="trailing" constant="51" id="njW-GW-PDT"/>
                             <constraint firstItem="3mC-GX-kPy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="sEQ-a0-5bR"/>
+                            <constraint firstItem="0cu-PY-ME8" firstAttribute="top" secondItem="VhP-gG-ynt" secondAttribute="bottom" constant="39" id="yXC-4O-sTG"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="bTA-RL-fKQ" appends="YES" id="GHQ-9L-1Mt"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="VbO-7b-PvK"/>
+                    <navigationItem key="navigationItem" title="Personal Details" id="VbO-7b-PvK"/>
                     <connections>
                         <outlet property="ageField" destination="3mC-GX-kPy" id="3mK-uC-XZV"/>
                         <outlet property="countryField" destination="VhP-gG-ynt" id="oWt-fC-9Rr"/>
                         <outlet property="genderField" destination="hMP-lh-wz8" id="Hmi-Jt-3D6"/>
                         <outlet property="nameFiled" destination="tMP-6J-Phg" id="89y-Le-NHg"/>
+                        <outlet property="nextOutlet" destination="w2n-bR-SgU" id="ZrT-xf-ZIu"/>
                         <outlet property="switchButton" destination="4OG-dI-wNX" id="Wq0-Qx-yA4"/>
                         <segue destination="sKD-CK-dNH" kind="show" identifier="Segue1" id="f0q-x5-Nxi"/>
                     </connections>
