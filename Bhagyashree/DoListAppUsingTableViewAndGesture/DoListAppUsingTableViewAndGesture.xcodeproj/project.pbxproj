@@ -15,7 +15,6 @@
 		52DF7B041CD46DCA0015FA99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DF7B021CD46DCA0015FA99 /* LaunchScreen.storyboard */; };
 		52DF7B0F1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7B0E1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m */; };
 		52DF7B1A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7B191CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m */; };
-		52DF7B2C1CD471C60015FA99 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7B2B1CD471C60015FA99 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +51,6 @@
 		52DF7B151CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoListAppUsingTableViewAndGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DF7B191CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoListAppUsingTableViewAndGestureUITests.m; sourceTree = "<group>"; };
 		52DF7B1B1CD46DCB0015FA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52DF7B2A1CD471C60015FA99 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
-		52DF7B2B1CD471C60015FA99 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				52DF7AF51CD46DCA0015FA99 /* main.m */,
-				52DF7B2A1CD471C60015FA99 /* TableViewCell.h */,
-				52DF7B2B1CD471C60015FA99 /* TableViewCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,7 +271,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DF7AFC1CD46DCA0015FA99 /* ViewController.m in Sources */,
-				52DF7B2C1CD471C60015FA99 /* TableViewCell.m in Sources */,
 				52DF7AF91CD46DCA0015FA99 /* AppDelegate.m in Sources */,
 				52DF7AF61CD46DCA0015FA99 /* main.m in Sources */,
 			);
@@ -502,6 +496,7 @@
 				52DF7B201CD46DCB0015FA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DF7B211CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +505,7 @@
 				52DF7B231CD46DCB0015FA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DF7B241CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +514,7 @@
 				52DF7B261CD46DCB0015FA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

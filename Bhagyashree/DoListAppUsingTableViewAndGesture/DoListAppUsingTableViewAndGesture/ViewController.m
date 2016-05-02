@@ -10,12 +10,9 @@
 #import "TableViewCell.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic,strong) NSMutableArray* taskNames;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
-@property (nonatomic,strong) NSString* newtask;
-@property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
-@property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapOutlet;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (nonatomic,strong) NSMutableArray* taskNames;
 @end
 
 @implementation ViewController
@@ -23,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _taskNames = [NSMutableArray arrayWithObjects:nil];
+    _taskNames = [[NSMutableArray alloc]init];
     
 }
 
@@ -40,30 +37,54 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    cell.textLabel.text=self.taskNames[indexPath.row];
     
-    cell.nameLbl.text=_taskNames[indexPath.row];
+    NSDate *myDate = [[NSDate alloc]init];
+    NSDateFormatter *format = [[NSDateFormatter alloc]init];
+    format.dateFormat = @"hh:mm:ss dd/MM/YY";
+    NSString *savedate = [format stringFromDate:myDate];
+    cell.detailTextLabel.text = savedate;
     return cell;
 }
 
-
-static int flag=0;
-- (IBAction)addAction:(id)sender {
-    flag++;
-    if(flag<1000)
-    {
-    _newtask   = [NSString stringWithFormat:@"Task %i",flag];
-        NSLog(@"%i string is added is added",flag);
-        [_taskNames addObject:_newtask];
-        NSLog(@"array is %@",_taskNames);
-   }
-    [_tableViewOutlet reloadData];
-}
-
-- (IBAction)tapGestureAction:(id)sender {
+- (IBAction)addBotton:(id)sender {
     
-    [self.taskNames removeObjectAtIndex:0];
-    [_tableViewOutlet reloadData];
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Enter new task"
+                                          message:@""
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField)
+     {
+         textField.placeholder = NSLocalizedString(@"TaskPlaceholder",@"New Task");
+     }];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
+        UITextField *newtask=alertController.textFields.firstObject;
+        
+        [self.taskNames addObject:newtask.text];
+        [self.tableView reloadData];
+    }];
+    
+    [alertController addAction:ok];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
+
+-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
+}
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if(editingStyle==UITableViewCellEditingStyleDelete)
+    {
+        [_taskNames removeObjectAtIndex:indexPath.row];
+        [tableView reloadData];
+    }
+}
+
+
 
 @end
