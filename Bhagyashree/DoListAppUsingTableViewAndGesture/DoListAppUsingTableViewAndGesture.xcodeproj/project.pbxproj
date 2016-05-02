@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52DF7AF61CD46DCA0015FA99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7AF51CD46DCA0015FA99 /* main.m */; };
+		52DF7AF91CD46DCA0015FA99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7AF81CD46DCA0015FA99 /* AppDelegate.m */; };
+		52DF7AFC1CD46DCA0015FA99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7AFB1CD46DCA0015FA99 /* ViewController.m */; };
+		52DF7AFF1CD46DCA0015FA99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DF7AFD1CD46DCA0015FA99 /* Main.storyboard */; };
+		52DF7B011CD46DCA0015FA99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52DF7B001CD46DCA0015FA99 /* Assets.xcassets */; };
+		52DF7B041CD46DCA0015FA99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DF7B021CD46DCA0015FA99 /* LaunchScreen.storyboard */; };
+		52DF7B0F1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7B0E1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m */; };
+		52DF7B1A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DF7B191CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52DF7B0B1CD46DCB0015FA99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DF7AE91CD46DCA0015FA99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DF7AF01CD46DCA0015FA99;
+			remoteInfo = DoListAppUsingTableViewAndGesture;
+		};
+		52DF7B161CD46DCB0015FA99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DF7AE91CD46DCA0015FA99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DF7AF01CD46DCA0015FA99;
+			remoteInfo = DoListAppUsingTableViewAndGesture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52DF7AF11CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoListAppUsingTableViewAndGesture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DF7AF51CD46DCA0015FA99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		52DF7AF71CD46DCA0015FA99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		52DF7AF81CD46DCA0015FA99 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		52DF7AFA1CD46DCA0015FA99 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		52DF7AFB1CD46DCA0015FA99 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		52DF7AFE1CD46DCA0015FA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52DF7B001CD46DCA0015FA99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52DF7B031CD46DCA0015FA99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52DF7B051CD46DCA0015FA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DF7B0A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoListAppUsingTableViewAndGestureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DF7B0E1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoListAppUsingTableViewAndGestureTests.m; sourceTree = "<group>"; };
+		52DF7B101CD46DCB0015FA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DF7B151CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoListAppUsingTableViewAndGestureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DF7B191CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoListAppUsingTableViewAndGestureUITests.m; sourceTree = "<group>"; };
+		52DF7B1B1CD46DCB0015FA99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52DF7AEE1CD46DCA0015FA99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B071CD46DCB0015FA99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B121CD46DCB0015FA99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52DF7AE81CD46DCA0015FA99 = {
+			isa = PBXGroup;
+			children = (
+				52DF7AF31CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */,
+				52DF7B0D1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests */,
+				52DF7B181CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests */,
+				52DF7AF21CD46DCA0015FA99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52DF7AF21CD46DCA0015FA99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DF7AF11CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture.app */,
+				52DF7B0A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.xctest */,
+				52DF7B151CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52DF7AF31CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */ = {
+			isa = PBXGroup;
+			children = (
+				52DF7AF71CD46DCA0015FA99 /* AppDelegate.h */,
+				52DF7AF81CD46DCA0015FA99 /* AppDelegate.m */,
+				52DF7AFA1CD46DCA0015FA99 /* ViewController.h */,
+				52DF7AFB1CD46DCA0015FA99 /* ViewController.m */,
+				52DF7AFD1CD46DCA0015FA99 /* Main.storyboard */,
+				52DF7B001CD46DCA0015FA99 /* Assets.xcassets */,
+				52DF7B021CD46DCA0015FA99 /* LaunchScreen.storyboard */,
+				52DF7B051CD46DCA0015FA99 /* Info.plist */,
+				52DF7AF41CD46DCA0015FA99 /* Supporting Files */,
+			);
+			path = DoListAppUsingTableViewAndGesture;
+			sourceTree = "<group>";
+		};
+		52DF7AF41CD46DCA0015FA99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				52DF7AF51CD46DCA0015FA99 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52DF7B0D1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests */ = {
+			isa = PBXGroup;
+			children = (
+				52DF7B0E1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m */,
+				52DF7B101CD46DCB0015FA99 /* Info.plist */,
+			);
+			path = DoListAppUsingTableViewAndGestureTests;
+			sourceTree = "<group>";
+		};
+		52DF7B181CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52DF7B191CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m */,
+				52DF7B1B1CD46DCB0015FA99 /* Info.plist */,
+			);
+			path = DoListAppUsingTableViewAndGestureUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52DF7AF01CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DF7B1E1CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGesture" */;
+			buildPhases = (
+				52DF7AED1CD46DCA0015FA99 /* Sources */,
+				52DF7AEE1CD46DCA0015FA99 /* Frameworks */,
+				52DF7AEF1CD46DCA0015FA99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoListAppUsingTableViewAndGesture;
+			productName = DoListAppUsingTableViewAndGesture;
+			productReference = 52DF7AF11CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52DF7B091CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DF7B211CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureTests" */;
+			buildPhases = (
+				52DF7B061CD46DCB0015FA99 /* Sources */,
+				52DF7B071CD46DCB0015FA99 /* Frameworks */,
+				52DF7B081CD46DCB0015FA99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52DF7B0C1CD46DCB0015FA99 /* PBXTargetDependency */,
+			);
+			name = DoListAppUsingTableViewAndGestureTests;
+			productName = DoListAppUsingTableViewAndGestureTests;
+			productReference = 52DF7B0A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52DF7B141CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52DF7B241CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureUITests" */;
+			buildPhases = (
+				52DF7B111CD46DCB0015FA99 /* Sources */,
+				52DF7B121CD46DCB0015FA99 /* Frameworks */,
+				52DF7B131CD46DCB0015FA99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52DF7B171CD46DCB0015FA99 /* PBXTargetDependency */,
+			);
+			name = DoListAppUsingTableViewAndGestureUITests;
+			productName = DoListAppUsingTableViewAndGestureUITests;
+			productReference = 52DF7B151CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52DF7AE91CD46DCA0015FA99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					52DF7AF01CD46DCA0015FA99 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					52DF7B091CD46DCB0015FA99 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52DF7AF01CD46DCA0015FA99;
+					};
+					52DF7B141CD46DCB0015FA99 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 52DF7AF01CD46DCA0015FA99;
+					};
+				};
+			};
+			buildConfigurationList = 52DF7AEC1CD46DCA0015FA99 /* Build configuration list for PBXProject "DoListAppUsingTableViewAndGesture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52DF7AE81CD46DCA0015FA99;
+			productRefGroup = 52DF7AF21CD46DCA0015FA99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52DF7AF01CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */,
+				52DF7B091CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests */,
+				52DF7B141CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52DF7AEF1CD46DCA0015FA99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DF7B041CD46DCA0015FA99 /* LaunchScreen.storyboard in Resources */,
+				52DF7B011CD46DCA0015FA99 /* Assets.xcassets in Resources */,
+				52DF7AFF1CD46DCA0015FA99 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B081CD46DCB0015FA99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B131CD46DCB0015FA99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52DF7AED1CD46DCA0015FA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DF7AFC1CD46DCA0015FA99 /* ViewController.m in Sources */,
+				52DF7AF91CD46DCA0015FA99 /* AppDelegate.m in Sources */,
+				52DF7AF61CD46DCA0015FA99 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B061CD46DCB0015FA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DF7B0F1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52DF7B111CD46DCB0015FA99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52DF7B1A1CD46DCB0015FA99 /* DoListAppUsingTableViewAndGestureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52DF7B0C1CD46DCB0015FA99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52DF7AF01CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */;
+			targetProxy = 52DF7B0B1CD46DCB0015FA99 /* PBXContainerItemProxy */;
+		};
+		52DF7B171CD46DCB0015FA99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52DF7AF01CD46DCA0015FA99 /* DoListAppUsingTableViewAndGesture */;
+			targetProxy = 52DF7B161CD46DCB0015FA99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52DF7AFD1CD46DCA0015FA99 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DF7AFE1CD46DCA0015FA99 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52DF7B021CD46DCA0015FA99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52DF7B031CD46DCA0015FA99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52DF7B1C1CD46DCB0015FA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		52DF7B1D1CD46DCB0015FA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52DF7B1F1CD46DCB0015FA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGesture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGesture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		52DF7B201CD46DCB0015FA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGesture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGesture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		52DF7B221CD46DCB0015FA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGestureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGestureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoListAppUsingTableViewAndGesture.app/DoListAppUsingTableViewAndGesture";
+			};
+			name = Debug;
+		};
+		52DF7B231CD46DCB0015FA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGestureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGestureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoListAppUsingTableViewAndGesture.app/DoListAppUsingTableViewAndGesture";
+			};
+			name = Release;
+		};
+		52DF7B251CD46DCB0015FA99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGestureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGestureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoListAppUsingTableViewAndGesture;
+			};
+			name = Debug;
+		};
+		52DF7B261CD46DCB0015FA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DoListAppUsingTableViewAndGestureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.DoListAppUsingTableViewAndGestureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DoListAppUsingTableViewAndGesture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52DF7AEC1CD46DCA0015FA99 /* Build configuration list for PBXProject "DoListAppUsingTableViewAndGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DF7B1C1CD46DCB0015FA99 /* Debug */,
+				52DF7B1D1CD46DCB0015FA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DF7B1E1CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGesture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DF7B1F1CD46DCB0015FA99 /* Debug */,
+				52DF7B201CD46DCB0015FA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DF7B211CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DF7B221CD46DCB0015FA99 /* Debug */,
+				52DF7B231CD46DCB0015FA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52DF7B241CD46DCB0015FA99 /* Build configuration list for PBXNativeTarget "DoListAppUsingTableViewAndGestureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52DF7B251CD46DCB0015FA99 /* Debug */,
+				52DF7B261CD46DCB0015FA99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52DF7AE91CD46DCA0015FA99 /* Project object */;
+}
