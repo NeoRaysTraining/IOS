@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="684" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MaO-qU-3eY">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.98605081939999994" blue="0.69666139900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" focusStyle="custom" rowHeight="684" id="TUD-kR-fsu" customClass="TableViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TUD-kR-fsu" id="Ge4-4X-e5j">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.98605081939999994" blue="0.69666139900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xOi-Us-kg0" appends="YES" id="NEl-zM-yB1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1qp-1d-PV9"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fwd-om-Pew"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T4Z-dP-sBT">
+                                <rect key="frame" x="0.0" y="34" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Task Table" id="9Xd-zu-ZHP">
+                                        <barButtonItem key="rightBarButtonItem" title="+" id="4i5-Wc-Qm5">
+                                            <connections>
+                                                <action selector="addButton:" destination="BYZ-38-t0r" id="pMG-AO-9Xd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98605081939999994" blue="0.69666139900000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="T4Z-dP-sBT" firstAttribute="centerX" secondItem="MaO-qU-3eY" secondAttribute="centerX" id="6ma-di-gra"/>
+                            <constraint firstItem="T4Z-dP-sBT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="QfN-a9-ZzD"/>
+                            <constraint firstAttribute="trailing" secondItem="T4Z-dP-sBT" secondAttribute="trailing" id="SIC-Fa-hPn"/>
+                            <constraint firstItem="T4Z-dP-sBT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wpj-JY-5hY"/>
+                            <constraint firstItem="MaO-qU-3eY" firstAttribute="top" secondItem="T4Z-dP-sBT" secondAttribute="bottom" id="ccq-lD-vgP"/>
+                            <constraint firstAttribute="bottom" secondItem="MaO-qU-3eY" secondAttribute="bottom" constant="20" symbolic="YES" id="dOo-XQ-IHz"/>
+                            <constraint firstItem="MaO-qU-3eY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iVu-BV-luI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MaO-qU-3eY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="ccq-lD-vgP"/>
+                                <exclude reference="dOo-XQ-IHz"/>
+                                <exclude reference="iVu-BV-luI"/>
+                                <exclude reference="6ma-di-gra"/>
+                                <exclude reference="QfN-a9-ZzD"/>
+                                <exclude reference="SIC-Fa-hPn"/>
+                                <exclude reference="Wpj-JY-5hY"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="MaO-qU-3eY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="ccq-lD-vgP"/>
+                                <include reference="dOo-XQ-IHz"/>
+                                <include reference="iVu-BV-luI"/>
+                                <include reference="6ma-di-gra"/>
+                                <include reference="QfN-a9-ZzD"/>
+                                <include reference="SIC-Fa-hPn"/>
+                                <include reference="Wpj-JY-5hY"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="MaO-qU-3eY" id="mSU-FQ-fzV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="xOi-Us-kg0">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="Nf3-Cz-Ddf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="247" y="297.75"/>
+        </scene>
+    </scenes>
+</document>
