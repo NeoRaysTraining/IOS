@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic,strong) NSMutableArray* taskNames;
+@property (nonatomic,strong) NSMutableArray* taskTime;
+@property (nonatomic,strong) NSString *createdate;
 @end
 
 @implementation ViewController
@@ -21,6 +23,7 @@
     [super viewDidLoad];
     
     _taskNames = [[NSMutableArray alloc]init];
+    _taskTime = [[NSMutableArray alloc]init];
     
 }
 
@@ -28,6 +31,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -39,12 +44,13 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text=self.taskNames[indexPath.row];
-    
+
     NSDate *myDate = [[NSDate alloc]init];
     NSDateFormatter *format = [[NSDateFormatter alloc]init];
     format.dateFormat = @"hh:mm:ss dd/MM/YY";
-    NSString *savedate = [format stringFromDate:myDate];
-    cell.detailTextLabel.text = savedate;
+    _createdate = [format stringFromDate:myDate];
+    [_taskTime addObject:_createdate];
+    cell.detailTextLabel.text = _taskTime[indexPath.row];
     return cell;
 }
 
@@ -69,6 +75,7 @@
     
     [alertController addAction:ok];
     [self presentViewController:alertController animated:YES completion:nil];
+    
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -84,7 +91,5 @@
         [tableView reloadData];
     }
 }
-
-
 
 @end
