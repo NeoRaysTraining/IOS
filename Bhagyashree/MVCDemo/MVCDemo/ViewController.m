@@ -93,8 +93,7 @@
         NSString *desigText = ((UITextField*)[alertController.textFields objectAtIndex:2]).text;
         
         NSString *mobileText = ((UITextField*)[alertController.textFields objectAtIndex:3]).text;
-        
-        
+    
         EmployeeModel *addingDetails=[[EmployeeModel alloc]initWithName:nameText Designation:ageText :desigText :mobileText ];
         [_nameObjects addObjectsFromArray:@[addingDetails]];
         [self.tableViewOutlet reloadData];
