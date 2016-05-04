@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPX-bY-wnS">
+                                <rect key="frame" x="210" y="463" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="kXY-Of-Agd"/>
+                                </constraints>
+                                <state key="normal" title="Select Department"/>
+                                <connections>
+                                    <segue destination="5Cj-ba-u08" kind="presentation" identifier="departmentDetails" id="7i8-5W-EEj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bW2-lD-gUJ">
+                                <rect key="frame" x="20" y="28" width="139" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Bln-Hr-a6o"/>
+                                    <constraint firstAttribute="width" constant="139" id="ROa-p6-EUB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APn-sJ-WIG">
+                                <rect key="frame" x="20" y="70" width="259" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="TTg-RV-wEW"/>
+                                    <constraint firstAttribute="height" constant="57" id="tEs-fN-CsK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bW2-lD-gUJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5JI-JI-A1N"/>
+                            <constraint firstItem="APn-sJ-WIG" firstAttribute="top" secondItem="bW2-lD-gUJ" secondAttribute="bottom" constant="8" id="7Cd-Y8-bfs"/>
+                            <constraint firstItem="bW2-lD-gUJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Igg-Iw-1TM"/>
+                            <constraint firstItem="VPX-bY-wnS" firstAttribute="top" secondItem="APn-sJ-WIG" secondAttribute="bottom" constant="336" id="MkO-Wg-lq9"/>
+                            <constraint firstItem="VPX-bY-wnS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VRa-cY-FQo"/>
+                            <constraint firstItem="APn-sJ-WIG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VeE-fo-0Ia"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VPX-bY-wnS" secondAttribute="bottom" constant="107" id="neW-3g-xR5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deptNameDisplayLabel" destination="APn-sJ-WIG" id="hlc-Fz-0ek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="70"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="26t-PY-fuT">
+            <objects>
+                <tableViewController id="5Cj-ba-u08" customClass="TableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="elh-TF-e5k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hXU-B2-PrM">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hXU-B2-PrM" id="FRU-ew-tWJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Cj-ba-u08" id="3dv-0P-zdI"/>
+                            <outlet property="delegate" destination="5Cj-ba-u08" id="Ghp-gE-x39"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TWN-4W-Uws" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="70"/>
+        </scene>
+    </scenes>
+</document>
