@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4y-DW-cz3">
+                                <rect key="frame" x="20" y="28" width="560" height="44"/>
+                                <items>
+                                    <navigationItem title="Employee Details" id="ake-vv-Gz7">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hZK-lG-na6">
+                                            <connections>
+                                                <action selector="addButton:" destination="BYZ-38-t0r" id="9b8-p2-lAN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SdP-iQ-s6h">
+                                <rect key="frame" x="20" y="72" width="560" height="508"/>
+                                <color key="backgroundColor" red="1" green="0.98096151880000004" blue="0.66932689050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="4Ss-r7-Erq" customClass="TableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="144"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4Ss-r7-Erq" id="lHz-oc-cu2">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="143"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-uQ-gGy">
+                                                    <rect key="frame" x="8" y="37" width="259" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="UrE-nf-bzu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkE-SA-x6p">
+                                                    <rect key="frame" x="8" y="95" width="259" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="7TB-y3-OvL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbc-36-6V0">
+                                                    <rect key="frame" x="8" y="66" width="259" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="0eq-jM-xfh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smp-36-1KS">
+                                                    <rect key="frame" x="8" y="8" width="259" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="V0V-GG-TUg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBS-BV-9aF">
+                                                    <rect key="frame" x="444" y="28" width="92" height="59"/>
+                                                    <color key="backgroundColor" red="1" green="0.54149885393031938" blue="0.44641560946182179" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="59" id="kNt-wt-JvH"/>
+                                                        <constraint firstAttribute="width" constant="92" id="uP2-Pw-zSy"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Delete">
+                                                        <color key="titleColor" red="0.98867265100000001" green="1" blue="0.94735354120000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mLT-BX-A7I"/>
+                                                    </connections>
+                                                </button>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7t-uc-DH8">
+                                                    <rect key="frame" x="307" y="28" width="95" height="59"/>
+                                                    <color key="backgroundColor" red="0.45287211686010787" green="1" blue="0.44078218940588842" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="59" id="8x6-uy-5A9"/>
+                                                        <constraint firstAttribute="width" constant="95" id="aKL-7e-qbU"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Edit">
+                                                        <color key="titleColor" red="0.98867265100000001" green="1" blue="0.94735354120000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="editButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djf-EG-hgj"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.98096151880000004" blue="0.66932689050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="smp-36-1KS" firstAttribute="top" secondItem="lHz-oc-cu2" secondAttribute="topMargin" id="79p-vZ-0Nw"/>
+                                                <constraint firstItem="DkE-SA-x6p" firstAttribute="top" secondItem="wbc-36-6V0" secondAttribute="bottom" constant="8" id="7aN-jV-gO1"/>
+                                                <constraint firstItem="smp-36-1KS" firstAttribute="leading" secondItem="lHz-oc-cu2" secondAttribute="leadingMargin" id="F1v-14-yeA"/>
+                                                <constraint firstItem="LBS-BV-9aF" firstAttribute="top" secondItem="lHz-oc-cu2" secondAttribute="topMargin" constant="20" id="MFG-v9-PLf"/>
+                                                <constraint firstItem="zCp-uQ-gGy" firstAttribute="top" secondItem="smp-36-1KS" secondAttribute="bottom" constant="8" id="PCl-QT-ZMM"/>
+                                                <constraint firstItem="wbc-36-6V0" firstAttribute="leading" secondItem="lHz-oc-cu2" secondAttribute="leadingMargin" id="VHz-uq-NcL"/>
+                                                <constraint firstItem="zCp-uQ-gGy" firstAttribute="leading" secondItem="lHz-oc-cu2" secondAttribute="leadingMargin" id="Y9D-C7-Cpa"/>
+                                                <constraint firstItem="LBS-BV-9aF" firstAttribute="leading" secondItem="T7t-uc-DH8" secondAttribute="trailing" constant="42" id="dou-CZ-IIL"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="LBS-BV-9aF" secondAttribute="trailing" constant="16" id="k6J-k6-y3f"/>
+                                                <constraint firstItem="wbc-36-6V0" firstAttribute="top" secondItem="zCp-uQ-gGy" secondAttribute="bottom" constant="8" id="kAj-sp-TeT"/>
+                                                <constraint firstItem="DkE-SA-x6p" firstAttribute="leading" secondItem="lHz-oc-cu2" secondAttribute="leadingMargin" id="p9P-8l-1cK"/>
+                                                <constraint firstItem="T7t-uc-DH8" firstAttribute="top" secondItem="lHz-oc-cu2" secondAttribute="topMargin" constant="20" id="tVj-NG-TiA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageLabel" destination="DkE-SA-x6p" id="wLr-3G-gIV"/>
+                                            <outlet property="deleteButtonOutlet" destination="LBS-BV-9aF" id="FXL-Qw-hYN"/>
+                                            <outlet property="designationLabel" destination="zCp-uQ-gGy" id="bwX-1q-cp2"/>
+                                            <outlet property="editButtonOutlet" destination="T7t-uc-DH8" id="4By-OA-xgP"/>
+                                            <outlet property="nameLabel" destination="smp-36-1KS" id="4YW-js-Eup"/>
+                                            <outlet property="phoneLabel" destination="wbc-36-6V0" id="gUu-r8-zkz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="S1T-Db-lIo"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nQ4-x9-8SH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98096151880000004" blue="0.66932689050000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="SdP-iQ-s6h" firstAttribute="top" secondItem="j4y-DW-cz3" secondAttribute="bottom" id="ChY-S6-gD8"/>
+                            <constraint firstItem="j4y-DW-cz3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="JWW-9R-BLC"/>
+                            <constraint firstItem="SdP-iQ-s6h" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="LuM-bm-naq"/>
+                            <constraint firstItem="SdP-iQ-s6h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="S0Q-cT-SZs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SdP-iQ-s6h" secondAttribute="bottom" constant="20" id="WEs-OW-41F"/>
+                            <constraint firstItem="j4y-DW-cz3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="trt-z0-FmN"/>
+                            <constraint firstItem="j4y-DW-cz3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w48-XR-pQZ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="0G1-Fz-U7n" appends="YES" id="kmF-kF-PhQ"/>
+                            <outletCollection property="gestureRecognizers" destination="zcc-5c-2Dv" appends="YES" id="dEo-DA-aai"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="myTableBiew" destination="SdP-iQ-s6h" id="LyE-lf-cGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="0G1-Fz-U7n">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BYZ-38-t0r" id="OhS-xK-rek"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="zcc-5c-2Dv">
+                    <connections>
+                        <action selector="swipeRight:" destination="BYZ-38-t0r" id="YgA-pN-yPp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="247" y="297"/>
+        </scene>
+    </scenes>
+</document>
