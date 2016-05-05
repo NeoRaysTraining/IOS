@@ -23,8 +23,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *placeField;
 @property (weak, nonatomic) IBOutlet UITextField *mobileField;
 @property (weak, nonatomic) IBOutlet UITextField *projectField;
-@property (nonatomic,strong) NSArray* details;
-@property (nonatomic,strong) NSMutableArray* addNewInfo;
+
 
 @end
 
@@ -34,8 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _details=[[NSArray alloc]init];
-}
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -51,18 +49,13 @@
     _mobile=self.mobileField.text;
     _project=self.placeField.text;
     
-    _details=@[_name,_empid,_desig,_place,_mobile,_project];
-    
-    //_addNewInfo=[[NSMutableArray alloc]init];
-    
-    NSLog(@"%@",_details);
     [self performSegueWithIdentifier:@"Segue1" sender:self];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     ViewController2 *VC2 = [segue destinationViewController];
-    [VC2 recieveData:_details];
+    [VC2 recieveData:self.name:self.empid:self.desig:self.place:self.mobile:self.project];
     
 }
 

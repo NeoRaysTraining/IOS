@@ -10,7 +10,7 @@
 #import "TableViewCell.h"
 
 @interface ViewController2 ()<UITableViewDelegate,UITableViewDataSource>
-
+@property (nonatomic,strong)NSMutableArray* details,*tableViewArray;
 @end
 
 @implementation ViewController2
@@ -18,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.empDetailsArray = [[NSMutableArray alloc]init];
+    _details=[[NSMutableArray alloc]init];
+    self.tableViewArray=[[NSMutableArray alloc]init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,40 +28,37 @@
 }
 
 
--(void) recieveData:(NSArray*) addNewInfo
+-(void) recieveData:(NSString*)name:(NSString*)empid:(NSString*)desig:(NSString*)place:(NSString*)mobile:(NSString*)project;
 {
-    _rcvDetails = [[NSArray alloc]init];
-    _rcvDetails=addNewInfo;
+    _rcvname=name;
+    _rcvempid=empid;
+    _rcvdesig=desig;
+    _rcvplace=place;
+    _rcvmobile=mobile;
+    _rcvproject=project;
     
-    [self.empDetailsArray addObject:_rcvDetails];
-    [self.tableViewOutlet reloadData];
+    
+    
+    _details=[NSMutableArray a]
+    _details=[NSMutableArray arrayWithObjects:_rcvname,_rcvempid,_rcvdesig,_rcvplace,_rcvmobile,_rcvproject, nil];
+    
+    self.tableViewArray=[NSMutableArray arrayWithObject:_details];
     
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.rcvDetails.count;
+    return self.tableViewArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     TableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    NSMutableArray *toPrintArray=self.tableViewArray[indexPath.row];
     
-    //[self.empDetailsArray addObject:_rcvDetails];
-    
-    NSLog(@"%@",self.empDetailsArray);
-    NSMutableArray *temp = [self.empDetailsArray objectAtIndex:indexPath.row];
-    
-    NSLog(@"%@",temp);
-    cell.nameLbl.text=temp[0];
-    cell.idLbl.text=temp[1];
-    cell.desigLbl.text=temp[2];
-    cell.placeLbl.text=temp[3];
-    cell.mobileLbl.text=temp[4];;
-    cell.projLbl.text=temp[5];
-    
+    cell.nameLbl.text=[toPrintArray objectAtIndex:0];
+    NSLog(@"%@",[toPrintArray objectAtIndex:0]);
     return cell;
-    
 }
 
 

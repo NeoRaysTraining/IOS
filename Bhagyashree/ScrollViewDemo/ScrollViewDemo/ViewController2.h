@@ -11,8 +11,14 @@
 @interface ViewController2 : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 
--(void) recieveData:(NSArray*) addNewInfo;
-@property (nonatomic,strong)NSArray* rcvDetails;
-@property(strong, nonatomic)NSMutableArray *empDetailsArray;
+-(void) recieveData:(NSString*)name:(NSString*)empid:(NSString*)desig:(NSString*)place:(NSString*)mobile:(NSString*)project;
+@property (nonatomic,strong) NSString* rcvname;
+@property (nonatomic,strong) NSString* rcvempid;
+@property (nonatomic,strong) NSString* rcvdesig;
+@property (nonatomic,strong) NSString* rcvplace;
+@property (nonatomic,strong) NSString* rcvmobile;
+@property (nonatomic,strong) NSString* rcvproject;
+
+
 
 @end
