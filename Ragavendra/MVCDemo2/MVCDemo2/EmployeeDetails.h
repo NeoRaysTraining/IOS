@@ -15,7 +15,7 @@
 @property(nonatomic,strong)NSString *empPlace;
 
 
-- (instancetype)initEId:(NSString *)employeeID  name:(NSString *)employeName     phoneNum:(NSString *) employeePhoneNumber place:(NSString *)employeePlace;
+- (instancetype)initEId:(NSString *)employeeID  name:(NSString *)employeName phoneNum:(NSString *) employeePhoneNumber place:(NSString *)employeePlace;
     
 
 

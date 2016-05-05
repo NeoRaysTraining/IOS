@@ -14,4 +14,10 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneNumberlabel;
 @property (weak, nonatomic) IBOutlet UILabel *placeLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *editOutlet;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *deleteOutlet;
+
+
 @end
