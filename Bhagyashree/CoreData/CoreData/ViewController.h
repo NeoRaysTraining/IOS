@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  ScrollViewDemo
+//  CoreData
 //
-//  Created by test on 5/4/16.
+//  Created by test on 5/6/16.
 //  Copyright © 2016 test. All rights reserved.
 //
 

@@ -1,18 +1,18 @@
 //
-//  ScrollViewDemoTests.m
-//  ScrollViewDemoTests
+//  CoreDataTests.m
+//  CoreDataTests
 //
-//  Created by test on 5/4/16.
+//  Created by test on 5/6/16.
 //  Copyright © 2016 test. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ScrollViewDemoTests : XCTestCase
+@interface CoreDataTests : XCTestCase
 
 @end
 
-@implementation ScrollViewDemoTests
+@implementation CoreDataTests
 
 - (void)setUp {
     [super setUp];
