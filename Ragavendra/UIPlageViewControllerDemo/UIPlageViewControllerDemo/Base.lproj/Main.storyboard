@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTT-rs-HY5">
+                                <rect key="frame" x="232" y="433" width="137" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="eO2-PM-Vas"/>
+                                    <constraint firstAttribute="height" constant="30" id="fsE-gV-UAd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="StartAgain">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDO-dN-gys"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XTT-rs-HY5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="413" id="JE9-Gk-yR6"/>
+                            <constraint firstItem="XTT-rs-HY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bHl-nY-0Dg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-401" y="-169"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="2eE-hR-Dgb">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="l6a-fM-9NM" customClass="PageContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mg0-t1-0hl"/>
+                        <viewControllerLayoutGuide type="bottom" id="rfd-2F-gJL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7u6-Mk-yp2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnW-hf-ioh">
+                                <rect key="frame" x="20" y="57" width="560" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="phG-ay-aC2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nCt-nW-UMG">
+                                <rect key="frame" x="152" y="225" width="297" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="R8Z-5C-esQ"/>
+                                    <constraint firstAttribute="height" constant="221" id="dnY-tE-6iQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VnW-hf-ioh" firstAttribute="leading" secondItem="7u6-Mk-yp2" secondAttribute="leadingMargin" id="Q5s-dW-aYT"/>
+                            <constraint firstItem="VnW-hf-ioh" firstAttribute="trailing" secondItem="7u6-Mk-yp2" secondAttribute="trailingMargin" id="RSq-Y7-hLh"/>
+                            <constraint firstItem="VnW-hf-ioh" firstAttribute="top" secondItem="Mg0-t1-0hl" secondAttribute="bottom" constant="37" id="aNG-7c-Wdr"/>
+                            <constraint firstItem="nCt-nW-UMG" firstAttribute="centerX" secondItem="7u6-Mk-yp2" secondAttribute="centerX" id="dBw-Bs-m3y"/>
+                            <constraint firstItem="nCt-nW-UMG" firstAttribute="top" secondItem="Mg0-t1-0hl" secondAttribute="bottom" constant="205" id="ltW-QK-A9E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BackgroundImageView" destination="nCt-nW-UMG" id="G6G-GA-Nva"/>
+                        <outlet property="titleLabel" destination="VnW-hf-ioh" id="R7c-KZ-fuA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9XW-ZM-aXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-136"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="nsK-Gi-cNN">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="xPe-0R-9y3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXD-KI-Oeu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="-144"/>
+        </scene>
+    </scenes>
+</document>
