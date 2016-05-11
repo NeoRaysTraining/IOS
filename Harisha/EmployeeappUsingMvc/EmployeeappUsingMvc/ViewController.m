@@ -10,8 +10,9 @@
 #import "TableViewCell.h"
 #import "EmployeeDetails.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property(strong,nonatomic) NSIndexPath* path;
 @end
 
 @implementation ViewController
@@ -52,26 +53,23 @@
     return cell;
 }
 
--(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return YES;
-}
-
-
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    if (editingStyle==UITableViewCellEditingStyleDelete)
-    {
-        [self.modelList removeObjectAtIndex:indexPath.row];
-        [self.tableView reloadData];
-    }
-    
-    if(UITableViewCellEditingStyleInsert)
-    {
-        
-    }
-}
+//-(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return YES;
+//}
+//
+//
+//-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    
+//    
+//    if (editingStyle==UITableViewCellEditingStyleDelete)
+//    {
+//        [self.modelList removeObjectAtIndex:indexPath.row];
+//        [self.tableView reloadData];
+//    }
+//    
+//   }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.storeValue = (int)indexPath.row;
@@ -131,4 +129,24 @@
 
 }
 
+- (IBAction)leftSwipeEdit:(UIGestureRecognizer*)sender
+{
+    CGPoint location = [sender locationInView:self.tableView];
+    self.path = [self.tableView indexPathForRowAtPoint:location];
+    TableViewCell* cell = [self.tableView cellForRowAtIndexPath:self.path];
+    
+    cell.editButton.hidden = NO;
+    cell.deleteButton.hidden = NO;
+    
+}
+- (IBAction)rigthSwipeToHide:(id)sender
+{
+    CGPoint location = [sender locationInView:self.tableView];
+    self.path = [self.tableView indexPathForRowAtPoint:location];
+    TableViewCell* cell = [self.tableView cellForRowAtIndexPath:self.path];
+    
+    cell.editButton.hidden = YES;
+    cell.deleteButton.hidden = YES;
+    
+}
 @end

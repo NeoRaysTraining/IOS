@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *ageLbl;
 @property (weak, nonatomic) IBOutlet UILabel *designLbl;
 @property (weak, nonatomic) IBOutlet UILabel *numberLbl;
+@property (weak, nonatomic) IBOutlet UIButton *editButton;
+@property (weak, nonatomic) IBOutlet UIView *deleteButton;
 
 @end
