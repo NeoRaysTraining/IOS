@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "EmployeeModel.h"
 #import "TableViewCell.h"
+#import "AppDelegate.h"
+#import <CoreData/CoreData.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
@@ -22,15 +24,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+ 
     
-    
-    self.employeeDetailsArray=[[NSMutableArray alloc]init];
-    EmployeeModel *bhaskar=[[EmployeeModel alloc]initWithName:@"Bhaskar" designation:@"ios"];
-    
-    EmployeeModel *sameer=[[EmployeeModel alloc]initWithName:@"Sameer"designation:@"Android"];
-    
-    [self.employeeDetailsArray addObjectsFromArray:@[bhaskar,sameer]];
+    [self fetchingData];
     
     
 }
@@ -83,6 +79,7 @@
         if ([nameText.text isEqualToString:@""]){
             
             [self alertTextFieldDidChange:[alert.textFields objectAtIndex:0]];
+            NSLog(@"nil");
         }
         else if ([designationText.text isEqualToString:@""])
         {
@@ -90,10 +87,22 @@
         }
         else
         {
-        EmployeeModel *addingEmpDetails=[[EmployeeModel alloc]initWithName:nameText.text designation:designationText.text];
-        [self.employeeDetailsArray addObjectsFromArray:@[addingEmpDetails]];
-        
-        [self.tableView reloadData];
+            
+            NSManagedObjectContext *context=[self getContext];
+            NSManagedObject *emp=[NSEntityDescription insertNewObjectForEntityForName:@"Employee" inManagedObjectContext:context];
+            
+            [emp setValue:nameText.text forKey:@"name"];
+            [emp setValue:designationText.text forKey:@"designation"];
+            NSError *error=nil;
+            if ([context save:&error]) {
+                [self fetchingData];
+                NSLog(@"Data Saved Successfully");
+            }
+            else
+            {
+                NSLog(@"not Saved");
+            }
+            
         [self hideButtons];
         }
     }];
@@ -111,6 +120,8 @@
 
 }
 
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.employeeDetailsArray.count;
@@ -120,24 +131,26 @@
 
     TableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-//    if ( indexPath.row % 2 == 0 )
-//        cell.backgroundColor = [UIColor darkGrayColor];
-//    else
-//        cell.backgroundColor = [UIColor lightGrayColor];
-    
-    EmployeeModel *model=self.employeeDetailsArray[indexPath.row];
-    cell.EmpNameLbl.text=model.empName;
-    cell.empDesignationLbl.text=model.empDesignation;
-    
-    
+    NSManagedObject *model=self.employeeDetailsArray[indexPath.row];
+    cell.EmpNameLbl.text=[model valueForKey:@"name"];
+    cell.empDesignationLbl.text=[model valueForKey:@"designation"];
     
     return cell;
     
 }
-- (IBAction)deleteAction:(id)sender {
+- (IBAction)deleteAction:(UIButton*)sender {
     
 
-    [self.employeeDetailsArray removeObjectAtIndex:self.path.row];
+    NSIndexPath *index=[self.tableView indexPathForCell:(TableViewCell *)sender.superview.superview];
+   
+    NSManagedObjectContext *context=[self getContext];
+    [context deleteObject:[self.employeeDetailsArray objectAtIndex:index.row]];
+    NSError *error=nil;
+    [context save:&error];
+    
+    
+    
+    [self.employeeDetailsArray removeObjectAtIndex:index.row];
     [self.tableView reloadData];
     [self hideButtons];
     
@@ -151,27 +164,31 @@
 }
 - (IBAction)editAction:(id)sender {
     
-    EmployeeModel *model=[self.employeeDetailsArray objectAtIndex:self.path.row];
+    NSManagedObject *model=[self.employeeDetailsArray objectAtIndex:self.path.row];
     
     
     UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Edit Employee Details" message:@"" preferredStyle:UIAlertControllerStyleAlert];
     
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField ){
-        textField.text=model.empName;
+        textField.text=[model valueForKey:@"name"];
     }];
     [alert addTextFieldWithConfigurationHandler:^(UITextField *textField ){
-        textField.text=model.empDesignation;
+        textField.text=[model valueForKey:@"designation"];
     }];
     
     UIAlertAction *ok=[UIAlertAction actionWithTitle:@"Save" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action){
         
         NSString *nameText=((UITextField*)[alert.textFields objectAtIndex:0]).text;
         NSString *designationText=((UITextField*)[alert.textFields objectAtIndex:1]).text;
-        EmployeeModel *addingEmpDetails=[[EmployeeModel alloc]initWithName:nameText designation:designationText];
         
-        [self.employeeDetailsArray replaceObjectAtIndex:self.path.row withObject:addingEmpDetails];
-        
-        [self.tableView reloadData];
+        NSManagedObjectContext *context=[self getContext];
+        NSManagedObject *employee=[self.employeeDetailsArray objectAtIndex:self.path.row];
+        [employee setValue:nameText forKey:@"name"];
+        [employee setValue:designationText forKey:@"designation"];
+        NSError *error=nil;
+        if ([context save:&error]) {
+            [self fetchingData];
+        }
         [self hideButtons];
     }];
     
@@ -219,8 +236,24 @@
     }
 }
 
+-(NSManagedObjectContext*)getContext
+{
+    AppDelegate *app=[UIApplication sharedApplication].delegate;
+    NSManagedObjectContext *context=[app managedObjectContext];
+    return context;
+    
+}
 
-
+-(void)fetchingData
+{
+    NSManagedObjectContext *context=[self getContext];
+    
+    NSFetchRequest *request=[NSFetchRequest fetchRequestWithEntityName:@"Employee"];
+    NSError *error=nil;
+     self.employeeDetailsArray=[[NSMutableArray alloc]initWithArray:[context executeFetchRequest:request error:&error]];
+    [self.tableView reloadData];
+    
+}
 @end
 
 

@@ -17,6 +17,8 @@
 		526B1D581CDA0B4F005C41BB /* MVCEmployeeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 526B1D571CDA0B4F005C41BB /* MVCEmployeeDemoUITests.m */; };
 		526B1D671CDA0C66005C41BB /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 526B1D661CDA0C66005C41BB /* TableViewCell.m */; };
 		526B1D6A1CDA1215005C41BB /* EmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 526B1D691CDA1215005C41BB /* EmployeeModel.m */; };
+		52982CAE1CDDB5B000BE9116 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52982CAD1CDDB5B000BE9116 /* CoreData.framework */; };
+		52982CB11CDDB5F200BE9116 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52982CAF1CDDB5F200BE9116 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		526B1D661CDA0C66005C41BB /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		526B1D681CDA1215005C41BB /* EmployeeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmployeeModel.h; sourceTree = "<group>"; };
 		526B1D691CDA1215005C41BB /* EmployeeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmployeeModel.m; sourceTree = "<group>"; };
+		52982CAD1CDDB5B000BE9116 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		52982CB01CDDB5F200BE9116 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52982CAE1CDDB5B000BE9116 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,7 @@
 		526B1D261CDA0B4F005C41BB = {
 			isa = PBXGroup;
 			children = (
+				52982CAD1CDDB5B000BE9116 /* CoreData.framework */,
 				526B1D311CDA0B4F005C41BB /* MVCEmployeeDemo */,
 				526B1D4B1CDA0B4F005C41BB /* MVCEmployeeDemoTests */,
 				526B1D561CDA0B4F005C41BB /* MVCEmployeeDemoUITests */,
@@ -123,6 +129,7 @@
 		526B1D321CDA0B4F005C41BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				52982CAF1CDDB5F200BE9116 /* Model.xcdatamodeld */,
 				526B1D331CDA0B4F005C41BB /* main.m */,
 				526B1D651CDA0C66005C41BB /* TableViewCell.h */,
 				526B1D661CDA0C66005C41BB /* TableViewCell.m */,
@@ -285,6 +292,7 @@
 				526B1D671CDA0C66005C41BB /* TableViewCell.m in Sources */,
 				526B1D371CDA0B4F005C41BB /* AppDelegate.m in Sources */,
 				526B1D341CDA0B4F005C41BB /* main.m in Sources */,
+				52982CB11CDDB5F200BE9116 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +518,7 @@
 				526B1D5E1CDA0B4F005C41BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526B1D5F1CDA0B4F005C41BB /* Build configuration list for PBXNativeTarget "MVCEmployeeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +527,7 @@
 				526B1D611CDA0B4F005C41BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		526B1D621CDA0B4F005C41BB /* Build configuration list for PBXNativeTarget "MVCEmployeeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,8 +536,22 @@
 				526B1D641CDA0B4F005C41BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52982CAF1CDDB5F200BE9116 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52982CB01CDDB5F200BE9116 /* Model.xcdatamodel */,
+			);
+			currentVersion = 52982CB01CDDB5F200BE9116 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 526B1D271CDA0B4F005C41BB /* Project object */;
 }
