@@ -15,8 +15,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableViewOutlet;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
 @property (nonatomic,strong) NSMutableArray* taskNames;
-@property (nonatomic,strong) NSMutableArray* taskTime;
-@property (nonatomic,strong) NSString *createdate;
 @property NSIndexPath *indexpath;
 
 @end
@@ -26,7 +24,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _taskNames = [[NSMutableArray alloc]init];
-    _taskTime = [[NSMutableArray alloc]init];
     [self fetchData];
     
 }
