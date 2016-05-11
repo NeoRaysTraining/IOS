@@ -148,7 +148,7 @@
 
         
         NSDate *mydate =[NSDate date];
-        NSManagedObject *taskobject = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
+        NSManagedObject *taskobject =[self.taskNames objectAtIndex:_indexpath.row];
         [taskobject setValue:newtask.text forKey:@"tname"];
         [taskobject setValue:mydate forKey:@"createtime"];
         
