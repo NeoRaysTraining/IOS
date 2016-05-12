@@ -16,6 +16,8 @@
 		52601ACA1CE2F87500E57B19 /* UIPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52601AC91CE2F87500E57B19 /* UIPageViewControllerTests.m */; };
 		52601AD51CE2F87500E57B19 /* UIPageViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52601AD41CE2F87500E57B19 /* UIPageViewControllerUITests.m */; };
 		52601AE41CE2FD2C00E57B19 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52601AE31CE2FD2C00E57B19 /* PageContentViewController.m */; };
+		52BF420C1CE449B7008476C6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF420B1CE449B7008476C6 /* LoginViewController.m */; };
+		52BF420F1CE449D2008476C6 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF420E1CE449D2008476C6 /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		52601AD61CE2F87500E57B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52601AE21CE2FD2C00E57B19 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		52601AE31CE2FD2C00E57B19 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		52BF420A1CE449B7008476C6 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		52BF420B1CE449B7008476C6 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		52BF420D1CE449D2008476C6 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		52BF420E1CE449D2008476C6 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				52601ABD1CE2F87500E57B19 /* LaunchScreen.storyboard */,
 				52601AC01CE2F87500E57B19 /* Info.plist */,
 				52601AAF1CE2F87500E57B19 /* Supporting Files */,
+				52BF420A1CE449B7008476C6 /* LoginViewController.h */,
+				52BF420B1CE449B7008476C6 /* LoginViewController.m */,
+				52BF420D1CE449D2008476C6 /* RegisterViewController.h */,
+				52BF420E1CE449D2008476C6 /* RegisterViewController.m */,
 			);
 			path = UIPageViewController;
 			sourceTree = "<group>";
@@ -276,9 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				52601AB71CE2F87500E57B19 /* ViewController.m in Sources */,
+				52BF420F1CE449D2008476C6 /* RegisterViewController.m in Sources */,
 				52601AE41CE2FD2C00E57B19 /* PageContentViewController.m in Sources */,
 				52601AB41CE2F87500E57B19 /* AppDelegate.m in Sources */,
 				52601AB11CE2F87500E57B19 /* main.m in Sources */,
+				52BF420C1CE449B7008476C6 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +516,7 @@
 				52601ADB1CE2F87500E57B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52601ADC1CE2F87500E57B19 /* Build configuration list for PBXNativeTarget "UIPageViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +525,7 @@
 				52601ADE1CE2F87500E57B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52601ADF1CE2F87500E57B19 /* Build configuration list for PBXNativeTarget "UIPageViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +534,7 @@
 				52601AE11CE2F87500E57B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

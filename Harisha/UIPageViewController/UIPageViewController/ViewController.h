@@ -10,7 +10,9 @@
 #import "PageContentViewController.h"
 
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
-- (IBAction)startHere:(id)sender;
+- (IBAction)loginButton:(id)sender;
+- (IBAction)registerButton:(id)sender;
+
 @property(strong,nonatomic)UIPageViewController* pageViewController;
 
 @property(strong,nonatomic)NSArray* pageTitle;

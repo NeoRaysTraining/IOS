@@ -95,10 +95,13 @@
     return 0;
 }
 
-- (IBAction)startHere:(id)sender
+- (IBAction)loginButton:(id)sender
 {
-    PageContentViewController *startingViewController = [self viewControllerAtIndex:0];
-    NSArray *viewControllers = @[startingViewController];
-    [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
+    [self performSegueWithIdentifier:@"viewcontroller1" sender:self];
+}
+
+- (IBAction)registerButton:(id)sender
+{
+    [self performSegueWithIdentifier:@"viewcontroller2" sender:self];
 }
 @end
