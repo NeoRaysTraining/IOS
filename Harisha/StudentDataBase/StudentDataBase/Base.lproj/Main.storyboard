@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="1783" y="-54"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Data-->
         <scene sceneID="tjt-PN-0w5">
             <objects>
-                <viewController id="qQS-fA-6xy" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qQS-fA-6xy" customClass="DisplayData" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BWr-NA-o6R"/>
                         <viewControllerLayoutGuide type="bottom" id="J9x-Em-Gez"/>
@@ -211,7 +211,49 @@
                     <view key="view" contentMode="scaleToFill" id="3gs-QQ-hIv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="C0X-TE-3Aj">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f51-CO-SXt">
+                                    <size key="itemSize" width="130" height="146"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Dxq-Ck-olt" customClass="CollectionViewCell">
+                                        <rect key="frame" x="10" y="10" width="130" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="146"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXV-bP-l3T">
+                                                    <rect key="frame" x="8" y="8" width="114" height="130"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="displayImages" destination="oXV-bP-l3T" id="PK3-jD-HZa"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="qQS-fA-6xy" id="Blc-aN-5cn"/>
+                                    <outlet property="delegate" destination="qQS-fA-6xy" id="Y0B-Uf-IOn"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J9x-Em-Gez" firstAttribute="top" secondItem="C0X-TE-3Aj" secondAttribute="bottom" id="HsO-yA-a6V"/>
+                            <constraint firstItem="C0X-TE-3Aj" firstAttribute="top" secondItem="BWr-NA-o6R" secondAttribute="bottom" id="WkJ-RE-jCx"/>
+                            <constraint firstItem="C0X-TE-3Aj" firstAttribute="leading" secondItem="3gs-QQ-hIv" secondAttribute="leadingMargin" constant="-20" id="lbq-a9-OP5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C0X-TE-3Aj" secondAttribute="trailing" constant="-20" id="nxW-bO-5zE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHb-Pe-k5G" userLabel="First Responder" sceneMemberID="firstResponder"/>

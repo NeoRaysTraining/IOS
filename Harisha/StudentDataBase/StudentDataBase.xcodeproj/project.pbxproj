@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		529161AC1CE58FF40029787E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 529161AB1CE58FF40029787E /* CollectionViewCell.m */; };
+		529161AF1CE5906E0029787E /* DisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 529161AE1CE5906E0029787E /* DisplayData.m */; };
 		52BF421E1CE4544F008476C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF421D1CE4544F008476C6 /* main.m */; };
 		52BF42211CE4544F008476C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF42201CE4544F008476C6 /* AppDelegate.m */; };
 		52BF42241CE4544F008476C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BF42231CE4544F008476C6 /* ViewController.m */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		529161AA1CE58FF40029787E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		529161AB1CE58FF40029787E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		529161AD1CE5906E0029787E /* DisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayData.h; sourceTree = "<group>"; };
+		529161AE1CE5906E0029787E /* DisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayData.m; sourceTree = "<group>"; };
 		52BF42191CE4544F008476C6 /* StudentDataBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudentDataBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BF421D1CE4544F008476C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52BF421F1CE4544F008476C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 				52BF42991CE49053008476C6 /* LoginViewController.m */,
 				52BF429B1CE49363008476C6 /* RegisterViewController.h */,
 				52BF429C1CE49363008476C6 /* RegisterViewController.m */,
+				529161AA1CE58FF40029787E /* CollectionViewCell.h */,
+				529161AB1CE58FF40029787E /* CollectionViewCell.m */,
+				529161AD1CE5906E0029787E /* DisplayData.h */,
+				529161AE1CE5906E0029787E /* DisplayData.m */,
 			);
 			path = StudentDataBase;
 			sourceTree = "<group>";
@@ -289,11 +299,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52BF422A1CE4544F008476C6 /* StudentDataBase.xcdatamodeld in Sources */,
+				529161AF1CE5906E0029787E /* DisplayData.m in Sources */,
 				52BF42241CE4544F008476C6 /* ViewController.m in Sources */,
 				52BF429A1CE49053008476C6 /* LoginViewController.m in Sources */,
 				52BF42971CE4756E008476C6 /* PageContentViewController.m in Sources */,
 				52BF429D1CE49363008476C6 /* RegisterViewController.m in Sources */,
 				52BF42211CE4544F008476C6 /* AppDelegate.m in Sources */,
+				529161AC1CE58FF40029787E /* CollectionViewCell.m in Sources */,
 				52BF421E1CE4544F008476C6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

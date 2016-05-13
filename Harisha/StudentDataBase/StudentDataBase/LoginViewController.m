@@ -56,14 +56,14 @@
         NSArray *results    = [context executeFetchRequest:req
 error:&error];
     
-    self.allnames = [[NSMutableArray alloc]init];
+   // self.allnames = [[NSMutableArray alloc]init];
   self.employeeIDs = [[NSMutableArray alloc]init];
     
-   self.allnames = [results valueForKey:@"name"];
+   self.employeeIDs = [results valueForKey:@"name"];
     self.employeeIDs = [results valueForKey:@"password"];
     
-    NSLog(@"%@",_employeeIDs);
-    NSLog(@"%@",self.allnames);
+   NSLog(@"%@",_employeeIDs);
+//    NSLog(@"%@",self.allnames);
 
 }
 -(NSManagedObjectContext*)getContext
@@ -88,18 +88,19 @@ error:&error];
 
 - (IBAction)LoginButton:(id)sender
 {
-    
-    [self fetchData];
+        [self fetchData];
     self.name = self.nameText.text;
     self.password = self.passwordText.text;
-    NSLog(@"%@",[self.employeeIDs objectAtIndex:0]);
-    NSLog(@"%@",[self.employeeIDs objectAtIndex:1]);
-    
-    if([self.name isEqualToString:[self.allnames objectAtIndex:0]] && [self.password isEqualToString:[NSString stringWithFormat:@"%@",[self.employeeIDs objectAtIndex:1]]])
-       {
-           [self performSegueWithIdentifier:@"displaydata" sender:self];
-       }
-    
+
+    for (NSString* values in self.allnames)
+    {
+        if ([self.name isEqualToString:values])
+        {
+            NSLog(@"%@",values);
+            [self performSegueWithIdentifier:@"displaydata" sender:self];
+
+        }
+    }
 
     
 }
