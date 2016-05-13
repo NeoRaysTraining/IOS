@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHX-ZC-oxN">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="QDc-dE-etS">
+                                <rect key="frame" x="173" y="299" width="254" height="3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="254" id="QQ5-jl-pFU"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yHX-ZC-oxN" secondAttribute="trailing" constant="-20" id="8qA-5m-Z63"/>
+                            <constraint firstItem="QDc-dE-etS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="A4q-aF-BjL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yHX-ZC-oxN" secondAttribute="bottom" id="J3f-Hn-r0n"/>
+                            <constraint firstItem="QDc-dE-etS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JuJ-2P-Mhs"/>
+                            <constraint firstItem="yHX-ZC-oxN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Mwt-Ne-qB4"/>
+                            <constraint firstItem="yHX-ZC-oxN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="y5m-BQ-SoQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="yHX-ZC-oxN" id="KU6-n6-0jY"/>
+                        <outlet property="progressView" destination="QDc-dE-etS" id="d4D-8j-Dz4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="298"/>
+        </scene>
+    </scenes>
+</document>
