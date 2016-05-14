@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Thk-aA-d1k">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iXy-vJ-Boh">
+                                <rect key="frame" x="20" y="567" width="560" height="2"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0OF-J6-FO0">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0OF-J6-FO0" secondAttribute="trailing" constant="-20" id="24C-Xq-Omq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0OF-J6-FO0" secondAttribute="bottom" id="4ou-Vq-1a3"/>
+                            <constraint firstItem="0OF-J6-FO0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bgu-Ml-FFK"/>
+                            <constraint firstItem="0OF-J6-FO0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="FA0-Q6-hWr"/>
+                            <constraint firstItem="iXy-vJ-Boh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="m0k-w4-ezc"/>
+                            <constraint firstItem="iXy-vJ-Boh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rtG-NR-5rH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iXy-vJ-Boh" secondAttribute="bottom" constant="31" id="sPv-qB-RDh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AJy-qy-tfh">
+                        <barButtonItem key="rightBarButtonItem" title="Download" id="GeC-4F-HZK">
+                            <connections>
+                                <action selector="download:" destination="BYZ-38-t0r" id="dnE-zQ-B4A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="0OF-J6-FO0" id="vnD-gN-SeT"/>
+                        <outlet property="progressView" destination="iXy-vJ-Boh" id="qVM-aK-sJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="201"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PEa-zt-CjU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Thk-aA-d1k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xJ2-gQ-Jbv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pgI-y8-BRo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mcm-sW-cnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="201"/>
+        </scene>
+    </scenes>
+</document>
