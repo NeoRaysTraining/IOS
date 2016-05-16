@@ -13,6 +13,7 @@
 @property (strong,nonatomic)NSArray* sandalsList;
 @property(strong,nonatomic)NSArray* tshirtList;
 @property(strong,nonatomic)NSArray* formalsList;
+@property(assign,nonatomic)int value;
 @end
 
 @implementation DisplayData
@@ -45,11 +46,17 @@
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.value = (int)indexPath.row;
+    [self performSegueWithIdentifier:@"datadescription" sender:self];
+}
+
 /*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender { 
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }

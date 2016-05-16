@@ -255,10 +255,74 @@
                             <constraint firstAttribute="trailingMargin" secondItem="C0X-TE-3Aj" secondAttribute="trailing" constant="-20" id="nxW-bO-5zE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="67z-2a-lkZ" kind="show" identifier="datadescription" id="IYI-e7-uVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHb-Pe-k5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2484" y="-54"/>
+        </scene>
+        <!--Select Item-->
+        <scene sceneID="leT-nS-eWc">
+            <objects>
+                <viewController id="67z-2a-lkZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ODN-EH-Xqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="kde-ll-jyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uxG-eM-nvT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Select Item" id="pmp-vD-shs">
+                        <barButtonItem key="rightBarButtonItem" title="PlaceOrder" id="iM1-Z3-X0J"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cb1-Iq-XIJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3176" y="-54"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="NUy-tk-1v7">
+            <objects>
+                <pageViewController storyboardIdentifier="description" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="GMD-aR-N36" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdR-0m-ms6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3176" y="629"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EYR-6H-FhI">
+            <objects>
+                <viewController storyboardIdentifier="descriptioncontent" id="mKZ-5s-QR6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Go-Kh-pHK"/>
+                        <viewControllerLayoutGuide type="bottom" id="a7u-RM-AHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X6B-gC-G8z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oOY-p6-kIf">
+                                <rect key="frame" x="70" y="53" width="460" height="196"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="196" id="Wrh-ap-xr5"/>
+                                    <constraint firstAttribute="width" constant="460" id="rBg-tI-arb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oOY-p6-kIf" firstAttribute="top" secondItem="0Go-Kh-pHK" secondAttribute="bottom" constant="33" id="3Lc-t0-vlU"/>
+                            <constraint firstItem="oOY-p6-kIf" firstAttribute="centerX" secondItem="X6B-gC-G8z" secondAttribute="centerX" id="FJG-7u-C8E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpd-Jk-LVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3176" y="1294"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="aip-av-PTd">

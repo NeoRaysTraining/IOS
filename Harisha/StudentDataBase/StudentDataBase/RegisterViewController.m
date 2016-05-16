@@ -50,7 +50,7 @@
     [task setValue:self.userName.text forKey:@"name"];
     [task setValue:[NSNumber numberWithInt:self.userAge.text.intValue] forKey:@"age"];
     [task setValue:self.userEmail.text forKey:@"email"];
-    [task setValue:[NSNumber numberWithInt:self.userPassword.text.intValue] forKey:@"password"];
+    [task setValue:self.userPassword.text forKey:@"password"];
     
     NSError* error = nil;
     if([context save:&error])

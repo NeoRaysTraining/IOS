@@ -20,6 +20,8 @@
 @property(strong,nonatomic)NSString* name;
 @property(assign,nonatomic)NSString* password;
 @property(strong,nonatomic)NSMutableArray* allnames;
+@property(assign,nonatomic)int pass;
+@property(strong,nonatomic)NSDictionary* allValues;
 @end
 
 @implementation LoginViewController
@@ -56,15 +58,19 @@
         NSArray *results    = [context executeFetchRequest:req
 error:&error];
     
-   // self.allnames = [[NSMutableArray alloc]init];
+  self.allnames = [[NSMutableArray alloc]init];
   self.employeeIDs = [[NSMutableArray alloc]init];
     
    self.employeeIDs = [results valueForKey:@"name"];
-    self.employeeIDs = [results valueForKey:@"password"];
+    self.allnames = [results valueForKey:@"password"];
     
-   NSLog(@"%@",_employeeIDs);
+    
+    self.allValues = [[NSDictionary alloc]initWithObjects:self.employeeIDs forKeys:self.allnames];
+    
+//   NSLog(@"%@",_employeeIDs);
 //    NSLog(@"%@",self.allnames);
-
+    NSLog(@"%@",self.allValues);
+    NSLog(@"inside fetch %@",[self.allValues valueForKey:@"111"]);
 }
 -(NSManagedObjectContext*)getContext
 {
@@ -92,16 +98,29 @@ error:&error];
     self.name = self.nameText.text;
     self.password = self.passwordText.text;
 
-    for (NSString* values in self.allnames)
-    {
-        if ([self.name isEqualToString:values])
-        {
-            NSLog(@"%@",values);
-            [self performSegueWithIdentifier:@"displaydata" sender:self];
-
-        }
+//    for (NSString* values in self.allValues)
+//    {
+//        if (([self.name isEqualToString:values]) && ([self.password isEqualToString:values]))
+//        {
+//            NSLog(@"%@",values);
+//
+//
+//        }
+//    }
+    
+    //NSLog(@"%@",[self.allValues valueForKey:self.name]);
+    if ([[self.allValues valueForKey:self.passwordText.text] isEqualToString:_nameText.text]) {
+        
+        [self performSegueWithIdentifier:@"displaydata" sender:self];
+        
     }
-
+    else
+    {
+        UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"Sorry Boss" message:@"You have entered invalid credentials" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *OK=[UIAlertAction actionWithTitle:@"ok" style:UIAlertActionStyleDefault handler:nil];
+        [alert addAction:OK];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
     
 }
 @end
