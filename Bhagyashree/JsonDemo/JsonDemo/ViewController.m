@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "ModelClass.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
-@property (nonatomic,strong)NSMutableArray* nameArray;
-@property (nonatomic,strong)NSMutableArray* idArray;
+@property (nonatomic,strong)NSMutableArray* artistArray;
 
 @end
 
@@ -19,8 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _nameArray=[[NSMutableArray alloc]init];
-    _idArray =[[NSMutableArray alloc]init];
+    _artistArray=[[NSMutableArray alloc]init];
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *datatask = [session dataTaskWithURL:[NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"] completionHandler:^(NSData *data,NSURLResponse *response,NSError *error){
@@ -32,19 +31,21 @@
         NSArray *mainArray1 =[json objectForKey:@"results"];
         for(NSDictionary *dic1 in mainArray1)
         {
-            [self.nameArray addObject:[dic1 objectForKey:@"artistName"]];
+//            [self.nameArray addObject:[dic1 objectForKey:@"artistName"]];
+//            
+//            NSLog(@"%@",_nameArray);
+//        }
+//        
+//        NSArray *mainArray2 = [json objectForKey:@"results"];
+//        for(NSDictionary *dic2 in mainArray2)
+//        {
+//            [self.idArray addObject:[dic2 objectForKey:@"artistId"]];
+//            NSLog(@"%@",_idArray);
+            ModelClass *model = [[ModelClass alloc]initWithName:[dic1 valueForKey:@"artistName"]initWithId:[dic1 valueForKey:@"artistId"]];
+            [self.artistArray addObject:model];
             
-            NSLog(@"%@",_nameArray);
-        }
-        
-        NSArray *mainArray2 = [json objectForKey:@"results"];
-        for(NSDictionary *dic2 in mainArray2)
-        {
-            [self.idArray addObject:[dic2 objectForKey:@"artistId"]];
-            NSLog(@"%@",_idArray);
         }
         [self.tableViewOutlet reloadData];
-        
     }];
     
     [datatask resume];
@@ -52,14 +53,18 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.nameArray.count;
+    return self.artistArray.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    cell.textLabel.text=[NSString stringWithFormat:@"%@",_nameArray[indexPath.row]];
-    cell.detailTextLabel.text=[NSString stringWithFormat:@"%@",_idArray[indexPath.row]];
+    ModelClass *model =[self.artistArray objectAtIndex:indexPath.row];
+    cell.textLabel.text=model.artistName;
+    cell.detailTextLabel.text=model.artistId;
+    
+    NSLog(@"All names:%@",cell.textLabel.text);
+    NSLog(@"All ids: %@",cell.detailTextLabel.text);
     
     return cell;
 }
