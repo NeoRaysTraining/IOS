@@ -20,7 +20,12 @@
 @property(strong,nonatomic)NSDictionary* jsonDict;
 @property (weak, nonatomic) IBOutlet UITableView *tableDisplay;
 @property(strong,nonatomic)NSString* track;
-@property (strong,nonatomic)NSArray* coreObj;
+@property (strong,nonatomic)NSMutableArray* coreObj;
+@property(strong,nonatomic)NSString* nme;
+@property(strong,nonatomic)NSString* tra;
+@property(strong,nonatomic)NSMutableArray* employeeIDs;
+@property(strong,nonatomic)NSMutableArray* allnames;
+
 - (IBAction)download:(id)sender;
 
 @end
@@ -30,7 +35,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-        
+   [self fetchData];
+    
+
 
 }
 
@@ -41,82 +48,32 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.modelArray.count;
+    return self.coreObj.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    Model* model = [self.modelArray objectAtIndex:indexPath.row];
-    NSManagedObjectContext* context = [self getContext];
+    NSManagedObject* obj = self.coreObj[indexPath.row];
     
+    cell.textLabel.text = [obj valueForKey:@"name"];
+    cell.detailTextLabel.text = [obj valueForKey:@"track"];
     
-    NSManagedObject* person = [NSEntityDescription insertNewObjectForEntityForName:@"DataTask" inManagedObjectContext:context];
-    
-    
-    
-    
-    
-    NSLog(@"%@",self.coreObj);
-    if(self.coreObj == NULL)
-    {
-        [person setValue:model.name forKey:@"data"];
-        NSError* error = nil;
-        if([context save:&error])
-        {
-            NSLog(@"saved data done");
-            
-        }
-        else{
-            NSLog(@"failed to save data %@",error.localizedDescription);
-        }
-    }
-    
-   // Model *model2 = [self.coreObj objectAtIndex:indexPath.row];
-    
-
-    cell.textLabel.text = model.name;
-    cell.detailTextLabel.text = model.track;
-    
+    [self.activityIndicator stopAnimating];
+    //[self.activityIndicator hidesWhenStopped];
+    self.activityIndicator.hidden=YES;
     return cell;
 }
 
 - (IBAction)download:(id)sender
 {
    
-    
     [self.activityIndicator startAnimating];
-    self.modelArray=[[NSMutableArray alloc]init];
-    NSURLSession* session  = [NSURLSession sharedSession];
-    
-    NSURLSessionDataTask* dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"]completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
-                                      {
-                                          NSError* errorparsing = nil;
-                                          if(error==nil){
-                                              self.jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&errorparsing];
-                                              
-                                              if(errorparsing==nil)
-                                              {
-                                                  self.jsonArray = [self.jsonDict valueForKey:@"results"];
-                                                  
-                                                  for(NSDictionary *dict in self.jsonArray)
-                                                  {
-                            Model* model = [[Model alloc]initWithName:[dict valueForKey:@"artistName"] trackName:[dict valueForKey:@"trackName"]];
-                        [self.modelArray addObject:model];
-                                                      
-                                                  }
-                                              }
-                                          }
-                                          [self.tableDisplay reloadData];
-                                          [self.activityIndicator stopAnimating];
-                                          //[self.activityIndicator hidesWhenStopped];
-                                          self.activityIndicator.hidden=YES;
-                                          
-                                      }];
-    
-    [dataTask resume];
+    [self downloadData];
+  
    
+    
 }
 -(NSManagedObjectContext*)getContext
 {
@@ -129,9 +86,68 @@
 {
    
     NSManagedObjectContext* context = [self getContext];
-    NSFetchRequest* fetch = [NSFetchRequest fetchRequestWithEntityName:@"Person"];
+    NSFetchRequest* fetch = [NSFetchRequest fetchRequestWithEntityName:@"DataTask"];
     NSError* error =nil;
-    self.coreObj = [context executeFetchRequest:fetch error:&error];
+    self.coreObj = [[NSMutableArray alloc]initWithArray:[context executeFetchRequest:fetch error:&error]];
+   
+    
+}
+-(void)downloadData
+{
+    self.modelArray=[[NSMutableArray alloc]init];
+    NSURLSession* session  = [NSURLSession sharedSession];
+    
+    NSURLSessionDataTask* dataTask = [session dataTaskWithURL:[NSURL URLWithString:@"https://itunes.apple.com/search?term=apple&media=software"]completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+                {
+        NSError* errorparsing = nil;
+        if(error==nil){
+        self.jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&errorparsing];
+
+                    if(errorparsing==nil)
+                        {
+                            
+                        self.jsonArray = [self.jsonDict valueForKey:@"results"];
+                            NSManagedObjectContext* context = [self getContext];
+                            for(NSDictionary *dict in self.jsonArray)
+                            {
+                                 NSManagedObject* person = [NSEntityDescription insertNewObjectForEntityForName:@"DataTask" inManagedObjectContext:context];
+    
+        self.nme = [dict valueForKey:@"artistName"];
+        self.tra = [dict valueForKey:@"trackName"];
+                                NSLog(@"%@",self.nme);
+                                NSLog(@"%@",self.tra);
+                [person setValue:self.nme forKey:@"name"];
+                [person setValue:self.tra forKey:@"track"];
+                                NSError* error = nil;
+                                
+                                if(self.coreObj.count==0)
+                                {
+                                if([context save:&error])
+                                {
+                                    NSLog(@"saved data done");
+                                    
+                                }
+                                else{
+                                    NSLog(@"failed to save data %@",error.localizedDescription);
+                                }
+                                }
+                                else{
+                                    [self.tableDisplay reloadData];
+                                    }
+
+                                
+                        }
+                                              }
+                                          }
+                    [self fetchData];
+                    [self.tableDisplay reloadData];
+                                          [self.activityIndicator stopAnimating];
+                                          //[self.activityIndicator hidesWhenStopped];
+                                          self.activityIndicator.hidden=YES;
+                                          
+                                      }];
+    
+    [dataTask resume];
 
 }
 @end
