@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5298B1A01CEECA200091C3F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5298B19F1CEECA200091C3F6 /* main.m */; };
+		5298B1A31CEECA200091C3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5298B1A21CEECA200091C3F6 /* AppDelegate.m */; };
+		5298B1A61CEECA200091C3F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5298B1A51CEECA200091C3F6 /* ViewController.m */; };
+		5298B1A91CEECA200091C3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5298B1A71CEECA200091C3F6 /* Main.storyboard */; };
+		5298B1AC1CEECA200091C3F6 /* Camara.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5298B1AA1CEECA200091C3F6 /* Camara.xcdatamodeld */; };
+		5298B1AE1CEECA200091C3F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5298B1AD1CEECA200091C3F6 /* Assets.xcassets */; };
+		5298B1B11CEECA200091C3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5298B1AF1CEECA200091C3F6 /* LaunchScreen.storyboard */; };
+		5298B1BC1CEECA200091C3F6 /* CamaraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5298B1BB1CEECA200091C3F6 /* CamaraTests.m */; };
+		5298B1C71CEECA200091C3F6 /* CamaraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5298B1C61CEECA200091C3F6 /* CamaraUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5298B1B81CEECA200091C3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5298B1931CEECA200091C3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5298B19A1CEECA200091C3F6;
+			remoteInfo = Camara;
+		};
+		5298B1C31CEECA200091C3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5298B1931CEECA200091C3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5298B19A1CEECA200091C3F6;
+			remoteInfo = Camara;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5298B19B1CEECA200091C3F6 /* Camara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5298B19F1CEECA200091C3F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5298B1A11CEECA200091C3F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5298B1A21CEECA200091C3F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5298B1A41CEECA200091C3F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5298B1A51CEECA200091C3F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5298B1A81CEECA200091C3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5298B1AB1CEECA200091C3F6 /* Camara.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camara.xcdatamodel; sourceTree = "<group>"; };
+		5298B1AD1CEECA200091C3F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5298B1B01CEECA200091C3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5298B1B21CEECA200091C3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5298B1B71CEECA200091C3F6 /* CamaraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamaraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5298B1BB1CEECA200091C3F6 /* CamaraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamaraTests.m; sourceTree = "<group>"; };
+		5298B1BD1CEECA200091C3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5298B1C21CEECA200091C3F6 /* CamaraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CamaraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5298B1C61CEECA200091C3F6 /* CamaraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamaraUITests.m; sourceTree = "<group>"; };
+		5298B1C81CEECA200091C3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5298B1981CEECA200091C3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1B41CEECA200091C3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1BF1CEECA200091C3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5298B1921CEECA200091C3F6 = {
+			isa = PBXGroup;
+			children = (
+				5298B19D1CEECA200091C3F6 /* Camara */,
+				5298B1BA1CEECA200091C3F6 /* CamaraTests */,
+				5298B1C51CEECA200091C3F6 /* CamaraUITests */,
+				5298B19C1CEECA200091C3F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5298B19C1CEECA200091C3F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5298B19B1CEECA200091C3F6 /* Camara.app */,
+				5298B1B71CEECA200091C3F6 /* CamaraTests.xctest */,
+				5298B1C21CEECA200091C3F6 /* CamaraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5298B19D1CEECA200091C3F6 /* Camara */ = {
+			isa = PBXGroup;
+			children = (
+				5298B1A11CEECA200091C3F6 /* AppDelegate.h */,
+				5298B1A21CEECA200091C3F6 /* AppDelegate.m */,
+				5298B1A41CEECA200091C3F6 /* ViewController.h */,
+				5298B1A51CEECA200091C3F6 /* ViewController.m */,
+				5298B1A71CEECA200091C3F6 /* Main.storyboard */,
+				5298B1AD1CEECA200091C3F6 /* Assets.xcassets */,
+				5298B1AF1CEECA200091C3F6 /* LaunchScreen.storyboard */,
+				5298B1B21CEECA200091C3F6 /* Info.plist */,
+				5298B1AA1CEECA200091C3F6 /* Camara.xcdatamodeld */,
+				5298B19E1CEECA200091C3F6 /* Supporting Files */,
+			);
+			path = Camara;
+			sourceTree = "<group>";
+		};
+		5298B19E1CEECA200091C3F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5298B19F1CEECA200091C3F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5298B1BA1CEECA200091C3F6 /* CamaraTests */ = {
+			isa = PBXGroup;
+			children = (
+				5298B1BB1CEECA200091C3F6 /* CamaraTests.m */,
+				5298B1BD1CEECA200091C3F6 /* Info.plist */,
+			);
+			path = CamaraTests;
+			sourceTree = "<group>";
+		};
+		5298B1C51CEECA200091C3F6 /* CamaraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5298B1C61CEECA200091C3F6 /* CamaraUITests.m */,
+				5298B1C81CEECA200091C3F6 /* Info.plist */,
+			);
+			path = CamaraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5298B19A1CEECA200091C3F6 /* Camara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5298B1CB1CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "Camara" */;
+			buildPhases = (
+				5298B1971CEECA200091C3F6 /* Sources */,
+				5298B1981CEECA200091C3F6 /* Frameworks */,
+				5298B1991CEECA200091C3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Camara;
+			productName = Camara;
+			productReference = 5298B19B1CEECA200091C3F6 /* Camara.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5298B1B61CEECA200091C3F6 /* CamaraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5298B1CE1CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "CamaraTests" */;
+			buildPhases = (
+				5298B1B31CEECA200091C3F6 /* Sources */,
+				5298B1B41CEECA200091C3F6 /* Frameworks */,
+				5298B1B51CEECA200091C3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5298B1B91CEECA200091C3F6 /* PBXTargetDependency */,
+			);
+			name = CamaraTests;
+			productName = CamaraTests;
+			productReference = 5298B1B71CEECA200091C3F6 /* CamaraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5298B1C11CEECA200091C3F6 /* CamaraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5298B1D11CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "CamaraUITests" */;
+			buildPhases = (
+				5298B1BE1CEECA200091C3F6 /* Sources */,
+				5298B1BF1CEECA200091C3F6 /* Frameworks */,
+				5298B1C01CEECA200091C3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5298B1C41CEECA200091C3F6 /* PBXTargetDependency */,
+			);
+			name = CamaraUITests;
+			productName = CamaraUITests;
+			productReference = 5298B1C21CEECA200091C3F6 /* CamaraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5298B1931CEECA200091C3F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					5298B19A1CEECA200091C3F6 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5298B1B61CEECA200091C3F6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5298B19A1CEECA200091C3F6;
+					};
+					5298B1C11CEECA200091C3F6 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5298B19A1CEECA200091C3F6;
+					};
+				};
+			};
+			buildConfigurationList = 5298B1961CEECA200091C3F6 /* Build configuration list for PBXProject "Camara" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5298B1921CEECA200091C3F6;
+			productRefGroup = 5298B19C1CEECA200091C3F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5298B19A1CEECA200091C3F6 /* Camara */,
+				5298B1B61CEECA200091C3F6 /* CamaraTests */,
+				5298B1C11CEECA200091C3F6 /* CamaraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5298B1991CEECA200091C3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298B1B11CEECA200091C3F6 /* LaunchScreen.storyboard in Resources */,
+				5298B1AE1CEECA200091C3F6 /* Assets.xcassets in Resources */,
+				5298B1A91CEECA200091C3F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1B51CEECA200091C3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1C01CEECA200091C3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5298B1971CEECA200091C3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298B1AC1CEECA200091C3F6 /* Camara.xcdatamodeld in Sources */,
+				5298B1A61CEECA200091C3F6 /* ViewController.m in Sources */,
+				5298B1A31CEECA200091C3F6 /* AppDelegate.m in Sources */,
+				5298B1A01CEECA200091C3F6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1B31CEECA200091C3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298B1BC1CEECA200091C3F6 /* CamaraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5298B1BE1CEECA200091C3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298B1C71CEECA200091C3F6 /* CamaraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5298B1B91CEECA200091C3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5298B19A1CEECA200091C3F6 /* Camara */;
+			targetProxy = 5298B1B81CEECA200091C3F6 /* PBXContainerItemProxy */;
+		};
+		5298B1C41CEECA200091C3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5298B19A1CEECA200091C3F6 /* Camara */;
+			targetProxy = 5298B1C31CEECA200091C3F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5298B1A71CEECA200091C3F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5298B1A81CEECA200091C3F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5298B1AF1CEECA200091C3F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5298B1B01CEECA200091C3F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5298B1C91CEECA200091C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5298B1CA1CEECA200091C3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5298B1CC1CEECA200091C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Camara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Camara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5298B1CD1CEECA200091C3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Camara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.Camara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5298B1CF1CEECA200091C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CamaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CamaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Camara.app/Camara";
+			};
+			name = Debug;
+		};
+		5298B1D01CEECA200091C3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CamaraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CamaraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Camara.app/Camara";
+			};
+			name = Release;
+		};
+		5298B1D21CEECA200091C3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CamaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CamaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Camara;
+			};
+			name = Debug;
+		};
+		5298B1D31CEECA200091C3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CamaraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.CamaraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Camara;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5298B1961CEECA200091C3F6 /* Build configuration list for PBXProject "Camara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5298B1C91CEECA200091C3F6 /* Debug */,
+				5298B1CA1CEECA200091C3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5298B1CB1CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "Camara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5298B1CC1CEECA200091C3F6 /* Debug */,
+				5298B1CD1CEECA200091C3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5298B1CE1CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "CamaraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5298B1CF1CEECA200091C3F6 /* Debug */,
+				5298B1D01CEECA200091C3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5298B1D11CEECA200091C3F6 /* Build configuration list for PBXNativeTarget "CamaraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5298B1D21CEECA200091C3F6 /* Debug */,
+				5298B1D31CEECA200091C3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5298B1AA1CEECA200091C3F6 /* Camara.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5298B1AB1CEECA200091C3F6 /* Camara.xcdatamodel */,
+			);
+			currentVersion = 5298B1AB1CEECA200091C3F6 /* Camara.xcdatamodel */;
+			path = Camara.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5298B1931CEECA200091C3F6 /* Project object */;
+}
