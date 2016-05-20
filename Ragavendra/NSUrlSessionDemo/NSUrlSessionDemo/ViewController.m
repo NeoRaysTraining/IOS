@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tabelview;
-
+@property (nonatomic,strong)NSString  *name;
 
 @end
 
@@ -31,7 +31,8 @@ NSError* errorparsing = nil;
    
 if(error==nil){
 self.jsonDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:&errorparsing];
-                                              
+    NSLog(@"json Values %@",self.jsonDict);
+
   if(errorparsing==nil)
 {
 self.jsonArray = [self.jsonDict valueForKey:@"result"];
@@ -45,7 +46,7 @@ Modal* model = [[Modal alloc]initWithName:[dict valueForKey:@"artistName"] track
   }
  }
 }
-[self.tabelview reloadData];
+
                                                                                
 }];
     
@@ -68,6 +69,7 @@ Modal* model = [[Modal alloc]initWithName:[dict valueForKey:@"artistName"] track
         cell.detailTextLabel.text = model.track;
     NSLog(@"All keys %@",cell.textLabel.text);
     NSLog(@"All values %@",cell.detailTextLabel.text);
+    
     return cell;
 }
 - (void)didReceiveMemoryWarning {
