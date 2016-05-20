@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  Camara
+//  Camera
 //
 //  Created by Mahaboobsab Nadaf on 20/05/16.
 //  Copyright © 2016 com.NeoRays. All rights reserved.
