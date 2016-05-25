@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lls-XJ-lFy">
+                                <rect key="frame" x="20" y="42" width="61" height="30"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DOB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3n-gn-qdc">
+                                <rect key="frame" x="20" y="42" width="192" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="17M-0j-tSH"/>
+                                    <constraint firstAttribute="height" constant="30" id="FT2-Wm-xjR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-T9-gaW">
+                                <rect key="frame" x="422" y="42" width="158" height="30"/>
+                                <color key="backgroundColor" red="0.98006484689999995" green="1" blue="0.3766422398" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="aU6-jw-uZ7"/>
+                                    <constraint firstAttribute="height" constant="30" id="jl4-qa-NNe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-qD-GAI">
+                                <rect key="frame" x="422" y="103" width="158" height="31"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="GbL-aG-lWx"/>
+                                    <constraint firstAttribute="height" constant="31" id="aVo-tq-EtE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3N-BN-UXI">
+                                <rect key="frame" x="76" y="335" width="448" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="448" id="YKw-A3-gsN"/>
+                                    <constraint firstAttribute="height" constant="229" id="oKt-P0-NOq"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="488462100.09988803">
+                                    <!--2016-06-24 11:55:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-T8-e86">
+                                <rect key="frame" x="20" y="103" width="192" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="THz-Qt-HGb"/>
+                                    <constraint firstAttribute="width" constant="192" id="TPw-Mj-7Jy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.97986665490000002" blue="0.91615657439999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lt7-T9-gaW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="6kv-V0-y5N"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="l3n-gn-qdc" secondAttribute="leading" id="D6w-r5-VKv"/>
+                            <constraint firstItem="ApH-T8-e86" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="EmY-3V-CCw"/>
+                            <constraint firstItem="IQ4-qD-GAI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="OKI-60-MtV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ApH-T8-e86" secondAttribute="leading" id="WCq-PZ-PGP"/>
+                            <constraint firstItem="l3n-gn-qdc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="aBX-si-36n"/>
+                            <constraint firstItem="J3N-BN-UXI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="315" id="fna-f6-8y1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lt7-T9-gaW" secondAttribute="trailing" id="snW-Mi-K9N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IQ4-qD-GAI" secondAttribute="trailing" id="tKz-ea-YwS"/>
+                            <constraint firstItem="J3N-BN-UXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vpW-Xh-K11"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageDisplayLabel" destination="IQ4-qD-GAI" id="glC-Ji-sdO"/>
+                        <outlet property="datePicker" destination="J3N-BN-UXI" id="rat-Uc-o56"/>
+                        <outlet property="dobDisplaylabel" destination="Lt7-T9-gaW" id="ZSJ-dE-mLP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="75"/>
+        </scene>
+    </scenes>
+</document>
