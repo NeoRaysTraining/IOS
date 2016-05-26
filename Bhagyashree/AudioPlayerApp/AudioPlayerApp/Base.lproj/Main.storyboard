@@ -52,13 +52,6 @@
                                     <action selector="volume:" destination="BYZ-38-t0r" eventType="valueChanged" id="ors-BY-y2U"/>
                                 </connections>
                             </slider>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-vz-g6y">
-                                <rect key="frame" x="20" y="120" width="560" height="2"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="Ikt-Qe-WLJ"/>
-                                    <constraint firstAttribute="width" constant="560" id="N1R-1J-Vel"/>
-                                </constraints>
-                            </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0c-bQ-OQN">
                                 <rect key="frame" x="20" y="153" width="81" height="33"/>
                                 <color key="backgroundColor" red="0.95868891477584839" green="0.8868979811668396" blue="0.96865338087081909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -82,6 +75,13 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="By6-Os-FiB"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f7Q-vz-g6y">
+                                <rect key="frame" x="20" y="120" width="560" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Ikt-Qe-WLJ"/>
+                                    <constraint firstAttribute="width" constant="560" id="N1R-1J-Vel"/>
+                                </constraints>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

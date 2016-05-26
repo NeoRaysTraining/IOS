@@ -1,0 +1,30 @@
+//
+//  AppDelegate.h
+//  ToDoLocalNotificationApp
+//
+//  Created by test on 5/24/16.
+//  Copyright © 2016 test. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
+
+//@property (strong,nonatomic) NSMutableString* enteredStr;
+//-(NSString*) getStrValue;
+//-(void) setStrVlaue:(NSString*)str;
+//
+
+
+@end
+
