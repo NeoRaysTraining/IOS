@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5233E5481CF807A200648AE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5233E5471CF807A200648AE2 /* main.m */; };
+		5233E54B1CF807A200648AE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5233E54A1CF807A200648AE2 /* AppDelegate.m */; };
+		5233E54E1CF807A200648AE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5233E54D1CF807A200648AE2 /* ViewController.m */; };
+		5233E5511CF807A200648AE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5233E54F1CF807A200648AE2 /* Main.storyboard */; };
+		5233E5531CF807A200648AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5233E5521CF807A200648AE2 /* Assets.xcassets */; };
+		5233E5561CF807A200648AE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5233E5541CF807A200648AE2 /* LaunchScreen.storyboard */; };
+		5233E5611CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5233E5601CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.m */; };
+		5233E56C1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5233E56B1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5233E55D1CF807A200648AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5233E53B1CF807A100648AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5233E5421CF807A100648AE2;
+			remoteInfo = TableViewCheckBoxExampleDemo;
+		};
+		5233E5681CF807A200648AE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5233E53B1CF807A100648AE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5233E5421CF807A100648AE2;
+			remoteInfo = TableViewCheckBoxExampleDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5233E5431CF807A100648AE2 /* TableViewCheckBoxExampleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCheckBoxExampleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5233E5471CF807A200648AE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5233E5491CF807A200648AE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5233E54A1CF807A200648AE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5233E54C1CF807A200648AE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5233E54D1CF807A200648AE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5233E5501CF807A200648AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5233E5521CF807A200648AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5233E5551CF807A200648AE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5233E5571CF807A200648AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5233E55C1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCheckBoxExampleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5233E5601CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCheckBoxExampleDemoTests.m; sourceTree = "<group>"; };
+		5233E5621CF807A200648AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5233E5671CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewCheckBoxExampleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5233E56B1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCheckBoxExampleDemoUITests.m; sourceTree = "<group>"; };
+		5233E56D1CF807A200648AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5233E5401CF807A100648AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E5591CF807A200648AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E5641CF807A200648AE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5233E53A1CF807A100648AE2 = {
+			isa = PBXGroup;
+			children = (
+				5233E5451CF807A100648AE2 /* TableViewCheckBoxExampleDemo */,
+				5233E55F1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests */,
+				5233E56A1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests */,
+				5233E5441CF807A100648AE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5233E5441CF807A100648AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5233E5431CF807A100648AE2 /* TableViewCheckBoxExampleDemo.app */,
+				5233E55C1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.xctest */,
+				5233E5671CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5233E5451CF807A100648AE2 /* TableViewCheckBoxExampleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5233E5491CF807A200648AE2 /* AppDelegate.h */,
+				5233E54A1CF807A200648AE2 /* AppDelegate.m */,
+				5233E54C1CF807A200648AE2 /* ViewController.h */,
+				5233E54D1CF807A200648AE2 /* ViewController.m */,
+				5233E54F1CF807A200648AE2 /* Main.storyboard */,
+				5233E5521CF807A200648AE2 /* Assets.xcassets */,
+				5233E5541CF807A200648AE2 /* LaunchScreen.storyboard */,
+				5233E5571CF807A200648AE2 /* Info.plist */,
+				5233E5461CF807A200648AE2 /* Supporting Files */,
+			);
+			path = TableViewCheckBoxExampleDemo;
+			sourceTree = "<group>";
+		};
+		5233E5461CF807A200648AE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5233E5471CF807A200648AE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5233E55F1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5233E5601CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.m */,
+				5233E5621CF807A200648AE2 /* Info.plist */,
+			);
+			path = TableViewCheckBoxExampleDemoTests;
+			sourceTree = "<group>";
+		};
+		5233E56A1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5233E56B1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.m */,
+				5233E56D1CF807A200648AE2 /* Info.plist */,
+			);
+			path = TableViewCheckBoxExampleDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5233E5421CF807A100648AE2 /* TableViewCheckBoxExampleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5233E5701CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemo" */;
+			buildPhases = (
+				5233E53F1CF807A100648AE2 /* Sources */,
+				5233E5401CF807A100648AE2 /* Frameworks */,
+				5233E5411CF807A100648AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewCheckBoxExampleDemo;
+			productName = TableViewCheckBoxExampleDemo;
+			productReference = 5233E5431CF807A100648AE2 /* TableViewCheckBoxExampleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5233E55B1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5233E5731CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemoTests" */;
+			buildPhases = (
+				5233E5581CF807A200648AE2 /* Sources */,
+				5233E5591CF807A200648AE2 /* Frameworks */,
+				5233E55A1CF807A200648AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5233E55E1CF807A200648AE2 /* PBXTargetDependency */,
+			);
+			name = TableViewCheckBoxExampleDemoTests;
+			productName = TableViewCheckBoxExampleDemoTests;
+			productReference = 5233E55C1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5233E5661CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5233E5761CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemoUITests" */;
+			buildPhases = (
+				5233E5631CF807A200648AE2 /* Sources */,
+				5233E5641CF807A200648AE2 /* Frameworks */,
+				5233E5651CF807A200648AE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5233E5691CF807A200648AE2 /* PBXTargetDependency */,
+			);
+			name = TableViewCheckBoxExampleDemoUITests;
+			productName = TableViewCheckBoxExampleDemoUITests;
+			productReference = 5233E5671CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5233E53B1CF807A100648AE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					5233E5421CF807A100648AE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5233E55B1CF807A200648AE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5233E5421CF807A100648AE2;
+					};
+					5233E5661CF807A200648AE2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5233E5421CF807A100648AE2;
+					};
+				};
+			};
+			buildConfigurationList = 5233E53E1CF807A100648AE2 /* Build configuration list for PBXProject "TableViewCheckBoxExampleDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5233E53A1CF807A100648AE2;
+			productRefGroup = 5233E5441CF807A100648AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5233E5421CF807A100648AE2 /* TableViewCheckBoxExampleDemo */,
+				5233E55B1CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests */,
+				5233E5661CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5233E5411CF807A100648AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233E5561CF807A200648AE2 /* LaunchScreen.storyboard in Resources */,
+				5233E5531CF807A200648AE2 /* Assets.xcassets in Resources */,
+				5233E5511CF807A200648AE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E55A1CF807A200648AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E5651CF807A200648AE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5233E53F1CF807A100648AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233E54E1CF807A200648AE2 /* ViewController.m in Sources */,
+				5233E54B1CF807A200648AE2 /* AppDelegate.m in Sources */,
+				5233E5481CF807A200648AE2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E5581CF807A200648AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233E5611CF807A200648AE2 /* TableViewCheckBoxExampleDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5233E5631CF807A200648AE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233E56C1CF807A200648AE2 /* TableViewCheckBoxExampleDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5233E55E1CF807A200648AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5233E5421CF807A100648AE2 /* TableViewCheckBoxExampleDemo */;
+			targetProxy = 5233E55D1CF807A200648AE2 /* PBXContainerItemProxy */;
+		};
+		5233E5691CF807A200648AE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5233E5421CF807A100648AE2 /* TableViewCheckBoxExampleDemo */;
+			targetProxy = 5233E5681CF807A200648AE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5233E54F1CF807A200648AE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5233E5501CF807A200648AE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5233E5541CF807A200648AE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5233E5551CF807A200648AE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5233E56E1CF807A200648AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5233E56F1CF807A200648AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5233E5711CF807A200648AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5233E5721CF807A200648AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5233E5741CF807A200648AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewCheckBoxExampleDemo.app/TableViewCheckBoxExampleDemo";
+			};
+			name = Debug;
+		};
+		5233E5751CF807A200648AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TableViewCheckBoxExampleDemo.app/TableViewCheckBoxExampleDemo";
+			};
+			name = Release;
+		};
+		5233E5771CF807A200648AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TableViewCheckBoxExampleDemo;
+			};
+			name = Debug;
+		};
+		5233E5781CF807A200648AE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TableViewCheckBoxExampleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neorays.TableViewCheckBoxExampleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TableViewCheckBoxExampleDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5233E53E1CF807A100648AE2 /* Build configuration list for PBXProject "TableViewCheckBoxExampleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233E56E1CF807A200648AE2 /* Debug */,
+				5233E56F1CF807A200648AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5233E5701CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233E5711CF807A200648AE2 /* Debug */,
+				5233E5721CF807A200648AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5233E5731CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233E5741CF807A200648AE2 /* Debug */,
+				5233E5751CF807A200648AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5233E5761CF807A200648AE2 /* Build configuration list for PBXNativeTarget "TableViewCheckBoxExampleDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233E5771CF807A200648AE2 /* Debug */,
+				5233E5781CF807A200648AE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5233E53B1CF807A100648AE2 /* Project object */;
+}
