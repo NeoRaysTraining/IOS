@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2037E3397432C4A1B3F8607BAC87425B /* Pods-GmailIntegrationInIosApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA12D86EBD4D63C972E1EFF0E859DB27 /* Pods-GmailIntegrationInIosApp-dummy.m */; };
+		3889CE4F1194C5A0FA40F7163C3D2F6B /* Pods-GmailIntegrationInIosAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDA38B99D6A85D76DDD903E95A13881 /* Pods-GmailIntegrationInIosAppUITests-dummy.m */; };
+		388D546C99734530E0320B6FA3B4F196 /* Pods-GmailIntegrationInIosAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F981860EB7F1DDF224650E1A5ABAFD29 /* Pods-GmailIntegrationInIosAppTests-dummy.m */; };
+		675D6D2EFC68B053D837C55E4B2140EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		BA72688D3EEE4295E2D88A147397FB40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F059E5755ADF756F396C275B02910CEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		003905CDC465C93C21236ED54404E071 /* GIDGoogleUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDGoogleUser.h; path = Headers/Public/GIDGoogleUser.h; sourceTree = "<group>"; };
+		01E1DFBDBB92FC5A3E8F3CA268A26FC4 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		0565912B8315CEDEAE22138F8311B5C6 /* GIDSignInButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDSignInButton.h; path = Headers/Public/GIDSignInButton.h; sourceTree = "<group>"; };
+		094A59D2CBC6DCCC89F79000B56E7570 /* Core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Core.h; path = Headers/GGLCore/Public/Core.h; sourceTree = "<group>"; };
+		0A180FEF6FED117CBCE34CE8BA5FB776 /* GGLContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLContext.h; path = Headers/GGLCore/Public/GGLContext.h; sourceTree = "<group>"; };
+		0D02A4E422A20460B2E4045E05A105CE /* Pods-GmailIntegrationInIosApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosApp-resources.sh"; sourceTree = "<group>"; };
+		0DDA38B99D6A85D76DDD903E95A13881 /* Pods-GmailIntegrationInIosAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GmailIntegrationInIosAppUITests-dummy.m"; sourceTree = "<group>"; };
+		15AC5A575C375EAC8B9D659D93404AF0 /* GGLContext+SignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GGLContext+SignIn.h"; path = "Headers/GGLSignIn/Public/GGLContext+SignIn.h"; sourceTree = "<group>"; };
+		16A91C5AEC2D3F2E917079AA8F20746D /* CloudMessaging-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CloudMessaging-Module.h"; path = "Headers/ModuleHeaders/CloudMessaging-Module.h"; sourceTree = "<group>"; };
+		16E74C0BBD06FDA756C449097B108C06 /* Pods-GmailIntegrationInIosAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		20DBF8B74B19C0E2FD1248C54142E2E3 /* Pods-GmailIntegrationInIosApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GmailIntegrationInIosApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2A28251F1D05FFCEB7F87C9C3999B739 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		2E62DDD62997EE4FFA44CCF4FA0359F4 /* Pods-GmailIntegrationInIosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		330E9359CBB30EAF897EB35D325F0D04 /* Pods-GmailIntegrationInIosAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A2ECEA6BA5029451F97D48C6B843086 /* SignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SignIn.h; path = Headers/GGLSignIn/Public/SignIn.h; sourceTree = "<group>"; };
+		4A4BD00482C63CC6E8A1DB92590B7E72 /* GMRConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMRConfiguration.h; path = Headers/GGLCore/Public/GMRConfiguration.h; sourceTree = "<group>"; };
+		4C3024180D8A2797DA90A675EC03EA4A /* SignIn-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SignIn-Module.h"; path = "Headers/ModuleHeaders/SignIn-Module.h"; sourceTree = "<group>"; };
+		5167B16E8442C7FC029072CA6DB4A0A2 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		5AE4B2A976809BE57852D72074D8B61C /* Pods-GmailIntegrationInIosApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GmailIntegrationInIosApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		5BC0B84A3EFE9BACD4FEEFA133D62C76 /* Pods-GmailIntegrationInIosAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GmailIntegrationInIosAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		61D9B0D2D30813AB286AB516D9DDDEE5 /* GIDAuthentication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDAuthentication.h; path = Headers/Public/GIDAuthentication.h; sourceTree = "<group>"; };
+		645EE02FB3F8AFAC093FDFEECA6EF6E1 /* GGLConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLConfiguration.h; path = Headers/GGLCore/Public/GGLConfiguration.h; sourceTree = "<group>"; };
+		6B618E0DFB9B557665FB7908F141BF67 /* Pods-GmailIntegrationInIosAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosAppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		702D958D3490D7A4B1A7A04661CAAF07 /* Analytics-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Analytics-Module.h"; path = "Headers/ModuleHeaders/Analytics-Module.h"; sourceTree = "<group>"; };
+		74B8AD85823C3C917BDE3F792698172E /* AdMob-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AdMob-Module.h"; path = "Headers/ModuleHeaders/AdMob-Module.h"; sourceTree = "<group>"; };
+		792456A5F94438E8B1265E0132E1896D /* AppInvite-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AppInvite-Module.h"; path = "Headers/ModuleHeaders/AppInvite-Module.h"; sourceTree = "<group>"; };
+		7B2E4A812F00976D381CCD3FA8319A0B /* GGLErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GGLErrorCode.h; path = Headers/GGLCore/Public/GGLErrorCode.h; sourceTree = "<group>"; };
+		7F1BAC27C796DC5B51D8D1FCF82C1112 /* libSignIn_external.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libSignIn_external.a; path = Libraries/libSignIn_external.a; sourceTree = "<group>"; };
+		834DF7B977A2E5B82D6EA0C0C2B9980D /* libPods-GmailIntegrationInIosAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GmailIntegrationInIosAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8559D66B9564F78B9103FAF44FEE0271 /* libPods-GmailIntegrationInIosAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GmailIntegrationInIosAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8669D81AC0A93B0A179B1FF9090846CA /* Pods-GmailIntegrationInIosAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GmailIntegrationInIosAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C856913E36E5C8A6C5B7CB7D270DAB4 /* GIDSignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDSignIn.h; path = Headers/Public/GIDSignIn.h; sourceTree = "<group>"; };
+		8EE90AFDDF417088D71887079BC1443E /* Pods-GmailIntegrationInIosAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosAppTests-resources.sh"; sourceTree = "<group>"; };
+		92546A5B576EDC9DDFBE566F10F10E24 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		938387F3718CF1A88D6B1F475660F75A /* libGGLSignIn.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLSignIn.a; path = Libraries/libGGLSignIn.a; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AFAF93349EDFA8EAB111E6AAF021905 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppUtilities.framework; path = Frameworks/GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		A9C53EFFDC0A02C7F48EF10DE4DDC1F4 /* Pods-GmailIntegrationInIosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB082262119AFABE8429D452DA6E110C /* Pods-GmailIntegrationInIosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosApp.release.xcconfig"; sourceTree = "<group>"; };
+		BCF3460B7FCE44D30C922CE3BAF40AD6 /* Pods-GmailIntegrationInIosAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosAppTests-frameworks.sh"; sourceTree = "<group>"; };
+		BF2ED9DDFA824D1A8F720BC7C5B042D7 /* Pods-GmailIntegrationInIosAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GmailIntegrationInIosAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C49BA1D2DCCCECDF11068DA298C05DA0 /* Pods-GmailIntegrationInIosAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GmailIntegrationInIosAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4E72AC3E71D87DE3237C9F1BF7A896A /* Pods-GmailIntegrationInIosApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosApp-frameworks.sh"; sourceTree = "<group>"; };
+		C9A13D3596EBE3492FDA517D68143D2D /* Pods-GmailIntegrationInIosAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GmailIntegrationInIosAppUITests-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D021751B6C188EB1E2450292E80ADB7B /* Core-Module.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Core-Module.h"; path = "Headers/ModuleHeaders/Core-Module.h"; sourceTree = "<group>"; };
+		D1AEB8B504E32E3E2FE29DA979C5066A /* libPods-GmailIntegrationInIosApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GmailIntegrationInIosApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2272348A365A9AEA8D51F023FC85C6D /* libGIPNSURL+FIFE_external.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libGIPNSURL+FIFE_external.a"; path = "Libraries/libGIPNSURL+FIFE_external.a"; sourceTree = "<group>"; };
+		DA12D86EBD4D63C972E1EFF0E859DB27 /* Pods-GmailIntegrationInIosApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GmailIntegrationInIosApp-dummy.m"; sourceTree = "<group>"; };
+		DC1F9C3AC10E49F749DD5F7CF76515AE /* GIDProfileData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GIDProfileData.h; path = Headers/Public/GIDProfileData.h; sourceTree = "<group>"; };
+		DC7455F1568B8AAB460E609DC55B9C1A /* libGGLCore.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGGLCore.a; path = Libraries/libGGLCore.a; sourceTree = "<group>"; };
+		E2469D388F7247168DFE693C2D1C0D53 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		E3800C95BBE31C5173013FC3DE86A492 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAuthUtilities.framework; path = Frameworks/GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		E9C2B75DA01457432F7F9ACF5B4A2A10 /* Pods-GmailIntegrationInIosAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GmailIntegrationInIosAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F571108DAB3DE644EB0D193E8B435C1F /* GoogleSignIn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GoogleSignIn.h; path = Headers/Public/GoogleSignIn.h; sourceTree = "<group>"; };
+		F981860EB7F1DDF224650E1A5ABAFD29 /* Pods-GmailIntegrationInIosAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GmailIntegrationInIosAppTests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E59BBA5D0A86899780E31CCFD427FF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675D6D2EFC68B053D837C55E4B2140EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		690A863CDFD3DA113A731CC9CF99F984 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA72688D3EEE4295E2D88A147397FB40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0C7CEEEA23DBF168B6B4FE9A54BF48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F059E5755ADF756F396C275B02910CEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BFBA3B302F36272C80DF008284BA4A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1AEB8B504E32E3E2FE29DA979C5066A /* libPods-GmailIntegrationInIosApp.a */,
+				8559D66B9564F78B9103FAF44FEE0271 /* libPods-GmailIntegrationInIosAppTests.a */,
+				834DF7B977A2E5B82D6EA0C0C2B9980D /* libPods-GmailIntegrationInIosAppUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB29CD82988C9BDBD4029429C51AA8B /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				79661227F6177873624DD5A96104A635 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		2C3AE1E3B077701E88A4EDDEAA9BB8DA /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				3480D1E9E18A15CDB60D19EA8311273C /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		3480D1E9E18A15CDB60D19EA8311273C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E1DFBDBB92FC5A3E8F3CA268A26FC4 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		349C96858E832F14F662559465588015 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A28251F1D05FFCEB7F87C9C3999B739 /* GoogleSignIn.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		40E8BF2562387BDF26349FEFA7C73A0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				938387F3718CF1A88D6B1F475660F75A /* libGGLSignIn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DE430F5BAA682F16B8190978387700 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				7E215F5329190290EFCC0EC2C9E2F80A /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		6C4255EF199AB6FE270FE78A50B16B23 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				9A48BDC8540C1B929CF3E72774E57E69 /* Core */,
+				8CF937F173B5A217DC0B101889D95BAC /* SignIn */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		79661227F6177873624DD5A96104A635 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2469D388F7247168DFE693C2D1C0D53 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D5B8E1D68FB6B2382FA0B240E1D69435 /* Pods */,
+				1BFBA3B302F36272C80DF008284BA4A8 /* Products */,
+				B4037DB9326A8065EBCE4C7F877FC596 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E215F5329190290EFCC0EC2C9E2F80A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92546A5B576EDC9DDFBE566F10F10E24 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CF937F173B5A217DC0B101889D95BAC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				15AC5A575C375EAC8B9D659D93404AF0 /* GGLContext+SignIn.h */,
+				4A2ECEA6BA5029451F97D48C6B843086 /* SignIn.h */,
+				40E8BF2562387BDF26349FEFA7C73A0A /* Frameworks */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		9A48BDC8540C1B929CF3E72774E57E69 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74B8AD85823C3C917BDE3F792698172E /* AdMob-Module.h */,
+				702D958D3490D7A4B1A7A04661CAAF07 /* Analytics-Module.h */,
+				792456A5F94438E8B1265E0132E1896D /* AppInvite-Module.h */,
+				16A91C5AEC2D3F2E917079AA8F20746D /* CloudMessaging-Module.h */,
+				094A59D2CBC6DCCC89F79000B56E7570 /* Core.h */,
+				D021751B6C188EB1E2450292E80ADB7B /* Core-Module.h */,
+				645EE02FB3F8AFAC093FDFEECA6EF6E1 /* GGLConfiguration.h */,
+				0A180FEF6FED117CBCE34CE8BA5FB776 /* GGLContext.h */,
+				7B2E4A812F00976D381CCD3FA8319A0B /* GGLErrorCode.h */,
+				4A4BD00482C63CC6E8A1DB92590B7E72 /* GMRConfiguration.h */,
+				4C3024180D8A2797DA90A675EC03EA4A /* SignIn-Module.h */,
+				B5B9BCA61E1165A351EB38B66284B3E4 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B1A94C4E0D67DD92561611E11332EA7E /* Pods-GmailIntegrationInIosAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC0B84A3EFE9BACD4FEEFA133D62C76 /* Pods-GmailIntegrationInIosAppTests-acknowledgements.markdown */,
+				BF2ED9DDFA824D1A8F720BC7C5B042D7 /* Pods-GmailIntegrationInIosAppTests-acknowledgements.plist */,
+				F981860EB7F1DDF224650E1A5ABAFD29 /* Pods-GmailIntegrationInIosAppTests-dummy.m */,
+				BCF3460B7FCE44D30C922CE3BAF40AD6 /* Pods-GmailIntegrationInIosAppTests-frameworks.sh */,
+				8EE90AFDDF417088D71887079BC1443E /* Pods-GmailIntegrationInIosAppTests-resources.sh */,
+				A9C53EFFDC0A02C7F48EF10DE4DDC1F4 /* Pods-GmailIntegrationInIosAppTests.debug.xcconfig */,
+				16E74C0BBD06FDA756C449097B108C06 /* Pods-GmailIntegrationInIosAppTests.release.xcconfig */,
+			);
+			name = "Pods-GmailIntegrationInIosAppTests";
+			path = "Target Support Files/Pods-GmailIntegrationInIosAppTests";
+			sourceTree = "<group>";
+		};
+		B202DE11E97FA4F84373764000C4C26F /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				61D9B0D2D30813AB286AB516D9DDDEE5 /* GIDAuthentication.h */,
+				003905CDC465C93C21236ED54404E071 /* GIDGoogleUser.h */,
+				DC1F9C3AC10E49F749DD5F7CF76515AE /* GIDProfileData.h */,
+				8C856913E36E5C8A6C5B7CB7D270DAB4 /* GIDSignIn.h */,
+				0565912B8315CEDEAE22138F8311B5C6 /* GIDSignInButton.h */,
+				F571108DAB3DE644EB0D193E8B435C1F /* GoogleSignIn.h */,
+				C8CFBA9AD19BDA2AE5C39F585DCE06CB /* Frameworks */,
+				349C96858E832F14F662559465588015 /* Resources */,
+			);
+			path = GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		B4037DB9326A8065EBCE4C7F877FC596 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55DF03AEEC1263EF89F39C1DD0E531F /* Pods-GmailIntegrationInIosApp */,
+				B1A94C4E0D67DD92561611E11332EA7E /* Pods-GmailIntegrationInIosAppTests */,
+				BA5FF4CC92CB72B06394612E3880D125 /* Pods-GmailIntegrationInIosAppUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B5B9BCA61E1165A351EB38B66284B3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7455F1568B8AAB460E609DC55B9C1A /* libGGLCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5FF4CC92CB72B06394612E3880D125 /* Pods-GmailIntegrationInIosAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8669D81AC0A93B0A179B1FF9090846CA /* Pods-GmailIntegrationInIosAppUITests-acknowledgements.markdown */,
+				C49BA1D2DCCCECDF11068DA298C05DA0 /* Pods-GmailIntegrationInIosAppUITests-acknowledgements.plist */,
+				0DDA38B99D6A85D76DDD903E95A13881 /* Pods-GmailIntegrationInIosAppUITests-dummy.m */,
+				6B618E0DFB9B557665FB7908F141BF67 /* Pods-GmailIntegrationInIosAppUITests-frameworks.sh */,
+				C9A13D3596EBE3492FDA517D68143D2D /* Pods-GmailIntegrationInIosAppUITests-resources.sh */,
+				E9C2B75DA01457432F7F9ACF5B4A2A10 /* Pods-GmailIntegrationInIosAppUITests.debug.xcconfig */,
+				330E9359CBB30EAF897EB35D325F0D04 /* Pods-GmailIntegrationInIosAppUITests.release.xcconfig */,
+			);
+			name = "Pods-GmailIntegrationInIosAppUITests";
+			path = "Target Support Files/Pods-GmailIntegrationInIosAppUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF6B35CE034DE3A17C13114897EB601 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFAF93349EDFA8EAB111E6AAF021905 /* GoogleAppUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8CFBA9AD19BDA2AE5C39F585DCE06CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2272348A365A9AEA8D51F023FC85C6D /* libGIPNSURL+FIFE_external.a */,
+				7F1BAC27C796DC5B51D8D1FCF82C1112 /* libSignIn_external.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1F2A21F35E5C3EAE11FDAE2F286B070 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5167B16E8442C7FC029072CA6DB4A0A2 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5B8E1D68FB6B2382FA0B240E1D69435 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C4255EF199AB6FE270FE78A50B16B23 /* Google */,
+				FCDFBE0E93E4C262B08B2AA5C9E248B8 /* GoogleAppUtilities */,
+				DE30C5C3883582764F8538CBD9A8C235 /* GoogleAuthUtilities */,
+				59DE430F5BAA682F16B8190978387700 /* GoogleInterchangeUtilities */,
+				2AB29CD82988C9BDBD4029429C51AA8B /* GoogleNetworkingUtilities */,
+				B202DE11E97FA4F84373764000C4C26F /* GoogleSignIn */,
+				2C3AE1E3B077701E88A4EDDEAA9BB8DA /* GoogleSymbolUtilities */,
+				DFFFD4E11DC55C6724424912E8E43F84 /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE30C5C3883582764F8538CBD9A8C235 /* GoogleAuthUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				F040DACB6DF7FBC47A15E2CBD39B99E8 /* Frameworks */,
+			);
+			path = GoogleAuthUtilities;
+			sourceTree = "<group>";
+		};
+		DFFFD4E11DC55C6724424912E8E43F84 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				D1F2A21F35E5C3EAE11FDAE2F286B070 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		F040DACB6DF7FBC47A15E2CBD39B99E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3800C95BBE31C5173013FC3DE86A492 /* GoogleAuthUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F55DF03AEEC1263EF89F39C1DD0E531F /* Pods-GmailIntegrationInIosApp */ = {
+			isa = PBXGroup;
+			children = (
+				20DBF8B74B19C0E2FD1248C54142E2E3 /* Pods-GmailIntegrationInIosApp-acknowledgements.markdown */,
+				5AE4B2A976809BE57852D72074D8B61C /* Pods-GmailIntegrationInIosApp-acknowledgements.plist */,
+				DA12D86EBD4D63C972E1EFF0E859DB27 /* Pods-GmailIntegrationInIosApp-dummy.m */,
+				C4E72AC3E71D87DE3237C9F1BF7A896A /* Pods-GmailIntegrationInIosApp-frameworks.sh */,
+				0D02A4E422A20460B2E4045E05A105CE /* Pods-GmailIntegrationInIosApp-resources.sh */,
+				2E62DDD62997EE4FFA44CCF4FA0359F4 /* Pods-GmailIntegrationInIosApp.debug.xcconfig */,
+				BB082262119AFABE8429D452DA6E110C /* Pods-GmailIntegrationInIosApp.release.xcconfig */,
+			);
+			name = "Pods-GmailIntegrationInIosApp";
+			path = "Target Support Files/Pods-GmailIntegrationInIosApp";
+			sourceTree = "<group>";
+		};
+		FCDFBE0E93E4C262B08B2AA5C9E248B8 /* GoogleAppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6B35CE034DE3A17C13114897EB601 /* Frameworks */,
+			);
+			path = GoogleAppUtilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52451CDD6DE2CC72680860676431B566 /* Pods-GmailIntegrationInIosAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D1AB14FD36970EFFA2C33102913D39 /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosAppUITests" */;
+			buildPhases = (
+				EC96508AD31198C39D410FAA359B3095 /* Sources */,
+				690A863CDFD3DA113A731CC9CF99F984 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GmailIntegrationInIosAppUITests";
+			productName = "Pods-GmailIntegrationInIosAppUITests";
+			productReference = 834DF7B977A2E5B82D6EA0C0C2B9980D /* libPods-GmailIntegrationInIosAppUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CBE98DB1FE25FEA7765462BFA8C250AC /* Pods-GmailIntegrationInIosAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00EF6E42A9662F030D887E67065AA141 /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosAppTests" */;
+			buildPhases = (
+				79F44F58C046652BC4F2B01A3AE65035 /* Sources */,
+				5E59BBA5D0A86899780E31CCFD427FF6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GmailIntegrationInIosAppTests";
+			productName = "Pods-GmailIntegrationInIosAppTests";
+			productReference = 8559D66B9564F78B9103FAF44FEE0271 /* libPods-GmailIntegrationInIosAppTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EFC220A023DCD6CB12951E3154871026 /* Pods-GmailIntegrationInIosApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79FC4DBD96AE4C6E30B4356BA151022B /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosApp" */;
+			buildPhases = (
+				E84DDE3DCF8681BDDB5DFAE6EB445D76 /* Sources */,
+				8F0C7CEEEA23DBF168B6B4FE9A54BF48 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GmailIntegrationInIosApp";
+			productName = "Pods-GmailIntegrationInIosApp";
+			productReference = D1AEB8B504E32E3E2FE29DA979C5066A /* libPods-GmailIntegrationInIosApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1BFBA3B302F36272C80DF008284BA4A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFC220A023DCD6CB12951E3154871026 /* Pods-GmailIntegrationInIosApp */,
+				CBE98DB1FE25FEA7765462BFA8C250AC /* Pods-GmailIntegrationInIosAppTests */,
+				52451CDD6DE2CC72680860676431B566 /* Pods-GmailIntegrationInIosAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79F44F58C046652BC4F2B01A3AE65035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				388D546C99734530E0320B6FA3B4F196 /* Pods-GmailIntegrationInIosAppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E84DDE3DCF8681BDDB5DFAE6EB445D76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2037E3397432C4A1B3F8607BAC87425B /* Pods-GmailIntegrationInIosApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC96508AD31198C39D410FAA359B3095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3889CE4F1194C5A0FA40F7163C3D2F6B /* Pods-GmailIntegrationInIosAppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0C2D46734F5F5EB759E20F8C8EEAC729 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C53EFFDC0A02C7F48EF10DE4DDC1F4 /* Pods-GmailIntegrationInIosAppTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1BDD5FE6F2556CE4CE777F8C5209E0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB082262119AFABE8429D452DA6E110C /* Pods-GmailIntegrationInIosApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		693F5650C71293A67A5612E6AAD0FB06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E74C0BBD06FDA756C449097B108C06 /* Pods-GmailIntegrationInIosAppTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84B12899F3324B5028413E3B084AA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330E9359CBB30EAF897EB35D325F0D04 /* Pods-GmailIntegrationInIosAppUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EB3AA596A0516AE807C1B6BEB70E6C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C2B75DA01457432F7F9ACF5B4A2A10 /* Pods-GmailIntegrationInIosAppUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF1975D102C7DC1260AD0171C17B9B6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E62DDD62997EE4FFA44CCF4FA0359F4 /* Pods-GmailIntegrationInIosApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00EF6E42A9662F030D887E67065AA141 /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C2D46734F5F5EB759E20F8C8EEAC729 /* Debug */,
+				693F5650C71293A67A5612E6AAD0FB06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79FC4DBD96AE4C6E30B4356BA151022B /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1975D102C7DC1260AD0171C17B9B6F /* Debug */,
+				1BDD5FE6F2556CE4CE777F8C5209E0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D1AB14FD36970EFFA2C33102913D39 /* Build configuration list for PBXNativeTarget "Pods-GmailIntegrationInIosAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB3AA596A0516AE807C1B6BEB70E6C87 /* Debug */,
+				84B12899F3324B5028413E3B084AA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

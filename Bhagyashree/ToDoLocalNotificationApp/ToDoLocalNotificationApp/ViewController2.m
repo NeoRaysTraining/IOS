@@ -28,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)cancelAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)saveAction:(id)sender {
 //    self.itemEntered = self.itemTextField.text;

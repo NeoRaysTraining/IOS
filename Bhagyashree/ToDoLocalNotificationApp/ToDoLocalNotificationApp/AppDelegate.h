@@ -20,10 +20,6 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-//@property (strong,nonatomic) NSMutableString* enteredStr;
-//-(NSString*) getStrValue;
-//-(void) setStrVlaue:(NSString*)str;
-//
 
 
 @end

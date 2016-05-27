@@ -153,14 +153,4 @@
     }
 }
 
-//-(void)setStrVlaue:(NSString *)str
-//{
-//    self.enteredStr=str;
-//}
-//
-//-(NSString *)getStrValue
-//{
-//    return  _enteredStr;
-//}
-
 @end
