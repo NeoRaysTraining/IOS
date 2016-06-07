@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *currentTemperatureLabel;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableview1;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageDisplay;
