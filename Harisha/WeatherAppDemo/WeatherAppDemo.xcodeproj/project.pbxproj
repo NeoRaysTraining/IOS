@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		523502211D07D987004A5374 /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 523502201D07D987004A5374 /* ModelClass.m */; };
 		52DCC6E51D02A7180099FB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6E41D02A7180099FB0F /* main.m */; };
 		52DCC6E81D02A7180099FB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6E71D02A7180099FB0F /* AppDelegate.m */; };
 		52DCC6EB1D02A7180099FB0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6EA1D02A7180099FB0F /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		52DCC6F31D02A7180099FB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52DCC6F11D02A7180099FB0F /* LaunchScreen.storyboard */; };
 		52DCC6FE1D02A7180099FB0F /* WeatherAppDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6FD1D02A7180099FB0F /* WeatherAppDemoTests.m */; };
 		52DCC7091D02A7180099FB0F /* WeatherAppDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC7081D02A7180099FB0F /* WeatherAppDemoUITests.m */; };
+		52E8462E1D08498D00ECBAD4 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E8462D1D08498D00ECBAD4 /* TableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5235021F1D07D987004A5374 /* ModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelClass.h; sourceTree = "<group>"; };
+		523502201D07D987004A5374 /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
 		52DCC6E01D02A7180099FB0F /* WeatherAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DCC6E41D02A7180099FB0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52DCC6E61D02A7180099FB0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		52DCC7041D02A7180099FB0F /* WeatherAppDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DCC7081D02A7180099FB0F /* WeatherAppDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherAppDemoUITests.m; sourceTree = "<group>"; };
 		52DCC70A1D02A7180099FB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52E8462C1D08498D00ECBAD4 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		52E8462D1D08498D00ECBAD4 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,10 @@
 				52DCC6F11D02A7180099FB0F /* LaunchScreen.storyboard */,
 				52DCC6F41D02A7180099FB0F /* Info.plist */,
 				52DCC6E31D02A7180099FB0F /* Supporting Files */,
+				5235021F1D07D987004A5374 /* ModelClass.h */,
+				523502201D07D987004A5374 /* ModelClass.m */,
+				52E8462C1D08498D00ECBAD4 /* TableViewCell.h */,
+				52E8462D1D08498D00ECBAD4 /* TableViewCell.m */,
 			);
 			path = WeatherAppDemo;
 			sourceTree = "<group>";
@@ -272,6 +282,8 @@
 			files = (
 				52DCC6EB1D02A7180099FB0F /* ViewController.m in Sources */,
 				52DCC6E81D02A7180099FB0F /* AppDelegate.m in Sources */,
+				523502211D07D987004A5374 /* ModelClass.m in Sources */,
+				52E8462E1D08498D00ECBAD4 /* TableViewCell.m in Sources */,
 				52DCC6E51D02A7180099FB0F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +510,7 @@
 				52DCC70F1D02A7180099FB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DCC7101D02A7180099FB0F /* Build configuration list for PBXNativeTarget "WeatherAppDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				52DCC7121D02A7180099FB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52DCC7131D02A7180099FB0F /* Build configuration list for PBXNativeTarget "WeatherAppDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				52DCC7151D02A7180099FB0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
