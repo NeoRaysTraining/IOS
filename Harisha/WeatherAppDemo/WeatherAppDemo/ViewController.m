@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 #import "TableViewCell.h"
-@interface ViewController () <UITableViewDataSource,UITableViewDelegate>
+#import "SearchViewController.h"
+#import "CollectionViewCell.h"
+@interface ViewController () <UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *backGroundImage;
 @property(strong,nonatomic)NSDictionary* json;
@@ -20,6 +22,7 @@
 @property(strong,nonatomic)NSArray* currentDate;
 @property(assign,nonatomic)int i ;
 @property(strong,nonatomic)NSMutableArray* allDates;
+@property(strong,nonatomic)NSString* weatherDescriptio;
 
 
 @end
@@ -28,6 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveData:) name:@"citiesListComplete" object:nil];
     // Do any additional setup after loading the view, typically from a nib.
     self.i = 0;
     self.allDates = [[NSMutableArray alloc]init];
@@ -53,6 +58,11 @@
             [self fetchDate];
             
             
+            
+//            NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+//            NSDateComponents *comps = [gregorian components:NSCalendarUnitWeekday fromDate:[NSDate date]];
+//            int weekday = [comps weekday];
+//            NSLog(@"The week day number: %d", weekday);
            
        
                                 }];
@@ -75,6 +85,12 @@
     NSString *weatherIcon=[[currentImageUrl objectAtIndex:0] componentsJoinedByString:@""];
     NSLog(@"image url %@",weatherIcon);
     
+    NSLog(@"weather description %@",self.weatherDescriptio);
+    NSLog(@"if condition %i",[self.weatherDescriptio isEqualToString:@"Partly Cloudy"]);
+    
+        
+    [self.activityIndicator stopAnimating];
+    self.activityIndicator.hidden=YES;
     
     
    // self.backGroundImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:weatherIcon]]];
@@ -89,8 +105,11 @@
     NSLog(@"current date %@",[tomdate[0]  valueForKey:@"date"]);
     NSLog(@"tomorow date %@",[tomdate[1] valueForKey:@"date"]);
   //  self.allDates = []
-        [self.activityIndicator stopAnimating];
-    self.activityIndicator.hidden=YES;
+       // [self.activityIndicator stopAnimating];
+    //self.activityIndicator.hidden=YES;
+    
+    
+    
     
     [self.tableview1 reloadData];
 }
@@ -111,10 +130,11 @@
     
     NSArray* currentCondtion = [self.jsonArray valueForKey:@"current_condition"];
     NSArray* weatherDesc = [currentCondtion valueForKey:@"weatherDesc"];
-    NSString* current = [[weatherDesc objectAtIndex:0]componentsJoinedByString:@""];
+    self.weatherDescriptio=[[[weatherDesc valueForKey:@"value"] objectAtIndex:0] componentsJoinedByString:@""];
+   // NSLog(@"%@",descName);
+
+    self.currentConditionLabel.text = self.weatherDescriptio;
     
-  //  NSLog(@"current condition %@",current );
-    self.currentConditionLabel.text = current;
    
    
     
@@ -124,7 +144,6 @@
 - (IBAction)changeDiffrentLocation:(id)sender
 {
     
-    [self.activityIndicator startAnimating];
     [self swipePerformAction];
     
     if(self.i==4)
@@ -139,6 +158,9 @@
 
 -(void)swipePerformAction
 {
+    self.activityIndicator.hidden = false;
+    [self.activityIndicator startAnimating];
+    
     NSString* apiUrl = [self replaceLocation:[_diffrentLocations objectAtIndex:self.i]];
     
     NSURLSession* session = [NSURLSession sharedSession];
@@ -179,9 +201,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"EEEE"];
+    NSLog(@"The day of the week: %@", [dateFormatter stringFromDate:[NSDate date]]);
+    
+  
     
     TableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    //NSLog(@"data %@",[self.currentDate objectAtIndex:0]);
+   
    NSArray*dateArr =[self.jsonArray valueForKey:@"weather"];
     
     NSLog(@"dates %@",[dateArr[indexPath.row] valueForKey:@"date"]);
@@ -197,12 +224,22 @@
     
   cell.temperatureLabel.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:weatherIcon]]];
     
-   // NSArray* tempArr = [dateArr[indexPath.row] valueForKey:@"maxtempC"];
-   // NSLog(@"current %@",tempArr);
+   
    
     cell.MaxTemperatureLabel.text = [dateArr[indexPath.row] valueForKey:@"maxtempC"];
     cell.minTemperature.text = [dateArr[indexPath.row]valueForKey:@"mintempC"];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    NSArray*dateArr =[self.jsonArray valueForKey:@"weather"];
+    self.currentTemperatureLabel.text = [dateArr[indexPath.row] valueForKey:@"maxtempC"];
+    
+   
+    
+    
 }
 
 -(void)fetchLocationDetails
@@ -219,6 +256,93 @@
         
     
    
+}
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    NSString* newUrl = [NSString stringWithFormat:@"http://api.worldweatheronline.com/premium/v1/weather.ashx?key=a3ce7967a5ff4216bd555247160406&q=%@&format=json&num_of_days=5",searchBar.text];
+    
+    NSLog(@"the new url %@",newUrl);
+    NSURLSession* session = [NSURLSession sharedSession];
+    NSURLSessionDataTask* dataTask = [session dataTaskWithURL:[NSURL URLWithString:newUrl] completionHandler:^(NSData *data,NSURLResponse* response,NSError* error)
+                                      {
+                                          self.json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                          // NSLog(@"%@",json);
+                                          
+                                          self.jsonArray = [self.json valueForKey:@"data"];
+                                          NSLog(@"value is %@",self.jsonArray);
+                                          [self fetchLocationDetails];
+                                          [self fetchWeatherDetails];
+                                          [self fetchImageFromServer];
+                                      }
+                                      ];
+    [dataTask resume];
+}
+- (IBAction)searchButton:(id)sender
+{
+    [self performSegueWithIdentifier:@"scene1" sender:self];
+}
+
+-(void)receiveData:(NSNotification*)locationName
+{
+   NSString* location = [[locationName userInfo] valueForKey:@"location"];
+    [self.activityIndicator setHidden:YES];
+    [self.activityIndicator startAnimating];
+    
+    NSLog(@"Location is %@",location);
+    NSString* newUrl = [NSString stringWithFormat:@"http://api.worldweatheronline.com/premium/v1/weather.ashx?key=a3ce7967a5ff4216bd555247160406&q=%@&format=json&num_of_days=5",location];
+    NSLog(@"new url %@",newUrl);
+    NSURLSession* session = [NSURLSession sharedSession];
+    
+    NSURLSessionDataTask* dataTask = [session dataTaskWithURL:[NSURL URLWithString:newUrl] completionHandler:^(NSData *data,NSURLResponse* response,NSError* error)
+                                      {
+                                          self.json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                          // NSLog(@"%@",json);
+                                          
+                                          self.jsonArray = [self.json valueForKey:@"data"];
+                                          NSLog(@"value is %@",self.jsonArray);
+                                          
+                                          [self fetchLocationDetails];
+                                          [self fetchWeatherDetails];
+                                          [self fetchImageFromServer];
+                                      }
+                                      ];
+    
+    [dataTask resume];
+
+
+}
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.currentDate.count;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+   // UICollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    CollectionViewCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    
+    NSArray*dateArr =[self.jsonArray valueForKey:@"weather"];
+    
+    NSLog(@"dates %@",[dateArr[indexPath.row] valueForKey:@"date"]);
+    
+  //  cell.datesLabel.text = [dateArr[indexPath.row] valueForKey:@"date"];
+    
+    NSArray* imgArray = [self.jsonArray valueForKey:@"current_condition"];
+    
+    NSLog(@"current condtion %@",imgArray);
+    NSArray* imageUrl = [imgArray valueForKey:@"weatherIconUrl"];
+    NSArray* currentImageUrl = [imageUrl valueForKey:@"value"];
+    NSString *weatherIcon=[[currentImageUrl objectAtIndex:0] componentsJoinedByString:@""];
+    
+    cell.collectionImage.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:weatherIcon]]];
+    
+    
+    
+    cell.maxTemperature.text = [dateArr[indexPath.row] valueForKey:@"maxtempC"];
+    //cell.minTemperature.text = [dateArr[indexPath.row]valueForKey:@"mintempC"];
+    return cell;
+
 }
 
 @end

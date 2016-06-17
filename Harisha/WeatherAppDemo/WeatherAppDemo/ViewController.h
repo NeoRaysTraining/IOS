@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SearchViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController 
+
+- (IBAction)searchButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *currentTemperatureLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (weak, nonatomic) IBOutlet UILabel *cityLabel;

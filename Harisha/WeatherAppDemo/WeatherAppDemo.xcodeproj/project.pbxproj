@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		523502211D07D987004A5374 /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 523502201D07D987004A5374 /* ModelClass.m */; };
+		52106D041D100CFC001EE53E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52106D031D100CFC001EE53E /* CollectionViewCell.m */; };
+		521EB35C1D0BD13F004D84B4 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521EB35B1D0BD13F004D84B4 /* SearchViewController.m */; };
 		52DCC6E51D02A7180099FB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6E41D02A7180099FB0F /* main.m */; };
 		52DCC6E81D02A7180099FB0F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6E71D02A7180099FB0F /* AppDelegate.m */; };
 		52DCC6EB1D02A7180099FB0F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52DCC6EA1D02A7180099FB0F /* ViewController.m */; };
@@ -37,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5235021F1D07D987004A5374 /* ModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelClass.h; sourceTree = "<group>"; };
-		523502201D07D987004A5374 /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
+		52106D021D100CFC001EE53E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		52106D031D100CFC001EE53E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		521EB35A1D0BD13F004D84B4 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		521EB35B1D0BD13F004D84B4 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		52DCC6E01D02A7180099FB0F /* WeatherAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DCC6E41D02A7180099FB0F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52DCC6E61D02A7180099FB0F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -116,10 +119,12 @@
 				52DCC6F11D02A7180099FB0F /* LaunchScreen.storyboard */,
 				52DCC6F41D02A7180099FB0F /* Info.plist */,
 				52DCC6E31D02A7180099FB0F /* Supporting Files */,
-				5235021F1D07D987004A5374 /* ModelClass.h */,
-				523502201D07D987004A5374 /* ModelClass.m */,
 				52E8462C1D08498D00ECBAD4 /* TableViewCell.h */,
 				52E8462D1D08498D00ECBAD4 /* TableViewCell.m */,
+				521EB35A1D0BD13F004D84B4 /* SearchViewController.h */,
+				521EB35B1D0BD13F004D84B4 /* SearchViewController.m */,
+				52106D021D100CFC001EE53E /* CollectionViewCell.h */,
+				52106D031D100CFC001EE53E /* CollectionViewCell.m */,
 			);
 			path = WeatherAppDemo;
 			sourceTree = "<group>";
@@ -280,9 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52106D041D100CFC001EE53E /* CollectionViewCell.m in Sources */,
 				52DCC6EB1D02A7180099FB0F /* ViewController.m in Sources */,
 				52DCC6E81D02A7180099FB0F /* AppDelegate.m in Sources */,
-				523502211D07D987004A5374 /* ModelClass.m in Sources */,
+				521EB35C1D0BD13F004D84B4 /* SearchViewController.m in Sources */,
 				52E8462E1D08498D00ECBAD4 /* TableViewCell.m in Sources */,
 				52DCC6E51D02A7180099FB0F /* main.m in Sources */,
 			);
