@@ -58,4 +58,26 @@
                                              completion:nil];
 }
 
+- (IBAction)submitAEDataButton:(id)sender {
+    
+    [self performSegueWithIdentifier:@"direct" sender:self];
+}
+
+- (IBAction)aeNewsButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.aeexchange.com/usefulInfo.html"]];
+}
+
+- (IBAction)faqButton:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://webpayrolltraining.co.uk/AEHelp/"]];
+}
+
+- (IBAction)whichPensionButton:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.pensionplaypen.com/"]];
+}
+
+- (IBAction)signUpButton:(id)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www1.aeexchange.com/portal/signup"]];
+}
 @end

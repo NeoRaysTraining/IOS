@@ -14,6 +14,13 @@
 
 - (IBAction)menuButton:(id)sender;
 - (IBAction)closeAlert:(id)sender;
+- (IBAction)submitAEDataButton:(id)sender;
+
+- (IBAction)aeNewsButton:(id)sender;
+- (IBAction)faqButton:(id)sender;
+- (IBAction)whichPensionButton:(id)sender;
+- (IBAction)signUpButton:(id)sender;
+
 
 @end
 

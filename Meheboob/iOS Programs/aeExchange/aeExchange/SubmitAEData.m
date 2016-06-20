@@ -1,22 +1,26 @@
 //
-//  AEPensionCalculator.m
+//  SubmitAEData.m
 //  aeExchange
 //
-//  Created by Mahaboobsab Nadaf on 15/06/16.
+//  Created by Mahaboobsab Nadaf on 18/06/16.
 //  Copyright © 2016 com.NeoRays. All rights reserved.
 //
 
-#import "AEPensionCalculator.h"
+#import "SubmitAEData.h"
 
-@interface AEPensionCalculator ()
+@interface SubmitAEData ()
 
 @end
 
-@implementation AEPensionCalculator
+@implementation SubmitAEData
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]pathForResource:@"aeExchangeAppReleaseSchedule.html" ofType:nil]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.myWebView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,23 +39,6 @@
 */
 
 - (IBAction)homeButton:(id)sender {
-    
     [self.navigationController popViewControllerAnimated:YES];
-}
-
-- (IBAction)calculateButton:(id)sender {
-    
-    [self performSegueWithIdentifier:@"AEPensionResult" sender:self];
-}
-
-- (IBAction)payFrequencyButton:(id)sender {
-    self.calculateButtonOutlet.hidden = YES;
-    self.pickerViewOutlet.hidden = NO;
-    self.pickerToolBar.hidden = NO;
-}
-- (IBAction)pickerViewDoneButton:(id)sender {
-     self.calculateButtonOutlet.hidden = NO;
-    self.pickerViewOutlet.hidden = YES;
-    self.pickerToolBar.hidden = YES;
 }
 @end

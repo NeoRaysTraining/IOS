@@ -10,5 +10,11 @@
 
 @interface AEPensionCalculator : UIViewController
 - (IBAction)homeButton:(id)sender;
+- (IBAction)calculateButton:(id)sender;
+- (IBAction)payFrequencyButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerViewOutlet;
+@property (weak, nonatomic) IBOutlet UIToolbar *pickerToolBar;
+- (IBAction)pickerViewDoneButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *calculateButtonOutlet;
 
 @end
