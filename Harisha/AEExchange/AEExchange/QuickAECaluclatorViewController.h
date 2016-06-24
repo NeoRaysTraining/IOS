@@ -42,7 +42,16 @@
 
 - (IBAction)customPicDone:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *netPayArrangements;
-- (IBAction)netPayArrangements:(id)sender;
 
 @property(nonatomic,strong)NSArray *FreqperiodPickerArray;
+@property(nonatomic,strong)NSArray* taxRelief;
+@property(nonatomic,strong)NSArray* earningBasisArray;
+@property(nonatomic,strong)NSArray* gender;
+
+@property(strong,nonatomic)NSDictionary* allValues;
+@property(strong,nonatomic)NSString* frequencyPeriodString;
+@property(strong,nonatomic)NSString* taxReliefString;
+@property(strong,nonatomic)NSString* earningBasisString;
+@property(strong,nonatomic)NSString* genderString;
+
 @end

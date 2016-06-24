@@ -10,8 +10,10 @@
 
 @interface QuickAECaluclatorViewController ()<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource>
 @property(strong,nonatomic)NSString* freqString;
-@property(nonatomic,assign)BOOL keyFlag;
+@property(nonatomic,assign)int keyFlag;
+@property(nonatomic,assign)int decidePickerArray;
 - (IBAction)caluclatePension:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *secondView;
 
 @end
 
@@ -22,7 +24,10 @@
     // Do any additional setup after loading the view.
     [self.navigationItem.backBarButtonItem setTitle:@"Title here"];
    
-    self.FreqperiodPickerArray = [[NSArray alloc]initWithObjects:@"Monthly",@"Quaterly",@"Weekly",@"day", nil];
+    self.FreqperiodPickerArray = [[NSArray alloc]initWithObjects:@"Weekly",@"Monthly",@"2Weekly",@"4Weekly",@"Quaterly",@"Bi-annual",@"Annual", nil];
+    self.taxRelief=[[NSArray alloc]initWithObjects:@"Net Pay Arrangements",@"Relief at Source", nil];
+    self.earningBasisArray = [[NSArray alloc]initWithObjects:@"Full Pensionable Earning",@"Banded Qualified Earnings", nil];
+    self.gender = [[NSArray alloc]initWithObjects:@"Male",@"Female", nil];
     
 }
 
@@ -52,18 +57,22 @@
     [self.picker setHidden:true];
     [self.pickerViewToolBar setHidden:true];
     self.scrollView.frame=CGRectMake(0, self.scrollView.frame.origin.y, self.scrollView.frame.size.width, self.scrollView.frame.size.height+250);
+    self.secondView.userInteractionEnabled=YES;
 }
 -( void)showPicker
 {
     self.scrollView.frame=CGRectMake(0, self.scrollView.frame.origin.y, self.scrollView.frame.size.width, self.scrollView.frame.size.height-250);
     [self.picker setHidden:false];
     [self.pickerViewToolBar setHidden:false];
+    self.secondView.userInteractionEnabled=NO;
+    
 }
 -(void)hideDatePicker
 {
     [self.datePicker setHidden:true];
     [self.datePickerToolBar setHidden:true];
     self.scrollView.frame=CGRectMake(0, self.scrollView.frame.origin.y, self.scrollView.frame.size.width, self.scrollView.frame.size.height+200);
+    self.secondView.userInteractionEnabled=YES;
 
 }
 -(void)showDatePicker
@@ -71,6 +80,7 @@
     self.scrollView.frame=CGRectMake(0, self.scrollView.frame.origin.y, self.scrollView.frame.size.width, self.scrollView.frame.size.height-200);
     [self.datePickerToolBar setHidden:false];
     [self.datePicker setHidden:false];
+    self.secondView.userInteractionEnabled=NO;
 }
 -(void)keyboardWillShow {
     // Animate the current view out of the way
@@ -99,7 +109,8 @@
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
    
-    
+
+    textField.keyboardType=UIKeyboardTypeNumberPad;
     if (textField==self.empContributionRate||textField==self.employeecontRate||textField==self.avc)
     {
         [self hideDatePicker];
@@ -163,7 +174,10 @@
 
 - (IBAction)genderButton:(id)sender
 {
+    
+    self.decidePickerArray=3;
     [self showPicker];
+    [self.picker reloadAllComponents];
    
 }
 
@@ -171,20 +185,46 @@
 
 - (IBAction)payFrequencyButton:(id)sender
 {
+    
+    self.decidePickerArray=0;
     [self showPicker];
+    [self.picker reloadAllComponents];
 }
 
 
 - (IBAction)datePickerDone:(id)sender
 {
     [self hideDatePicker];
+    [self.datePicker setHidden:true];
+    [self.datePickerToolBar setHidden:true];
+    NSDateFormatter *formatter=[[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd/MM/yyyy"];
+    [formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
+    [self.dateofBirth setTitle:[NSString stringWithFormat:@"%@",[formatter stringFromDate:self.datePicker.date] ] forState:UIControlStateNormal];
     
 }
 
 - (IBAction)customPicDone:(id)sender
 {
-    [self.payFrequencyButton setTitle:self.freqString forState:normal];
+   
     [self hidePicker];
+    if(self.decidePickerArray==0)
+    {
+        [self.payFrequencyButton setTitle:self.freqString forState:normal];
+    }
+    if (self.decidePickerArray==1)
+    {
+        [self.netPayArrangements setTitle:self.freqString forState:normal];
+    }
+    if (self.decidePickerArray==2)
+    {
+        [self.earningBasis setTitle:self.freqString forState:normal];
+    }
+    if (self.decidePickerArray==3)
+    {
+        [self.genderButton setTitle:self.freqString forState:normal];
+    }
+
     
 }
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -193,35 +233,61 @@
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    return self.FreqperiodPickerArray.count;
+    NSArray *reqPickerArray = [self returnRequiredArray:self.decidePickerArray];
+    return reqPickerArray.count;
 }
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-   return  self.FreqperiodPickerArray[row];
+    NSArray *reqPickerArray = [self returnRequiredArray:self.decidePickerArray];
+    return reqPickerArray[row];
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.freqString = self.FreqperiodPickerArray[row];
-}
-- (IBAction)netPayArrangements:(id)sender
-{
-    [self.pickerViewToolBar setHidden:false];
-    [self.picker setHidden:false];
+    NSArray *reqPickerArray = [self returnRequiredArray:self.decidePickerArray];
+    self.freqString = reqPickerArray[row];
+   // [self setButtonTitle:self.freqString];
 }
 - (IBAction)dateofBirth:(id)sender
 {
-    [self.pickerViewToolBar setHidden:false];
-    [self.picker setHidden:false];
+    [self showDatePicker];
+    
 }
 
 - (IBAction)taxReliefArrange:(id)sender
 {
+    self.decidePickerArray=1;
     [self showPicker];
+    [self.picker reloadAllComponents];
 }
 
 - (IBAction)earningBasis:(id)sender
 {
-    [self.pickerViewToolBar setHidden:false];
-    [self.picker setHidden:false];
+    
+    self.decidePickerArray=2;
+    [self showPicker];
+    [self.picker reloadAllComponents];
 }
+
+-(NSArray*)returnRequiredArray:(int)category{
+    
+    switch (category) {
+        case 0:
+            return self.FreqperiodPickerArray;
+            break;
+        case 1:
+            return self.taxRelief;
+            break;
+        case 2:
+            return self.earningBasisArray;
+            break;
+        case 3:
+            return self.gender;
+            break;
+        default:
+            break;
+    }
+    return 0;
+}
+
+
 @end

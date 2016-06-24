@@ -1,24 +1,22 @@
 //
-//  AEAssessmentResultVC.m
+//  PrintCommLetterVC.m
 //  AEExchange
 //
-//  Created by test on 6/18/16.
+//  Created by test on 6/24/16.
 //  Copyright © 2016 NeoRays. All rights reserved.
 //
 
-#import "AEAssessmentResultVC.h"
+#import "PrintCommLetterVC.h"
 
-@interface AEAssessmentResultVC ()
-- (IBAction)produceCommLetter:(id)sender;
+@interface PrintCommLetterVC ()
 
 @end
 
-@implementation AEAssessmentResultVC
+@implementation PrintCommLetterVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.automaticallyAdjustsScrollViewInsets=YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,10 +33,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
-- (IBAction)produceCommLetter:(id)sender
-{
-    [self performSegueWithIdentifier:@"letterDetails" sender:self];
-}
 
 @end
