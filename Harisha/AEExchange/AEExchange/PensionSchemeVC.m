@@ -18,6 +18,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.pensionProviderDeatails = [[NSArray alloc]initWithObjects:@"Demo Pension",@"Aegon Pension",@"Aviva Pension",@"FriendsLife Pension",@"Gen Life",@"Hargreave Lansdown",@"Legal and General Pension",@"NEST Pension",@"NOW:Pension",@"People's Pension",@"Prudential Pension",@"Royal London Group",@"Scottish Widows",@"Standard Life",@"True Potential",@"Salvus Master Trust",@"others", nil];
+    
+    [self.continue2 setHidden:true];
 
 }
 
@@ -35,10 +37,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-- (IBAction)continueButton:(id)sender
-{
-    [self performSegueWithIdentifier:@"letterDetails" sender:self];
-}
+
 
 - (IBAction)selectPensionProvider:(id)sender
 {
@@ -48,8 +47,14 @@
 {
        [self.pensionProviderStackView setHidden:false];
     [self hidePicker];
+    self.
     self.secondView.userInteractionEnabled=YES;
-}
+    self.provideNameField.text = self.providerString;
+    
+    [self.continue1 setHidden:true];
+    
+     [self.continue2 setHidden:false];
+    }
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return 1;
@@ -64,7 +69,7 @@
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.provideNameField.text = self.pensionProviderDeatails[row];
+    self.providerString = self.pensionProviderDeatails[row];
 }
 -(void)hidePicker
 {
@@ -188,4 +193,12 @@
     return YES;
 }
 
+- (IBAction)continue1Button:(id)sender
+{
+    
+}
+- (IBAction)continue2Button:(id)sender
+{
+    [self performSegueWithIdentifier:@"letterDetails" sender:self];
+}
 @end

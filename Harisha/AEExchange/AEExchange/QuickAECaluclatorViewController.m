@@ -108,9 +108,12 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
-   
-
-    textField.keyboardType=UIKeyboardTypeNumberPad;
+   self.payFrequencyButton.userInteractionEnabled=NO;
+    self.taxReliefArrange.userInteractionEnabled=NO;
+    self.genderButton.userInteractionEnabled=NO;
+    self.earningBasis.userInteractionEnabled=NO;
+    
+    
     if (textField==self.empContributionRate||textField==self.employeecontRate||textField==self.avc)
     {
         [self hideDatePicker];
@@ -153,6 +156,11 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    self.payFrequencyButton.userInteractionEnabled=YES;
+    self.taxReliefArrange.userInteractionEnabled=YES;
+    self.genderButton.userInteractionEnabled=YES;
+    self.earningBasis.userInteractionEnabled=YES;
+
     if (textField==self.empContributionRate||textField==self.employeecontRate||textField==self.avc) {
         if (self.view.frame.origin.y >= 0)
         {
@@ -206,7 +214,7 @@
 
 - (IBAction)customPicDone:(id)sender
 {
-   
+    
     [self hidePicker];
     if(self.decidePickerArray==0)
     {
@@ -243,6 +251,7 @@
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
+    [self.picker reloadAllComponents];
     NSArray *reqPickerArray = [self returnRequiredArray:self.decidePickerArray];
     self.freqString = reqPickerArray[row];
    // [self setButtonTitle:self.freqString];

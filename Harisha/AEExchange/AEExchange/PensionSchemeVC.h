@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface PensionSchemeVC : ViewController
+- (IBAction)continue1Button:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *continue1;
 - (IBAction)selectPensionProvider:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPickerView *customPicker;
@@ -21,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *stagingDate;
 @property (weak, nonatomic) IBOutlet UIButton *dateOfCommLett;
 @property (weak, nonatomic) IBOutlet UIButton *optOutEndDate;
+
 @property (weak, nonatomic) IBOutlet UIToolbar *dateToolBar;
 - (IBAction)dateOnCommlett:(id)sender;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *datePickerDone;
@@ -38,5 +41,7 @@
 @property (weak, nonatomic) IBOutlet UIView *secondView;
 
 @property(strong,nonatomic)NSArray* pensionProviderDeatails;
-
+@property (weak, nonatomic) IBOutlet UIButton *continue2;
+- (IBAction)continue2Button:(id)sender;
+@property(strong,nonatomic)NSString* providerString;
 @end
