@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		173A24CBBD4A01E37B892400 /* libPods-AfNetWithDelegateUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ECAAE35A3831769178AC32 /* libPods-AfNetWithDelegateUITests.a */; };
+		5222851F1D2628C7004DCD31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5222851E1D2628C7004DCD31 /* main.m */; };
+		522285221D2628C7004DCD31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 522285211D2628C7004DCD31 /* AppDelegate.m */; };
+		522285251D2628C7004DCD31 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522285241D2628C7004DCD31 /* ViewController.m */; };
+		522285281D2628C7004DCD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522285261D2628C7004DCD31 /* Main.storyboard */; };
+		5222852A1D2628C7004DCD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522285291D2628C7004DCD31 /* Assets.xcassets */; };
+		5222852D1D2628C7004DCD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5222852B1D2628C7004DCD31 /* LaunchScreen.storyboard */; };
+		522285381D2628C7004DCD31 /* AfNetWithDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 522285371D2628C7004DCD31 /* AfNetWithDelegateTests.m */; };
+		522285431D2628C7004DCD31 /* AfNetWithDelegateUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 522285421D2628C7004DCD31 /* AfNetWithDelegateUITests.m */; };
+		522285521D262ABB004DCD31 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 522285511D262ABB004DCD31 /* ViewController2.m */; };
+		CD836407ABD3979BFF55FC19 /* libPods-AfNetWithDelegateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35ADF142FA5D1256D6814212 /* libPods-AfNetWithDelegateTests.a */; };
+		DABF149FB83EF17382393CBB /* libPods-AfNetWithDelegate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 025112595DD4E18B11313FB0 /* libPods-AfNetWithDelegate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		522285341D2628C7004DCD31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522285121D2628C6004DCD31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522285191D2628C6004DCD31;
+			remoteInfo = AfNetWithDelegate;
+		};
+		5222853F1D2628C7004DCD31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 522285121D2628C6004DCD31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 522285191D2628C6004DCD31;
+			remoteInfo = AfNetWithDelegate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025112595DD4E18B11313FB0 /* libPods-AfNetWithDelegate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AfNetWithDelegate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A46DCAC0884BC6630525BB2 /* Pods-AfNetWithDelegateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegateTests/Pods-AfNetWithDelegateTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33798A2E32E826DB8DC5BDA8 /* Pods-AfNetWithDelegateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegateUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegateUITests/Pods-AfNetWithDelegateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		35ADF142FA5D1256D6814212 /* libPods-AfNetWithDelegateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AfNetWithDelegateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4809214759584D76A633BD63 /* Pods-AfNetWithDelegateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegateTests/Pods-AfNetWithDelegateTests.release.xcconfig"; sourceTree = "<group>"; };
+		5222851A1D2628C6004DCD31 /* AfNetWithDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfNetWithDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222851E1D2628C7004DCD31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		522285201D2628C7004DCD31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		522285211D2628C7004DCD31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		522285231D2628C7004DCD31 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		522285241D2628C7004DCD31 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		522285271D2628C7004DCD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		522285291D2628C7004DCD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5222852C1D2628C7004DCD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5222852E1D2628C7004DCD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522285331D2628C7004DCD31 /* AfNetWithDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfNetWithDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		522285371D2628C7004DCD31 /* AfNetWithDelegateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfNetWithDelegateTests.m; sourceTree = "<group>"; };
+		522285391D2628C7004DCD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5222853E1D2628C7004DCD31 /* AfNetWithDelegateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfNetWithDelegateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		522285421D2628C7004DCD31 /* AfNetWithDelegateUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AfNetWithDelegateUITests.m; sourceTree = "<group>"; };
+		522285441D2628C7004DCD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522285501D262ABB004DCD31 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		522285511D262ABB004DCD31 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		89C73CB9F98AD7F4E7FB3F6E /* Pods-AfNetWithDelegate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegate/Pods-AfNetWithDelegate.release.xcconfig"; sourceTree = "<group>"; };
+		9EB852C3AB42727BE107EC40 /* Pods-AfNetWithDelegateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegateUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegateUITests/Pods-AfNetWithDelegateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B210A34D15CB94C23EC73171 /* Pods-AfNetWithDelegate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AfNetWithDelegate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AfNetWithDelegate/Pods-AfNetWithDelegate.debug.xcconfig"; sourceTree = "<group>"; };
+		C2ECAAE35A3831769178AC32 /* libPods-AfNetWithDelegateUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AfNetWithDelegateUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		522285171D2628C6004DCD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF149FB83EF17382393CBB /* libPods-AfNetWithDelegate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522285301D2628C7004DCD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD836407ABD3979BFF55FC19 /* libPods-AfNetWithDelegateTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222853B1D2628C7004DCD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173A24CBBD4A01E37B892400 /* libPods-AfNetWithDelegateUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D0DD8EBAA33167070A90398 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025112595DD4E18B11313FB0 /* libPods-AfNetWithDelegate.a */,
+				35ADF142FA5D1256D6814212 /* libPods-AfNetWithDelegateTests.a */,
+				C2ECAAE35A3831769178AC32 /* libPods-AfNetWithDelegateUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16A4E0F4BC93E5B4C3548010 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B210A34D15CB94C23EC73171 /* Pods-AfNetWithDelegate.debug.xcconfig */,
+				89C73CB9F98AD7F4E7FB3F6E /* Pods-AfNetWithDelegate.release.xcconfig */,
+				0A46DCAC0884BC6630525BB2 /* Pods-AfNetWithDelegateTests.debug.xcconfig */,
+				4809214759584D76A633BD63 /* Pods-AfNetWithDelegateTests.release.xcconfig */,
+				9EB852C3AB42727BE107EC40 /* Pods-AfNetWithDelegateUITests.debug.xcconfig */,
+				33798A2E32E826DB8DC5BDA8 /* Pods-AfNetWithDelegateUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		522285111D2628C6004DCD31 = {
+			isa = PBXGroup;
+			children = (
+				5222851C1D2628C6004DCD31 /* AfNetWithDelegate */,
+				522285361D2628C7004DCD31 /* AfNetWithDelegateTests */,
+				522285411D2628C7004DCD31 /* AfNetWithDelegateUITests */,
+				5222851B1D2628C6004DCD31 /* Products */,
+				16A4E0F4BC93E5B4C3548010 /* Pods */,
+				0D0DD8EBAA33167070A90398 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5222851B1D2628C6004DCD31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5222851A1D2628C6004DCD31 /* AfNetWithDelegate.app */,
+				522285331D2628C7004DCD31 /* AfNetWithDelegateTests.xctest */,
+				5222853E1D2628C7004DCD31 /* AfNetWithDelegateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5222851C1D2628C6004DCD31 /* AfNetWithDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				522285201D2628C7004DCD31 /* AppDelegate.h */,
+				522285211D2628C7004DCD31 /* AppDelegate.m */,
+				522285231D2628C7004DCD31 /* ViewController.h */,
+				522285241D2628C7004DCD31 /* ViewController.m */,
+				522285501D262ABB004DCD31 /* ViewController2.h */,
+				522285511D262ABB004DCD31 /* ViewController2.m */,
+				522285261D2628C7004DCD31 /* Main.storyboard */,
+				522285291D2628C7004DCD31 /* Assets.xcassets */,
+				5222852B1D2628C7004DCD31 /* LaunchScreen.storyboard */,
+				5222852E1D2628C7004DCD31 /* Info.plist */,
+				5222851D1D2628C6004DCD31 /* Supporting Files */,
+			);
+			path = AfNetWithDelegate;
+			sourceTree = "<group>";
+		};
+		5222851D1D2628C6004DCD31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5222851E1D2628C7004DCD31 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		522285361D2628C7004DCD31 /* AfNetWithDelegateTests */ = {
+			isa = PBXGroup;
+			children = (
+				522285371D2628C7004DCD31 /* AfNetWithDelegateTests.m */,
+				522285391D2628C7004DCD31 /* Info.plist */,
+			);
+			path = AfNetWithDelegateTests;
+			sourceTree = "<group>";
+		};
+		522285411D2628C7004DCD31 /* AfNetWithDelegateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				522285421D2628C7004DCD31 /* AfNetWithDelegateUITests.m */,
+				522285441D2628C7004DCD31 /* Info.plist */,
+			);
+			path = AfNetWithDelegateUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		522285191D2628C6004DCD31 /* AfNetWithDelegate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 522285471D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegate" */;
+			buildPhases = (
+				C99FC5C368257F16AC68C462 /* 📦 Check Pods Manifest.lock */,
+				522285161D2628C6004DCD31 /* Sources */,
+				522285171D2628C6004DCD31 /* Frameworks */,
+				522285181D2628C6004DCD31 /* Resources */,
+				D89B69122BD8C1CCF4E629E9 /* 📦 Embed Pods Frameworks */,
+				29BDCDCC8DFA5847ECEF888C /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AfNetWithDelegate;
+			productName = AfNetWithDelegate;
+			productReference = 5222851A1D2628C6004DCD31 /* AfNetWithDelegate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		522285321D2628C7004DCD31 /* AfNetWithDelegateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5222854A1D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegateTests" */;
+			buildPhases = (
+				CCCED38055DBD55655C18223 /* 📦 Check Pods Manifest.lock */,
+				5222852F1D2628C7004DCD31 /* Sources */,
+				522285301D2628C7004DCD31 /* Frameworks */,
+				522285311D2628C7004DCD31 /* Resources */,
+				BA49D44363AEDCE9A916B1F6 /* 📦 Embed Pods Frameworks */,
+				E7AF450CE134793D7B36541F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522285351D2628C7004DCD31 /* PBXTargetDependency */,
+			);
+			name = AfNetWithDelegateTests;
+			productName = AfNetWithDelegateTests;
+			productReference = 522285331D2628C7004DCD31 /* AfNetWithDelegateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5222853D1D2628C7004DCD31 /* AfNetWithDelegateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5222854D1D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegateUITests" */;
+			buildPhases = (
+				50AC7C8B12B38233D2FCC245 /* 📦 Check Pods Manifest.lock */,
+				5222853A1D2628C7004DCD31 /* Sources */,
+				5222853B1D2628C7004DCD31 /* Frameworks */,
+				5222853C1D2628C7004DCD31 /* Resources */,
+				D1C4E4B32E09689A79960C40 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				522285401D2628C7004DCD31 /* PBXTargetDependency */,
+			);
+			name = AfNetWithDelegateUITests;
+			productName = AfNetWithDelegateUITests;
+			productReference = 5222853E1D2628C7004DCD31 /* AfNetWithDelegateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		522285121D2628C6004DCD31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					522285191D2628C6004DCD31 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					522285321D2628C7004DCD31 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 522285191D2628C6004DCD31;
+					};
+					5222853D1D2628C7004DCD31 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 522285191D2628C6004DCD31;
+					};
+				};
+			};
+			buildConfigurationList = 522285151D2628C6004DCD31 /* Build configuration list for PBXProject "AfNetWithDelegate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 522285111D2628C6004DCD31;
+			productRefGroup = 5222851B1D2628C6004DCD31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				522285191D2628C6004DCD31 /* AfNetWithDelegate */,
+				522285321D2628C7004DCD31 /* AfNetWithDelegateTests */,
+				5222853D1D2628C7004DCD31 /* AfNetWithDelegateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522285181D2628C6004DCD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5222852D1D2628C7004DCD31 /* LaunchScreen.storyboard in Resources */,
+				5222852A1D2628C7004DCD31 /* Assets.xcassets in Resources */,
+				522285281D2628C7004DCD31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		522285311D2628C7004DCD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222853C1D2628C7004DCD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29BDCDCC8DFA5847ECEF888C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfNetWithDelegate/Pods-AfNetWithDelegate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50AC7C8B12B38233D2FCC245 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA49D44363AEDCE9A916B1F6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfNetWithDelegateTests/Pods-AfNetWithDelegateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C99FC5C368257F16AC68C462 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCCED38055DBD55655C18223 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C4E4B32E09689A79960C40 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfNetWithDelegateUITests/Pods-AfNetWithDelegateUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89B69122BD8C1CCF4E629E9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfNetWithDelegate/Pods-AfNetWithDelegate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AF450CE134793D7B36541F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AfNetWithDelegateTests/Pods-AfNetWithDelegateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		522285161D2628C6004DCD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522285251D2628C7004DCD31 /* ViewController.m in Sources */,
+				522285521D262ABB004DCD31 /* ViewController2.m in Sources */,
+				522285221D2628C7004DCD31 /* AppDelegate.m in Sources */,
+				5222851F1D2628C7004DCD31 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222852F1D2628C7004DCD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522285381D2628C7004DCD31 /* AfNetWithDelegateTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5222853A1D2628C7004DCD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522285431D2628C7004DCD31 /* AfNetWithDelegateUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		522285351D2628C7004DCD31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 522285191D2628C6004DCD31 /* AfNetWithDelegate */;
+			targetProxy = 522285341D2628C7004DCD31 /* PBXContainerItemProxy */;
+		};
+		522285401D2628C7004DCD31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 522285191D2628C6004DCD31 /* AfNetWithDelegate */;
+			targetProxy = 5222853F1D2628C7004DCD31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		522285261D2628C7004DCD31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				522285271D2628C7004DCD31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5222852B1D2628C7004DCD31 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5222852C1D2628C7004DCD31 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		522285451D2628C7004DCD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		522285461D2628C7004DCD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		522285481D2628C7004DCD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B210A34D15CB94C23EC73171 /* Pods-AfNetWithDelegate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AfNetWithDelegate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		522285491D2628C7004DCD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C73CB9F98AD7F4E7FB3F6E /* Pods-AfNetWithDelegate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AfNetWithDelegate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5222854B1D2628C7004DCD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A46DCAC0884BC6630525BB2 /* Pods-AfNetWithDelegateTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AfNetWithDelegateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AfNetWithDelegate.app/AfNetWithDelegate";
+			};
+			name = Debug;
+		};
+		5222854C1D2628C7004DCD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4809214759584D76A633BD63 /* Pods-AfNetWithDelegateTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AfNetWithDelegateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AfNetWithDelegate.app/AfNetWithDelegate";
+			};
+			name = Release;
+		};
+		5222854E1D2628C7004DCD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EB852C3AB42727BE107EC40 /* Pods-AfNetWithDelegateUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AfNetWithDelegateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AfNetWithDelegate;
+			};
+			name = Debug;
+		};
+		5222854F1D2628C7004DCD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33798A2E32E826DB8DC5BDA8 /* Pods-AfNetWithDelegateUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AfNetWithDelegateUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bhagyashree.AfNetWithDelegateUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AfNetWithDelegate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		522285151D2628C6004DCD31 /* Build configuration list for PBXProject "AfNetWithDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522285451D2628C7004DCD31 /* Debug */,
+				522285461D2628C7004DCD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		522285471D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522285481D2628C7004DCD31 /* Debug */,
+				522285491D2628C7004DCD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5222854A1D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222854B1D2628C7004DCD31 /* Debug */,
+				5222854C1D2628C7004DCD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5222854D1D2628C7004DCD31 /* Build configuration list for PBXNativeTarget "AfNetWithDelegateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5222854E1D2628C7004DCD31 /* Debug */,
+				5222854F1D2628C7004DCD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 522285121D2628C6004DCD31 /* Project object */;
+}
