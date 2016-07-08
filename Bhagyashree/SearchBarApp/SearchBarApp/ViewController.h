@@ -9,7 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
--(void) filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope;
-
 @end
 
