@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		529F924E1D41E5E700BDE7D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 529F924D1D41E5E700BDE7D7 /* main.m */; };
+		529F92511D41E5E700BDE7D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 529F92501D41E5E700BDE7D7 /* AppDelegate.m */; };
+		529F92541D41E5E700BDE7D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529F92531D41E5E700BDE7D7 /* ViewController.m */; };
+		529F92571D41E5E700BDE7D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529F92551D41E5E700BDE7D7 /* Main.storyboard */; };
+		529F925A1D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 529F92581D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodeld */; };
+		529F925C1D41E5E700BDE7D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529F925B1D41E5E700BDE7D7 /* Assets.xcassets */; };
+		529F925F1D41E5E700BDE7D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529F925D1D41E5E700BDE7D7 /* LaunchScreen.storyboard */; };
+		529F926A1D41E5E700BDE7D7 /* TelirikChartDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529F92691D41E5E700BDE7D7 /* TelirikChartDemoTests.m */; };
+		529F92751D41E5E800BDE7D7 /* TelirikChartDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529F92741D41E5E800BDE7D7 /* TelirikChartDemoUITests.m */; };
+		529F92831D41E61E00BDE7D7 /* TelerikUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529F92821D41E61E00BDE7D7 /* TelerikUI.framework */; };
+		529F92851D41E62B00BDE7D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529F92841D41E62B00BDE7D7 /* CoreGraphics.framework */; };
+		529F92871D41E63D00BDE7D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529F92861D41E63D00BDE7D7 /* Foundation.framework */; };
+		529F92891D41E64800BDE7D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529F92881D41E64800BDE7D7 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		529F92661D41E5E700BDE7D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529F92411D41E5E700BDE7D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529F92481D41E5E700BDE7D7;
+			remoteInfo = TelirikChartDemo;
+		};
+		529F92711D41E5E800BDE7D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 529F92411D41E5E700BDE7D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 529F92481D41E5E700BDE7D7;
+			remoteInfo = TelirikChartDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		529F92491D41E5E700BDE7D7 /* TelirikChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelirikChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		529F924D1D41E5E700BDE7D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		529F924F1D41E5E700BDE7D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		529F92501D41E5E700BDE7D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		529F92521D41E5E700BDE7D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		529F92531D41E5E700BDE7D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		529F92561D41E5E700BDE7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		529F92591D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TelirikChartDemo.xcdatamodel; sourceTree = "<group>"; };
+		529F925B1D41E5E700BDE7D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		529F925E1D41E5E700BDE7D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		529F92601D41E5E700BDE7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529F92651D41E5E700BDE7D7 /* TelirikChartDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelirikChartDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		529F92691D41E5E700BDE7D7 /* TelirikChartDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelirikChartDemoTests.m; sourceTree = "<group>"; };
+		529F926B1D41E5E800BDE7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529F92701D41E5E800BDE7D7 /* TelirikChartDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelirikChartDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		529F92741D41E5E800BDE7D7 /* TelirikChartDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TelirikChartDemoUITests.m; sourceTree = "<group>"; };
+		529F92761D41E5E800BDE7D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529F92821D41E61E00BDE7D7 /* TelerikUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TelerikUI.framework; path = Library/Frameworks/TelerikUI.framework; sourceTree = DEVELOPER_DIR; };
+		529F92841D41E62B00BDE7D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		529F92861D41E63D00BDE7D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		529F92881D41E64800BDE7D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		529F92461D41E5E700BDE7D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529F92891D41E64800BDE7D7 /* UIKit.framework in Frameworks */,
+				529F92871D41E63D00BDE7D7 /* Foundation.framework in Frameworks */,
+				529F92851D41E62B00BDE7D7 /* CoreGraphics.framework in Frameworks */,
+				529F92831D41E61E00BDE7D7 /* TelerikUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F92621D41E5E700BDE7D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F926D1D41E5E800BDE7D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		529F92401D41E5E700BDE7D7 = {
+			isa = PBXGroup;
+			children = (
+				529F92881D41E64800BDE7D7 /* UIKit.framework */,
+				529F92861D41E63D00BDE7D7 /* Foundation.framework */,
+				529F92841D41E62B00BDE7D7 /* CoreGraphics.framework */,
+				529F92821D41E61E00BDE7D7 /* TelerikUI.framework */,
+				529F924B1D41E5E700BDE7D7 /* TelirikChartDemo */,
+				529F92681D41E5E700BDE7D7 /* TelirikChartDemoTests */,
+				529F92731D41E5E800BDE7D7 /* TelirikChartDemoUITests */,
+				529F924A1D41E5E700BDE7D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		529F924A1D41E5E700BDE7D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				529F92491D41E5E700BDE7D7 /* TelirikChartDemo.app */,
+				529F92651D41E5E700BDE7D7 /* TelirikChartDemoTests.xctest */,
+				529F92701D41E5E800BDE7D7 /* TelirikChartDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		529F924B1D41E5E700BDE7D7 /* TelirikChartDemo */ = {
+			isa = PBXGroup;
+			children = (
+				529F924F1D41E5E700BDE7D7 /* AppDelegate.h */,
+				529F92501D41E5E700BDE7D7 /* AppDelegate.m */,
+				529F92521D41E5E700BDE7D7 /* ViewController.h */,
+				529F92531D41E5E700BDE7D7 /* ViewController.m */,
+				529F92551D41E5E700BDE7D7 /* Main.storyboard */,
+				529F925B1D41E5E700BDE7D7 /* Assets.xcassets */,
+				529F925D1D41E5E700BDE7D7 /* LaunchScreen.storyboard */,
+				529F92601D41E5E700BDE7D7 /* Info.plist */,
+				529F92581D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodeld */,
+				529F924C1D41E5E700BDE7D7 /* Supporting Files */,
+			);
+			path = TelirikChartDemo;
+			sourceTree = "<group>";
+		};
+		529F924C1D41E5E700BDE7D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				529F924D1D41E5E700BDE7D7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		529F92681D41E5E700BDE7D7 /* TelirikChartDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				529F92691D41E5E700BDE7D7 /* TelirikChartDemoTests.m */,
+				529F926B1D41E5E800BDE7D7 /* Info.plist */,
+			);
+			path = TelirikChartDemoTests;
+			sourceTree = "<group>";
+		};
+		529F92731D41E5E800BDE7D7 /* TelirikChartDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				529F92741D41E5E800BDE7D7 /* TelirikChartDemoUITests.m */,
+				529F92761D41E5E800BDE7D7 /* Info.plist */,
+			);
+			path = TelirikChartDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		529F92481D41E5E700BDE7D7 /* TelirikChartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529F92791D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemo" */;
+			buildPhases = (
+				529F92451D41E5E700BDE7D7 /* Sources */,
+				529F92461D41E5E700BDE7D7 /* Frameworks */,
+				529F92471D41E5E700BDE7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelirikChartDemo;
+			productName = TelirikChartDemo;
+			productReference = 529F92491D41E5E700BDE7D7 /* TelirikChartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		529F92641D41E5E700BDE7D7 /* TelirikChartDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529F927C1D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemoTests" */;
+			buildPhases = (
+				529F92611D41E5E700BDE7D7 /* Sources */,
+				529F92621D41E5E700BDE7D7 /* Frameworks */,
+				529F92631D41E5E700BDE7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529F92671D41E5E700BDE7D7 /* PBXTargetDependency */,
+			);
+			name = TelirikChartDemoTests;
+			productName = TelirikChartDemoTests;
+			productReference = 529F92651D41E5E700BDE7D7 /* TelirikChartDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		529F926F1D41E5E800BDE7D7 /* TelirikChartDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 529F927F1D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemoUITests" */;
+			buildPhases = (
+				529F926C1D41E5E800BDE7D7 /* Sources */,
+				529F926D1D41E5E800BDE7D7 /* Frameworks */,
+				529F926E1D41E5E800BDE7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				529F92721D41E5E800BDE7D7 /* PBXTargetDependency */,
+			);
+			name = TelirikChartDemoUITests;
+			productName = TelirikChartDemoUITests;
+			productReference = 529F92701D41E5E800BDE7D7 /* TelirikChartDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		529F92411D41E5E700BDE7D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					529F92481D41E5E700BDE7D7 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					529F92641D41E5E700BDE7D7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 529F92481D41E5E700BDE7D7;
+					};
+					529F926F1D41E5E800BDE7D7 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 529F92481D41E5E700BDE7D7;
+					};
+				};
+			};
+			buildConfigurationList = 529F92441D41E5E700BDE7D7 /* Build configuration list for PBXProject "TelirikChartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 529F92401D41E5E700BDE7D7;
+			productRefGroup = 529F924A1D41E5E700BDE7D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				529F92481D41E5E700BDE7D7 /* TelirikChartDemo */,
+				529F92641D41E5E700BDE7D7 /* TelirikChartDemoTests */,
+				529F926F1D41E5E800BDE7D7 /* TelirikChartDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		529F92471D41E5E700BDE7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529F925F1D41E5E700BDE7D7 /* LaunchScreen.storyboard in Resources */,
+				529F925C1D41E5E700BDE7D7 /* Assets.xcassets in Resources */,
+				529F92571D41E5E700BDE7D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F92631D41E5E700BDE7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F926E1D41E5E800BDE7D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529F92451D41E5E700BDE7D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529F925A1D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodeld in Sources */,
+				529F92541D41E5E700BDE7D7 /* ViewController.m in Sources */,
+				529F92511D41E5E700BDE7D7 /* AppDelegate.m in Sources */,
+				529F924E1D41E5E700BDE7D7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F92611D41E5E700BDE7D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529F926A1D41E5E700BDE7D7 /* TelirikChartDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		529F926C1D41E5E800BDE7D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529F92751D41E5E800BDE7D7 /* TelirikChartDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		529F92671D41E5E700BDE7D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529F92481D41E5E700BDE7D7 /* TelirikChartDemo */;
+			targetProxy = 529F92661D41E5E700BDE7D7 /* PBXContainerItemProxy */;
+		};
+		529F92721D41E5E800BDE7D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 529F92481D41E5E700BDE7D7 /* TelirikChartDemo */;
+			targetProxy = 529F92711D41E5E800BDE7D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		529F92551D41E5E700BDE7D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529F92561D41E5E700BDE7D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		529F925D1D41E5E700BDE7D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				529F925E1D41E5E700BDE7D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		529F92771D41E5E800BDE7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		529F92781D41E5E800BDE7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		529F927A1D41E5E800BDE7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/test/Documents/Telerik/**";
+				INFOPLIST_FILE = TelirikChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		529F927B1D41E5E800BDE7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "/Users/test/Documents/Telerik/**";
+				INFOPLIST_FILE = TelirikChartDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		529F927D1D41E5E800BDE7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelirikChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelirikChartDemo.app/TelirikChartDemo";
+			};
+			name = Debug;
+		};
+		529F927E1D41E5E800BDE7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TelirikChartDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelirikChartDemo.app/TelirikChartDemo";
+			};
+			name = Release;
+		};
+		529F92801D41E5E800BDE7D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelirikChartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TelirikChartDemo;
+			};
+			name = Debug;
+		};
+		529F92811D41E5E800BDE7D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TelirikChartDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TelirikChartDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TelirikChartDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		529F92441D41E5E700BDE7D7 /* Build configuration list for PBXProject "TelirikChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529F92771D41E5E800BDE7D7 /* Debug */,
+				529F92781D41E5E800BDE7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		529F92791D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529F927A1D41E5E800BDE7D7 /* Debug */,
+				529F927B1D41E5E800BDE7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		529F927C1D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529F927D1D41E5E800BDE7D7 /* Debug */,
+				529F927E1D41E5E800BDE7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		529F927F1D41E5E800BDE7D7 /* Build configuration list for PBXNativeTarget "TelirikChartDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				529F92801D41E5E800BDE7D7 /* Debug */,
+				529F92811D41E5E800BDE7D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		529F92581D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				529F92591D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodel */,
+			);
+			currentVersion = 529F92591D41E5E700BDE7D7 /* TelirikChartDemo.xcdatamodel */;
+			path = TelirikChartDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 529F92411D41E5E700BDE7D7 /* Project object */;
+}
