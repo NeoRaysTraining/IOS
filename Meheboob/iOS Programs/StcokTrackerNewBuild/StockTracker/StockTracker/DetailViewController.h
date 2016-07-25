@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< Updated upstream
 
+=======
+#import <TelerikUI/TelerikUI.h>
+>>>>>>> Stashed changes
 @interface DetailViewController : UIViewController
 -(void)receiveArrray : (NSArray *)selectedArray;
 @property(strong,nonatomic)NSArray *receivedArray;
@@ -27,8 +31,20 @@
 @property (weak, nonatomic) IBOutlet UILabel *topCloseLbl;
 @property (weak, nonatomic) IBOutlet UILabel *netChangePercLbl;
 
+<<<<<<< Updated upstream
 
 
 
 
+=======
+@property(strong,nonatomic)NSString *urlString;
+@property(strong,nonatomic)NSString *urlCmp;
+@property(strong, nonatomic)NSDictionary *json;
+
+@property (weak, nonatomic) IBOutlet TKChart *chartView;
+
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
+@property(strong,nonatomic)NSMutableArray *formattedArray;
+@property(strong, nonatomic)NSArray *myArray;
+>>>>>>> Stashed changes
 @end

@@ -2,7 +2,11 @@
 //  SellViewController.m
 //  StockTracker
 //
+<<<<<<< Updated upstream
 //  Created by test on 20/07/16.
+=======
+//  Created by Meheboob Nadaf on 20/07/16.
+>>>>>>> Stashed changes
 //  Copyright © 2016 com.NeoRays. All rights reserved.
 //
 
