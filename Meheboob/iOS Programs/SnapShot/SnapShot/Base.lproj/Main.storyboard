@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8HW-iT-Go5">
+                                <rect key="frame" x="243" y="62" width="115" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Fn-xS-zkp"/>
+                                    <constraint firstAttribute="width" constant="115" id="Ql2-eO-2fF"/>
+                                </constraints>
+                                <state key="normal" title="CaptureScreen"/>
+                                <connections>
+                                    <action selector="takeSnapShot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPL-wC-eDp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MMEC.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Suo-9Z-tsN">
+                                <rect key="frame" x="180" y="199" width="240" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="Q7y-Vk-RLd"/>
+                                    <constraint firstAttribute="width" constant="240" id="VaC-Hy-wY8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-AY-sIZ">
+                                <rect key="frame" x="180" y="452" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ike-KH-KNR"/>
+                                    <constraint firstAttribute="height" constant="128" id="JkT-a8-W3U"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Suo-9Z-tsN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bQ-Gd-QAG"/>
+                            <constraint firstItem="8HW-iT-Go5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="9Rc-vZ-RWB"/>
+                            <constraint firstItem="8HW-iT-Go5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTy-cW-p9X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mHy-AY-sIZ" secondAttribute="bottom" constant="20" id="eD8-7F-iTT"/>
+                            <constraint firstItem="mHy-AY-sIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gR2-9a-9c5"/>
+                            <constraint firstItem="Suo-9Z-tsN" firstAttribute="top" secondItem="8HW-iT-Go5" secondAttribute="bottom" constant="107" id="sXg-Dv-7x0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="mHy-AY-sIZ" id="suf-yT-TXp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247" y="299"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MMEC.jpg" width="2560" height="1440"/>
+    </resources>
+</document>
