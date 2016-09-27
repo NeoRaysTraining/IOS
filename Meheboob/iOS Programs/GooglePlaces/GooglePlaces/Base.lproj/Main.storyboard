@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gzt-jQ-ZjD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TLX-cr-8MK">
+                                <frame key="frameInset" minY="64" width="600" height="536"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="42y-fu-8eT"/>
+                                    <constraint firstAttribute="height" constant="536" id="z0n-nm-cVA"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="RBS-gO-7FV"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="TLX-cr-8MK" secondAttribute="trailing" constant="-20" id="Fea-rZ-TJ6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TLX-cr-8MK" secondAttribute="bottom" id="KA8-FD-Azc"/>
+                            <constraint firstItem="TLX-cr-8MK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VoR-Bp-rd7"/>
+                            <constraint firstItem="TLX-cr-8MK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lo2-P6-dav"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wtf-d7-We4">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Bar" id="W9V-K9-LFA">
+                                <connections>
+                                    <action selector="toolBarButtonPress:" destination="BYZ-38-t0r" id="nzc-2z-O9s"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Cafe" id="cev-jh-qT3">
+                                <connections>
+                                    <action selector="toolBarButtonPress:" destination="BYZ-38-t0r" id="h9N-Vs-tOs"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Florist" id="9Rs-XC-BvJ">
+                                <connections>
+                                    <action selector="toolBarButtonPress:" destination="BYZ-38-t0r" id="PAc-GE-3Lt"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="ATM" id="fkG-0W-JS1">
+                                <connections>
+                                    <action selector="toolBarButtonPress:" destination="BYZ-38-t0r" id="Aru-55-i1u"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Park" id="E1i-rJ-xWw">
+                                <connections>
+                                    <action selector="toolBarButtonPress:" destination="BYZ-38-t0r" id="jMA-D4-o4k"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Pv9-6k-Bnr">
+                            <stepper key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="pUF-07-Sqb">
+                                <rect key="frame" x="265" y="7" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didClickStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="Gp9-jv-WTw"/>
+                                </connections>
+                            </stepper>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="TLX-cr-8MK" id="LYY-2G-cm9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="207"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VYh-nV-uho">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gzt-jQ-ZjD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="caX-0n-igt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="buE-kS-vOq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Cx-Ix-TND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="207"/>
+        </scene>
+    </scenes>
+</document>
