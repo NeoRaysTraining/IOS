@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04841A01072D2BB6C64CD55D /* libPods-TextFieldAnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB38D8624392FC82DF2642E /* libPods-TextFieldAnimationTests.a */; };
+		25110D4B09A2C0840655702F /* libPods-TextFieldAnimationUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10138FCD0939FC886F005E3A /* libPods-TextFieldAnimationUITests.a */; };
+		528472F81DA67B0400FC38F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 528472F71DA67B0400FC38F5 /* main.m */; };
+		528472FB1DA67B0500FC38F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 528472FA1DA67B0500FC38F5 /* AppDelegate.m */; };
+		528472FE1DA67B0500FC38F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 528472FD1DA67B0500FC38F5 /* ViewController.m */; };
+		528473011DA67B0600FC38F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528472FF1DA67B0600FC38F5 /* Main.storyboard */; };
+		528473031DA67B0800FC38F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528473021DA67B0800FC38F5 /* Assets.xcassets */; };
+		528473061DA67B0800FC38F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528473041DA67B0800FC38F5 /* LaunchScreen.storyboard */; };
+		528473111DA67B0B00FC38F5 /* TextFieldAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 528473101DA67B0B00FC38F5 /* TextFieldAnimationTests.m */; };
+		5284731C1DA67B0C00FC38F5 /* TextFieldAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5284731B1DA67B0C00FC38F5 /* TextFieldAnimationUITests.m */; };
+		52EE50A01DA7627000C84D16 /* lineNew2x-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EE509F1DA7627000C84D16 /* lineNew2x-1.png */; };
+		52EE50A21DA7628900C84D16 /* gray-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52EE50A11DA7628900C84D16 /* gray-1.png */; };
+		C89C0EB66F5FC8C3058B7928 /* libPods-TextFieldAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB41E7A2AA07B75572295AE /* libPods-TextFieldAnimation.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5284730D1DA67B0B00FC38F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 528472EB1DA67B0200FC38F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528472F21DA67B0300FC38F5;
+			remoteInfo = TextFieldAnimation;
+		};
+		528473181DA67B0B00FC38F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 528472EB1DA67B0200FC38F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 528472F21DA67B0300FC38F5;
+			remoteInfo = TextFieldAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10138FCD0939FC886F005E3A /* libPods-TextFieldAnimationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DED836E379F2CBA45DAAA5E /* Pods-TextFieldAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimationTests/Pods-TextFieldAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2EB38D8624392FC82DF2642E /* libPods-TextFieldAnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37772BC326385F3BAB4C6ABC /* Pods-TextFieldAnimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimationUITests/Pods-TextFieldAnimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		37DC8F07B05F5FFEF943EAE8 /* Pods-TextFieldAnimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimationUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimationUITests/Pods-TextFieldAnimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		528472F31DA67B0300FC38F5 /* TextFieldAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextFieldAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		528472F71DA67B0400FC38F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		528472F91DA67B0500FC38F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		528472FA1DA67B0500FC38F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		528472FC1DA67B0500FC38F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		528472FD1DA67B0500FC38F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		528473001DA67B0600FC38F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		528473021DA67B0800FC38F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		528473051DA67B0800FC38F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		528473071DA67B0800FC38F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5284730C1DA67B0B00FC38F5 /* TextFieldAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		528473101DA67B0B00FC38F5 /* TextFieldAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldAnimationTests.m; sourceTree = "<group>"; };
+		528473121DA67B0B00FC38F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		528473171DA67B0B00FC38F5 /* TextFieldAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextFieldAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5284731B1DA67B0C00FC38F5 /* TextFieldAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldAnimationUITests.m; sourceTree = "<group>"; };
+		5284731D1DA67B0C00FC38F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EE509F1DA7627000C84D16 /* lineNew2x-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lineNew2x-1.png"; sourceTree = "<group>"; };
+		52EE50A11DA7628900C84D16 /* gray-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray-1.png"; sourceTree = "<group>"; };
+		9E4D9D45BFD6FB09BE8BA900 /* Pods-TextFieldAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimationTests/Pods-TextFieldAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		C428E74E375923674D6FEC15 /* Pods-TextFieldAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimation/Pods-TextFieldAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		CCB41E7A2AA07B75572295AE /* libPods-TextFieldAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05F9EF758CAE382DB558D51 /* Pods-TextFieldAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextFieldAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextFieldAnimation/Pods-TextFieldAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		528472F01DA67B0300FC38F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C89C0EB66F5FC8C3058B7928 /* libPods-TextFieldAnimation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528473091DA67B0B00FC38F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04841A01072D2BB6C64CD55D /* libPods-TextFieldAnimationTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528473141DA67B0B00FC38F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25110D4B09A2C0840655702F /* libPods-TextFieldAnimationUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		528472EA1DA67B0200FC38F5 = {
+			isa = PBXGroup;
+			children = (
+				528472F51DA67B0300FC38F5 /* TextFieldAnimation */,
+				5284730F1DA67B0B00FC38F5 /* TextFieldAnimationTests */,
+				5284731A1DA67B0B00FC38F5 /* TextFieldAnimationUITests */,
+				528472F41DA67B0300FC38F5 /* Products */,
+				C16732CF470B536E1A0F0884 /* Pods */,
+				8DD5C6CF974A38D76424DD4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		528472F41DA67B0300FC38F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				528472F31DA67B0300FC38F5 /* TextFieldAnimation.app */,
+				5284730C1DA67B0B00FC38F5 /* TextFieldAnimationTests.xctest */,
+				528473171DA67B0B00FC38F5 /* TextFieldAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		528472F51DA67B0300FC38F5 /* TextFieldAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				528472F91DA67B0500FC38F5 /* AppDelegate.h */,
+				528472FA1DA67B0500FC38F5 /* AppDelegate.m */,
+				528472FC1DA67B0500FC38F5 /* ViewController.h */,
+				52EE509F1DA7627000C84D16 /* lineNew2x-1.png */,
+				52EE50A11DA7628900C84D16 /* gray-1.png */,
+				528472FD1DA67B0500FC38F5 /* ViewController.m */,
+				528472FF1DA67B0600FC38F5 /* Main.storyboard */,
+				528473021DA67B0800FC38F5 /* Assets.xcassets */,
+				528473041DA67B0800FC38F5 /* LaunchScreen.storyboard */,
+				528473071DA67B0800FC38F5 /* Info.plist */,
+				528472F61DA67B0400FC38F5 /* Supporting Files */,
+			);
+			path = TextFieldAnimation;
+			sourceTree = "<group>";
+		};
+		528472F61DA67B0400FC38F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				528472F71DA67B0400FC38F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5284730F1DA67B0B00FC38F5 /* TextFieldAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				528473101DA67B0B00FC38F5 /* TextFieldAnimationTests.m */,
+				528473121DA67B0B00FC38F5 /* Info.plist */,
+			);
+			path = TextFieldAnimationTests;
+			sourceTree = "<group>";
+		};
+		5284731A1DA67B0B00FC38F5 /* TextFieldAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5284731B1DA67B0C00FC38F5 /* TextFieldAnimationUITests.m */,
+				5284731D1DA67B0C00FC38F5 /* Info.plist */,
+			);
+			path = TextFieldAnimationUITests;
+			sourceTree = "<group>";
+		};
+		8DD5C6CF974A38D76424DD4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCB41E7A2AA07B75572295AE /* libPods-TextFieldAnimation.a */,
+				2EB38D8624392FC82DF2642E /* libPods-TextFieldAnimationTests.a */,
+				10138FCD0939FC886F005E3A /* libPods-TextFieldAnimationUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C16732CF470B536E1A0F0884 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05F9EF758CAE382DB558D51 /* Pods-TextFieldAnimation.debug.xcconfig */,
+				C428E74E375923674D6FEC15 /* Pods-TextFieldAnimation.release.xcconfig */,
+				1DED836E379F2CBA45DAAA5E /* Pods-TextFieldAnimationTests.debug.xcconfig */,
+				9E4D9D45BFD6FB09BE8BA900 /* Pods-TextFieldAnimationTests.release.xcconfig */,
+				37DC8F07B05F5FFEF943EAE8 /* Pods-TextFieldAnimationUITests.debug.xcconfig */,
+				37772BC326385F3BAB4C6ABC /* Pods-TextFieldAnimationUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		528472F21DA67B0300FC38F5 /* TextFieldAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528473201DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimation" */;
+			buildPhases = (
+				D41B29DCFC6BFCD2D601D887 /* [CP] Check Pods Manifest.lock */,
+				528472EF1DA67B0300FC38F5 /* Sources */,
+				528472F01DA67B0300FC38F5 /* Frameworks */,
+				528472F11DA67B0300FC38F5 /* Resources */,
+				4FCA178B4AD67884394376CF /* [CP] Embed Pods Frameworks */,
+				8EBB2B9F3BACABBFE356E187 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextFieldAnimation;
+			productName = TextFieldAnimation;
+			productReference = 528472F31DA67B0300FC38F5 /* TextFieldAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5284730B1DA67B0B00FC38F5 /* TextFieldAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528473231DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimationTests" */;
+			buildPhases = (
+				54527947A91654AB125BAB50 /* [CP] Check Pods Manifest.lock */,
+				528473081DA67B0B00FC38F5 /* Sources */,
+				528473091DA67B0B00FC38F5 /* Frameworks */,
+				5284730A1DA67B0B00FC38F5 /* Resources */,
+				ACBCAC47600FC16565C1C5B0 /* [CP] Embed Pods Frameworks */,
+				7FAE72422BB42272E18FD7CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5284730E1DA67B0B00FC38F5 /* PBXTargetDependency */,
+			);
+			name = TextFieldAnimationTests;
+			productName = TextFieldAnimationTests;
+			productReference = 5284730C1DA67B0B00FC38F5 /* TextFieldAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		528473161DA67B0B00FC38F5 /* TextFieldAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 528473261DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimationUITests" */;
+			buildPhases = (
+				FAC321575A11EBED94E57E21 /* [CP] Check Pods Manifest.lock */,
+				528473131DA67B0B00FC38F5 /* Sources */,
+				528473141DA67B0B00FC38F5 /* Frameworks */,
+				528473151DA67B0B00FC38F5 /* Resources */,
+				1A62FB3F8C259C9348273561 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				528473191DA67B0B00FC38F5 /* PBXTargetDependency */,
+			);
+			name = TextFieldAnimationUITests;
+			productName = TextFieldAnimationUITests;
+			productReference = 528473171DA67B0B00FC38F5 /* TextFieldAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		528472EB1DA67B0200FC38F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					528472F21DA67B0300FC38F5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					5284730B1DA67B0B00FC38F5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 528472F21DA67B0300FC38F5;
+					};
+					528473161DA67B0B00FC38F5 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 528472F21DA67B0300FC38F5;
+					};
+				};
+			};
+			buildConfigurationList = 528472EE1DA67B0200FC38F5 /* Build configuration list for PBXProject "TextFieldAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 528472EA1DA67B0200FC38F5;
+			productRefGroup = 528472F41DA67B0300FC38F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				528472F21DA67B0300FC38F5 /* TextFieldAnimation */,
+				5284730B1DA67B0B00FC38F5 /* TextFieldAnimationTests */,
+				528473161DA67B0B00FC38F5 /* TextFieldAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		528472F11DA67B0300FC38F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52EE50A21DA7628900C84D16 /* gray-1.png in Resources */,
+				52EE50A01DA7627000C84D16 /* lineNew2x-1.png in Resources */,
+				528473061DA67B0800FC38F5 /* LaunchScreen.storyboard in Resources */,
+				528473031DA67B0800FC38F5 /* Assets.xcassets in Resources */,
+				528473011DA67B0600FC38F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5284730A1DA67B0B00FC38F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528473151DA67B0B00FC38F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A62FB3F8C259C9348273561 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldAnimationUITests/Pods-TextFieldAnimationUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FCA178B4AD67884394376CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldAnimation/Pods-TextFieldAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54527947A91654AB125BAB50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAE72422BB42272E18FD7CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldAnimationTests/Pods-TextFieldAnimationTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBB2B9F3BACABBFE356E187 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldAnimation/Pods-TextFieldAnimation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACBCAC47600FC16565C1C5B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextFieldAnimationTests/Pods-TextFieldAnimationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D41B29DCFC6BFCD2D601D887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC321575A11EBED94E57E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		528472EF1DA67B0300FC38F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528472FE1DA67B0500FC38F5 /* ViewController.m in Sources */,
+				528472FB1DA67B0500FC38F5 /* AppDelegate.m in Sources */,
+				528472F81DA67B0400FC38F5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528473081DA67B0B00FC38F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528473111DA67B0B00FC38F5 /* TextFieldAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		528473131DA67B0B00FC38F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5284731C1DA67B0C00FC38F5 /* TextFieldAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5284730E1DA67B0B00FC38F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528472F21DA67B0300FC38F5 /* TextFieldAnimation */;
+			targetProxy = 5284730D1DA67B0B00FC38F5 /* PBXContainerItemProxy */;
+		};
+		528473191DA67B0B00FC38F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 528472F21DA67B0300FC38F5 /* TextFieldAnimation */;
+			targetProxy = 528473181DA67B0B00FC38F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		528472FF1DA67B0600FC38F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528473001DA67B0600FC38F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		528473041DA67B0800FC38F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				528473051DA67B0800FC38F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5284731E1DA67B0C00FC38F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5284731F1DA67B0C00FC38F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		528473211DA67B0C00FC38F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05F9EF758CAE382DB558D51 /* Pods-TextFieldAnimation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		528473221DA67B0C00FC38F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C428E74E375923674D6FEC15 /* Pods-TextFieldAnimation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TextFieldAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		528473241DA67B0C00FC38F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DED836E379F2CBA45DAAA5E /* Pods-TextFieldAnimationTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TextFieldAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldAnimation.app/TextFieldAnimation";
+			};
+			name = Debug;
+		};
+		528473251DA67B0C00FC38F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4D9D45BFD6FB09BE8BA900 /* Pods-TextFieldAnimationTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TextFieldAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TextFieldAnimation.app/TextFieldAnimation";
+			};
+			name = Release;
+		};
+		528473271DA67B0C00FC38F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DC8F07B05F5FFEF943EAE8 /* Pods-TextFieldAnimationUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TextFieldAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TextFieldAnimation;
+			};
+			name = Debug;
+		};
+		528473281DA67B0C00FC38F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37772BC326385F3BAB4C6ABC /* Pods-TextFieldAnimationUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = TextFieldAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.TextFieldAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TextFieldAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		528472EE1DA67B0200FC38F5 /* Build configuration list for PBXProject "TextFieldAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5284731E1DA67B0C00FC38F5 /* Debug */,
+				5284731F1DA67B0C00FC38F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528473201DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528473211DA67B0C00FC38F5 /* Debug */,
+				528473221DA67B0C00FC38F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528473231DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528473241DA67B0C00FC38F5 /* Debug */,
+				528473251DA67B0C00FC38F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		528473261DA67B0C00FC38F5 /* Build configuration list for PBXNativeTarget "TextFieldAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528473271DA67B0C00FC38F5 /* Debug */,
+				528473281DA67B0C00FC38F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 528472EB1DA67B0200FC38F5 /* Project object */;
+}

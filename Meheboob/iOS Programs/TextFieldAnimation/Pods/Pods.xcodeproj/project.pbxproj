@@ -1,0 +1,699 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B0F030308BA5FBF9ECCBC465A5B47BD /* Pods-TextFieldAnimation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C9A2C4BB90DE8F613D95B02DEA70C /* Pods-TextFieldAnimation-dummy.m */; };
+		0F5B6AC14F58EABEB001C30A452D5268 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 72B5D9805F82D77E25E434AF9F59B88E /* JVFloatLabeledTextField.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1E04E83623789E01EB3D44E0864941E5 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3A80B5303873D0B1A9666D8B015356 /* JVFloatLabeledTextView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		266712BC5C45697B7DD802E678F13047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		499E5A5E8F45A0E6FC10DBAB17BBB66E /* NSString+TextDirectionality.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D0679DA954FF4D91457DBA8EBA4D47D /* NSString+TextDirectionality.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D067C25E11B77A40849965454AD3F5E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */; };
+		5A8748753AF1138672E5AA29599E488D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		740275241245444929B51C5C824BC87F /* JVFloatLabeledTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A25D860AA6CDEDBE4B5AD704F701EC2 /* JVFloatLabeledTextField-dummy.m */; };
+		75B9287485714913A1A259FEA70BE606 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = EA890A2A17FF45006B4C578762C288E4 /* NSString+TextDirectionality.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7F4570380A6FEE31AEC1F357B2BD7D4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+		8C3C27FFD4B270EC7E8AF5E7C4051A09 /* JVFloatLabeledTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA329E0828748971E18AA4628C717EC /* JVFloatLabeledTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A85BA27B82D8D6BBD7BA6BBF6C4A42CF /* Pods-TextFieldAnimationUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19590016510D17EFA83C2DE2FA210D6D /* Pods-TextFieldAnimationUITests-dummy.m */; };
+		B8AD4B6E45EFC98D8C0519515224DF9F /* Pods-TextFieldAnimationTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F524245588B4787E39439963986B359 /* Pods-TextFieldAnimationTests-dummy.m */; };
+		CFF5177687FB45610BF82F645C636DFA /* JVFloatLabeledTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = F445554D57B263F2EA17ED09E9FA047F /* JVFloatLabeledTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2ACEE3E73C3E02AA5FA0EF7F4393CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0039AF3D92A12ECD755E091D998D38A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 266E27D897FD7FD68078059CF4D7455F;
+			remoteInfo = JVFloatLabeledTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08760907C6A9971FF25A0E3AD8A3C9A6 /* Pods-TextFieldAnimation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextFieldAnimation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0ABAC978D152E927C0170FCA6049E05F /* Pods-TextFieldAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		0D0679DA954FF4D91457DBA8EBA4D47D /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+TextDirectionality.h"; path = "JVFloatLabeledTextField/JVFloatLabeledTextField/NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		19590016510D17EFA83C2DE2FA210D6D /* Pods-TextFieldAnimationUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextFieldAnimationUITests-dummy.m"; sourceTree = "<group>"; };
+		1E09E088897921D0E8343A2F4AEFF64B /* JVFloatLabeledTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JVFloatLabeledTextField-prefix.pch"; sourceTree = "<group>"; };
+		1EFEDECBDD1579706DBB4F456FE4A86B /* Pods-TextFieldAnimationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2C894DD453C02F680795541D45DF2DA4 /* Pods-TextFieldAnimationTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimationTests-frameworks.sh"; sourceTree = "<group>"; };
+		2E8C9A2C4BB90DE8F613D95B02DEA70C /* Pods-TextFieldAnimation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextFieldAnimation-dummy.m"; sourceTree = "<group>"; };
+		2F524245588B4787E39439963986B359 /* Pods-TextFieldAnimationTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextFieldAnimationTests-dummy.m"; sourceTree = "<group>"; };
+		3FD63CD4302D2AFE39A8E985F6A45934 /* libJVFloatLabeledTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJVFloatLabeledTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4187DD134D75F10692B290084094B3CB /* Pods-TextFieldAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		4AF3B5CB225780B8494CA97B51B349AF /* Pods-TextFieldAnimationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		53EE9330CE3B48CA6D5D98B3E071943B /* Pods-TextFieldAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72B5D9805F82D77E25E434AF9F59B88E /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVFloatLabeledTextField.m; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		81CDDA86B424E3FFD106B8EEEFCD25D4 /* libPods-TextFieldAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86290BF680B618DDE858602094365AF8 /* Pods-TextFieldAnimationTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimationTests-resources.sh"; sourceTree = "<group>"; };
+		8672FD1AB88E73D384D76B3016CD09E2 /* Pods-TextFieldAnimationTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextFieldAnimationTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8691F896D0B408F090C1D0F251CA3F57 /* Pods-TextFieldAnimationUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimationUITests-resources.sh"; sourceTree = "<group>"; };
+		8AAD17D9C50C355D3E8A81D36951AB4A /* JVFloatLabeledTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JVFloatLabeledTextField.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A25D860AA6CDEDBE4B5AD704F701EC2 /* JVFloatLabeledTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JVFloatLabeledTextField-dummy.m"; sourceTree = "<group>"; };
+		A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AD8E4AADE64CA4B0E8F660EDB014976C /* libPods-TextFieldAnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3C6863AEBF6DAE59A7809CF8B8E660 /* Pods-TextFieldAnimation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimation-resources.sh"; sourceTree = "<group>"; };
+		CD55010465C292C75D04EA1F0E3646DD /* Pods-TextFieldAnimation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimation-frameworks.sh"; sourceTree = "<group>"; };
+		D00E8EC178F168ACE6A1B28AC0F49CF8 /* Pods-TextFieldAnimationUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextFieldAnimationUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DA51E6313AB34C2F21C10D7A71E4B0B5 /* Pods-TextFieldAnimationUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextFieldAnimationUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DB75F10C8AD901F7A6C446CA217139A1 /* Pods-TextFieldAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextFieldAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF3A80B5303873D0B1A9666D8B015356 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JVFloatLabeledTextView.m; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		DFA329E0828748971E18AA4628C717EC /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVFloatLabeledTextView.h; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		E12FE81D07317F7AB568DEFE605C5C45 /* Pods-TextFieldAnimationUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextFieldAnimationUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EA890A2A17FF45006B4C578762C288E4 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+TextDirectionality.m"; path = "JVFloatLabeledTextField/JVFloatLabeledTextField/NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		F445554D57B263F2EA17ED09E9FA047F /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JVFloatLabeledTextField.h; path = JVFloatLabeledTextField/JVFloatLabeledTextField/JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		FC7B93F64CBCB02FC646A610ADFCDF2B /* Pods-TextFieldAnimation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextFieldAnimation-acknowledgements.plist"; sourceTree = "<group>"; };
+		FDD3CEFB1B7442B37026B8706030A3E8 /* Pods-TextFieldAnimationTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextFieldAnimationTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE2878307A5593F5723AAFABE8D458B1 /* libPods-TextFieldAnimationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextFieldAnimationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2125AD4A4460E94F7DD4F41EB7BE6345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8748753AF1138672E5AA29599E488D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3B643E4451C0CA25C73FCE3CA5D090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2ACEE3E73C3E02AA5FA0EF7F4393CBA /* Foundation.framework in Frameworks */,
+				4D067C25E11B77A40849965454AD3F5E /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38A9FD21095A4366F71184CE57B291D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266712BC5C45697B7DD802E678F13047 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B956454CCC1B0B9CA72AF7E819EF0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4570380A6FEE31AEC1F357B2BD7D4A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				9FFF112B167A55FC1908E1DD44603498 /* Pods */,
+				E5F07784A3BA4E50FCE7FEEE69324937 /* Products */,
+				FD4365D5034FB5E019EF6DCD6866F1E7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		866D0B6D189A0521BAFD13529EE56977 /* Pods-TextFieldAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3CEFB1B7442B37026B8706030A3E8 /* Pods-TextFieldAnimationTests-acknowledgements.markdown */,
+				8672FD1AB88E73D384D76B3016CD09E2 /* Pods-TextFieldAnimationTests-acknowledgements.plist */,
+				2F524245588B4787E39439963986B359 /* Pods-TextFieldAnimationTests-dummy.m */,
+				2C894DD453C02F680795541D45DF2DA4 /* Pods-TextFieldAnimationTests-frameworks.sh */,
+				86290BF680B618DDE858602094365AF8 /* Pods-TextFieldAnimationTests-resources.sh */,
+				53EE9330CE3B48CA6D5D98B3E071943B /* Pods-TextFieldAnimationTests.debug.xcconfig */,
+				DB75F10C8AD901F7A6C446CA217139A1 /* Pods-TextFieldAnimationTests.release.xcconfig */,
+			);
+			name = "Pods-TextFieldAnimationTests";
+			path = "Target Support Files/Pods-TextFieldAnimationTests";
+			sourceTree = "<group>";
+		};
+		892B7A1FAEA706D0905D6AE3E7530105 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				F445554D57B263F2EA17ED09E9FA047F /* JVFloatLabeledTextField.h */,
+				72B5D9805F82D77E25E434AF9F59B88E /* JVFloatLabeledTextField.m */,
+				DFA329E0828748971E18AA4628C717EC /* JVFloatLabeledTextView.h */,
+				DF3A80B5303873D0B1A9666D8B015356 /* JVFloatLabeledTextView.m */,
+				0D0679DA954FF4D91457DBA8EBA4D47D /* NSString+TextDirectionality.h */,
+				EA890A2A17FF45006B4C578762C288E4 /* NSString+TextDirectionality.m */,
+				EA704BB535F2950CE1B54222F630E550 /* Support Files */,
+			);
+			path = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		9FFF112B167A55FC1908E1DD44603498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				892B7A1FAEA706D0905D6AE3E7530105 /* JVFloatLabeledTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2FD0FD52F75CE8CC94904BA4A269CAB /* Pods-TextFieldAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				08760907C6A9971FF25A0E3AD8A3C9A6 /* Pods-TextFieldAnimation-acknowledgements.markdown */,
+				FC7B93F64CBCB02FC646A610ADFCDF2B /* Pods-TextFieldAnimation-acknowledgements.plist */,
+				2E8C9A2C4BB90DE8F613D95B02DEA70C /* Pods-TextFieldAnimation-dummy.m */,
+				CD55010465C292C75D04EA1F0E3646DD /* Pods-TextFieldAnimation-frameworks.sh */,
+				AF3C6863AEBF6DAE59A7809CF8B8E660 /* Pods-TextFieldAnimation-resources.sh */,
+				0ABAC978D152E927C0170FCA6049E05F /* Pods-TextFieldAnimation.debug.xcconfig */,
+				4187DD134D75F10692B290084094B3CB /* Pods-TextFieldAnimation.release.xcconfig */,
+			);
+			name = "Pods-TextFieldAnimation";
+			path = "Target Support Files/Pods-TextFieldAnimation";
+			sourceTree = "<group>";
+		};
+		C31F0AFFCC67D218D2AADCA48545004A /* Pods-TextFieldAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA51E6313AB34C2F21C10D7A71E4B0B5 /* Pods-TextFieldAnimationUITests-acknowledgements.markdown */,
+				D00E8EC178F168ACE6A1B28AC0F49CF8 /* Pods-TextFieldAnimationUITests-acknowledgements.plist */,
+				19590016510D17EFA83C2DE2FA210D6D /* Pods-TextFieldAnimationUITests-dummy.m */,
+				E12FE81D07317F7AB568DEFE605C5C45 /* Pods-TextFieldAnimationUITests-frameworks.sh */,
+				8691F896D0B408F090C1D0F251CA3F57 /* Pods-TextFieldAnimationUITests-resources.sh */,
+				1EFEDECBDD1579706DBB4F456FE4A86B /* Pods-TextFieldAnimationUITests.debug.xcconfig */,
+				4AF3B5CB225780B8494CA97B51B349AF /* Pods-TextFieldAnimationUITests.release.xcconfig */,
+			);
+			name = "Pods-TextFieldAnimationUITests";
+			path = "Target Support Files/Pods-TextFieldAnimationUITests";
+			sourceTree = "<group>";
+		};
+		E5F07784A3BA4E50FCE7FEEE69324937 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD63CD4302D2AFE39A8E985F6A45934 /* libJVFloatLabeledTextField.a */,
+				81CDDA86B424E3FFD106B8EEEFCD25D4 /* libPods-TextFieldAnimation.a */,
+				AD8E4AADE64CA4B0E8F660EDB014976C /* libPods-TextFieldAnimationTests.a */,
+				FE2878307A5593F5723AAFABE8D458B1 /* libPods-TextFieldAnimationUITests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA704BB535F2950CE1B54222F630E550 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AAD17D9C50C355D3E8A81D36951AB4A /* JVFloatLabeledTextField.xcconfig */,
+				9A25D860AA6CDEDBE4B5AD704F701EC2 /* JVFloatLabeledTextField-dummy.m */,
+				1E09E088897921D0E8343A2F4AEFF64B /* JVFloatLabeledTextField-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JVFloatLabeledTextField";
+			sourceTree = "<group>";
+		};
+		F302CD3B306AF1ED96B9AF31FCDBC26C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6FF208CEC4C2861F1E9D42D651453 /* Foundation.framework */,
+				E86668F20F252C440D1015B816BE59C5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FD4365D5034FB5E019EF6DCD6866F1E7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2FD0FD52F75CE8CC94904BA4A269CAB /* Pods-TextFieldAnimation */,
+				866D0B6D189A0521BAFD13529EE56977 /* Pods-TextFieldAnimationTests */,
+				C31F0AFFCC67D218D2AADCA48545004A /* Pods-TextFieldAnimationUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AB03CCA1077C149FD6671EFCD64C3AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF5177687FB45610BF82F645C636DFA /* JVFloatLabeledTextField.h in Headers */,
+				8C3C27FFD4B270EC7E8AF5E7C4051A09 /* JVFloatLabeledTextView.h in Headers */,
+				499E5A5E8F45A0E6FC10DBAB17BBB66E /* NSString+TextDirectionality.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		266E27D897FD7FD68078059CF4D7455F /* JVFloatLabeledTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17BDC6FC1B950393098EDD292C09ECF /* Build configuration list for PBXNativeTarget "JVFloatLabeledTextField" */;
+			buildPhases = (
+				313DB931CE985F1211597D142EEB3C8B /* Sources */,
+				8C3B643E4451C0CA25C73FCE3CA5D090 /* Frameworks */,
+				2AB03CCA1077C149FD6671EFCD64C3AB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JVFloatLabeledTextField;
+			productName = JVFloatLabeledTextField;
+			productReference = 3FD63CD4302D2AFE39A8E985F6A45934 /* libJVFloatLabeledTextField.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		38D2E6A596BA5FF54823596D213D035C /* Pods-TextFieldAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D4CF4B8DB22E5ADF0B07A6D49CA6DEF /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimationTests" */;
+			buildPhases = (
+				67D45F76989D5A4FFD537D7630DA308C /* Sources */,
+				A5B956454CCC1B0B9CA72AF7E819EF0C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TextFieldAnimationTests";
+			productName = "Pods-TextFieldAnimationTests";
+			productReference = AD8E4AADE64CA4B0E8F660EDB014976C /* libPods-TextFieldAnimationTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4662718BE787F6B5B97D72DA88B0D575 /* Pods-TextFieldAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9960470B6290423D9CE4BFB0CCFBE7C /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimation" */;
+			buildPhases = (
+				A573B121D39CA9404618C6608D4E842B /* Sources */,
+				2125AD4A4460E94F7DD4F41EB7BE6345 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EB5E19D0F01329706A7D32A6A8B92C /* PBXTargetDependency */,
+			);
+			name = "Pods-TextFieldAnimation";
+			productName = "Pods-TextFieldAnimation";
+			productReference = 81CDDA86B424E3FFD106B8EEEFCD25D4 /* libPods-TextFieldAnimation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		968E491B151C92DB19ED1D6F669F83D0 /* Pods-TextFieldAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 414FFB0FC863207E3E95FEA19CF3C4B1 /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimationUITests" */;
+			buildPhases = (
+				7C9C3C69B2C79788DEE9B71A5E7E6910 /* Sources */,
+				A38A9FD21095A4366F71184CE57B291D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TextFieldAnimationUITests";
+			productName = "Pods-TextFieldAnimationUITests";
+			productReference = FE2878307A5593F5723AAFABE8D458B1 /* libPods-TextFieldAnimationUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E5F07784A3BA4E50FCE7FEEE69324937 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				266E27D897FD7FD68078059CF4D7455F /* JVFloatLabeledTextField */,
+				4662718BE787F6B5B97D72DA88B0D575 /* Pods-TextFieldAnimation */,
+				38D2E6A596BA5FF54823596D213D035C /* Pods-TextFieldAnimationTests */,
+				968E491B151C92DB19ED1D6F669F83D0 /* Pods-TextFieldAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		313DB931CE985F1211597D142EEB3C8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740275241245444929B51C5C824BC87F /* JVFloatLabeledTextField-dummy.m in Sources */,
+				0F5B6AC14F58EABEB001C30A452D5268 /* JVFloatLabeledTextField.m in Sources */,
+				1E04E83623789E01EB3D44E0864941E5 /* JVFloatLabeledTextView.m in Sources */,
+				75B9287485714913A1A259FEA70BE606 /* NSString+TextDirectionality.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67D45F76989D5A4FFD537D7630DA308C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AD4B6E45EFC98D8C0519515224DF9F /* Pods-TextFieldAnimationTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C9C3C69B2C79788DEE9B71A5E7E6910 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A85BA27B82D8D6BBD7BA6BBF6C4A42CF /* Pods-TextFieldAnimationUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573B121D39CA9404618C6608D4E842B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B0F030308BA5FBF9ECCBC465A5B47BD /* Pods-TextFieldAnimation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07EB5E19D0F01329706A7D32A6A8B92C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JVFloatLabeledTextField;
+			target = 266E27D897FD7FD68078059CF4D7455F /* JVFloatLabeledTextField */;
+			targetProxy = 0039AF3D92A12ECD755E091D998D38A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14F58F0F6DACE5557C4D77616DD58185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAD17D9C50C355D3E8A81D36951AB4A /* JVFloatLabeledTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JVFloatLabeledTextField/JVFloatLabeledTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3467D21FB9ADA3306B1FF83B7C6E2389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AF3B5CB225780B8494CA97B51B349AF /* Pods-TextFieldAnimationUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		42287DDF97330524BA3EF220F0276DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7908B684681906075AF72119C3681E9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB75F10C8AD901F7A6C446CA217139A1 /* Pods-TextFieldAnimationTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8CA866BEE56CB7BF27772F40774A7680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53EE9330CE3B48CA6D5D98B3E071943B /* Pods-TextFieldAnimationTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9A1203FCA2C77CCCE3199F9438D6C3F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFEDECBDD1579706DBB4F456FE4A86B /* Pods-TextFieldAnimationUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		ACFADB36CBEF8688BD2396971E9DA125 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4187DD134D75F10692B290084094B3CB /* Pods-TextFieldAnimation.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AE9439C22469D35336242DD983DB5C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BA3A033AEF6DDDD9F81599F74F84A971 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAD17D9C50C355D3E8A81D36951AB4A /* JVFloatLabeledTextField.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JVFloatLabeledTextField/JVFloatLabeledTextField-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C2F82FDEDC9108EB559AC7A88A6DE74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ABAC978D152E927C0170FCA6049E05F /* Pods-TextFieldAnimation.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9439C22469D35336242DD983DB5C5F /* Debug */,
+				42287DDF97330524BA3EF220F0276DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		414FFB0FC863207E3E95FEA19CF3C4B1 /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A1203FCA2C77CCCE3199F9438D6C3F7 /* Debug */,
+				3467D21FB9ADA3306B1FF83B7C6E2389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D4CF4B8DB22E5ADF0B07A6D49CA6DEF /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CA866BEE56CB7BF27772F40774A7680 /* Debug */,
+				7908B684681906075AF72119C3681E9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9960470B6290423D9CE4BFB0CCFBE7C /* Build configuration list for PBXNativeTarget "Pods-TextFieldAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2F82FDEDC9108EB559AC7A88A6DE74B /* Debug */,
+				ACFADB36CBEF8688BD2396971E9DA125 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17BDC6FC1B950393098EDD292C09ECF /* Build configuration list for PBXNativeTarget "JVFloatLabeledTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14F58F0F6DACE5557C4D77616DD58185 /* Debug */,
+				BA3A033AEF6DDDD9F81599F74F84A971 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
