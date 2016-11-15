@@ -41,8 +41,8 @@ static UIView *lastOpenedCellView;
     recognizerView = recognizer.view;
     
     UIView *upperView  = recognizer.view;
-    NSLog(@"Val of X : %f",upperView.frame.origin.x);
-    NSLog(@"Val of Y : %f",upperView.frame.origin.y);
+   // NSLog(@"Val of X : %f",upperView.frame.origin.x);
+    //NSLog(@"Val of Y : %f",upperView.frame.origin.y);
     if (lastOpenedCellView!=nil) {
         //[self hideButtonsForView:lastOpenedCellView];
     }
@@ -66,8 +66,8 @@ static UIView *lastOpenedCellView;
 {
     recognizerView = recognizer.view;
     UIView *upperView  = recognizer.view;
-    NSLog(@"Val of X : %f",upperView.frame.origin.x);
-    NSLog(@"Val of Y : %f",upperView.frame.origin.y);
+   // NSLog(@"Val of X : %f",upperView.frame.origin.x);
+   // NSLog(@"Val of Y : %f",upperView.frame.origin.y);
     if (upperView.frame.origin.x == 0.000000) {
         [self showHiddenButtonsForView2:upperView];
     }
@@ -83,7 +83,7 @@ static UIView *lastOpenedCellView;
 -(void)showHiddenButtonsForView:(UIView *)cellView
 {
     [UIView animateWithDuration:0.5
-                          delay:0.5
+                          delay:0.3
          usingSpringWithDamping:0.4
           initialSpringVelocity:0.5
                         options:0 animations:^{
@@ -96,7 +96,7 @@ static UIView *lastOpenedCellView;
 -(void)hideButtonsForView:(UIView *)cellView
 {
     [UIView animateWithDuration:0.5
-                          delay:0.5
+                          delay:0.3
          usingSpringWithDamping:0.4
           initialSpringVelocity:0.5
                         options:0 animations:^{

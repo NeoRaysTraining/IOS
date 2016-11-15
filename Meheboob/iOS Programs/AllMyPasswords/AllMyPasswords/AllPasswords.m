@@ -18,6 +18,8 @@
     NSManagedObject *allTitles;
     NSIndexPath *indexPathForEditImage;
     
+    NSIndexPath* passTableIndex;
+    
     TableViewCell *viewCell;
     
     BOOL checkFlag;
@@ -27,12 +29,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
    
-   
+    
     [self fetchData];
     
     checkFlag = YES;
+    
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [self fetchData];
+    checkFlag = YES;
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -46,8 +54,6 @@
 }
 
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
@@ -55,11 +61,10 @@
     
     viewCell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
-   
+
+   // cell.imageView.layer.borderWidth = 2.0f;
     
-    cell.imageView.layer.borderWidth = 2.0f;
-    
-    cell.imageView.layer.borderColor = [UIColor greenColor].CGColor;
+   // cell.imageView.layer.borderColor = [UIColor blueColor].CGColor;
     allTitles = [shortResults objectAtIndex:indexPath.row];
     
   
@@ -69,14 +74,17 @@
     cell.title.text = title ;
     
    
-    cell.userName.text = [NSString stringWithFormat:@"User Name : %@",[allTitles valueForKey:@"userName"] ];
-    cell.password.text = [NSString stringWithFormat:@"Password : %@",[allTitles valueForKey:@"password"] ];
+    cell.userName.text = [NSString stringWithFormat:@"  %@",[allTitles valueForKey:@"userName"] ];
+    cell.password.text = [NSString stringWithFormat:@"  %@",[allTitles valueForKey:@"password"] ];
     
-    cell.facebookLabel.text = [[title substringToIndex:1] capitalizedString];
-  
     
+    [cell.buttonImage setBackgroundImage:[UIImage imageWithData:[allTitles valueForKey:@"picture"]] forState:UIControlStateNormal];
+    
+       
     return cell;
 }
+
+
 
 
 - (IBAction)addButton:(id)sender{
@@ -176,6 +184,7 @@
 
 
 }
+
 
 
 
@@ -536,6 +545,14 @@
             
             [emp setValue:userName.text forKey:@"userName"];
             [emp setValue:password.text forKey:@"password"];
+               
+                
+                
+                UIImage *imageLogo = [UIImage imageNamed:@"web.jpg"];
+                NSData *imageData = UIImagePNGRepresentation(imageLogo);
+                [emp setValue:imageData forKey:@"picture"];
+                
+                
             NSError* error=nil;
             
             if (![context save:&error
@@ -633,6 +650,17 @@
     if ([customURL isEqualToString:@"gmail"]) {
         customURL = @"googlegmail";
     }
+    if ([customURL isEqualToString:@"googlemaps"]) {
+        customURL = @"comgooglemaps";
+    }
+    if ([customURL isEqualToString:@"google+"]) {
+        customURL = @"gplus";
+    }
+    if ([customURL isEqualToString:@"googleplus"]) {
+        customURL = @"gplus";
+    }
+    
+    
     NSString *customUrlForApp = [NSString stringWithFormat:@"%@://",customURL];
     
     if ([[UIApplication sharedApplication]
@@ -679,4 +707,24 @@
         
     }
 }
+
+- (IBAction)buttonImageAction:(UIButton *)sender {
+    
+    
+    CGPoint buttonPosition = [sender convertPoint:CGPointZero toView:self.myTableView];
+    NSIndexPath *indexPath = [self.myTableView indexPathForRowAtPoint:buttonPosition];
+    
+      passTableIndex = indexPath;
+    [self performSegueWithIdentifier:@"image" sender:self];
+
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+
+    ImageViewController *imageController = [segue destinationViewController];
+    
+    [imageController revieweTableIndex:passTableIndex];
+}
+
+
 @end

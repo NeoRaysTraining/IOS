@@ -10,13 +10,19 @@
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 #import "TableViewCell.h"
+#import "ImageViewController.h"
 @interface AllPasswords : UIViewController<UITableViewDelegate, UITableViewDataSource,UISearchBarDelegate>
+
+
+
 
 @property(strong, nonatomic)NSMutableArray *employeeObjects;
 @property(strong, nonatomic)NSIndexPath *selectedPath;
+- (IBAction)buttonImageAction:(UIButton *)sender;
 
 - (IBAction)addButton:(id)sender;
 - (IBAction)moreButton:(UIButton *)sender;
+
 
 
 

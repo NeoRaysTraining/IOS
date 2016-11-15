@@ -12,13 +12,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *title;
 
 @property (weak, nonatomic) IBOutlet UIView *swipableUIView;
-@property (weak, nonatomic) IBOutlet UILabel *facebookLabel;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *userName;
 @property (weak, nonatomic) IBOutlet UILabel *password;
-@property (weak, nonatomic) IBOutlet UIImageView *imageview;
+//@property (weak, nonatomic) IBOutlet UIImageView *imageview;
 -(void)hideButtonsForView:(UIView *)cellView;
 -(void)showHiddenButtonsForView2:(UIView *)cellView;
+@property (weak, nonatomic) IBOutlet UILabel *userNameT;
+@property (weak, nonatomic) IBOutlet UILabel *passwordT;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonImage;
 
 -(void)swifeLeft ;
 @end

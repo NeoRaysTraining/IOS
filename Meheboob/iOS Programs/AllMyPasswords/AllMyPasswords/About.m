@@ -9,13 +9,14 @@
 #import "About.h"
 #import <QuartzCore/QuartzCore.h>
 #import <sys/utsname.h>
-#define YOUR_APP_STORE_ID 545174222 //Change this one to your ID
+
 @interface About ()
 
 @end
 
 @implementation About
 
+#pragma - mark View Did Load
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -29,32 +30,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-
-
-
-- (IBAction)rateReveiew:(id)sender {
-   
-        
-//    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"itms-apps://itunes.apple.com/app/reviews" stringByAppendingString: @"id547101139"]] options:@{} completionHandler:nil
-//     ];
-    
-    
-    
-   
-    
-    NSString* url = [NSString stringWithFormat: @"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=547101139&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"];
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url ]options:@{} completionHandler:nil];
-   
-    
-}
-
-- (IBAction)sendFeedback:(id)sender {
-    
-    [self feedBackMail];
-}
-
+#pragma - mark Share
 - (IBAction)sendToFriends:(id)sender {
     
     
@@ -94,18 +70,7 @@
         else
         {
             
-            
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"WhatsApp not installed."
-                                                                           message:@"Your device has no WhatsApp installed."
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {}];
-            
-            [alert addAction:defaultAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-            
+            [self CreateAlert:@"WhatsApp not installed." :@"Your device has no WhatsApp installed."];
             
         }
         
@@ -150,6 +115,7 @@
         }
         else
         {
+            [self CreateAlert:@"Error" :@"Your device will not support mail"];
             NSLog(@"It Cannot send mail");
         }
 
@@ -162,17 +128,7 @@
         
         if(![MFMessageComposeViewController canSendText]) {
             
-            
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                           message:@"Your device doesn't support SMS!."
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {}];
-            
-            [alert addAction:defaultAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
+            [self CreateAlert:@"Error" :@"Your device doesn't support SMS!."];
             
             return;
         }
@@ -218,6 +174,8 @@
     
 }
 
+#pragma - mark Facebook and Twitter
+
 - (IBAction)facebookPage:(id)sender {
     
     UIApplication *application = [UIApplication sharedApplication];
@@ -238,6 +196,49 @@
     [application openURL:[NSURL URLWithString:@"http://neorays.com"] options:@{} completionHandler:nil];
 }
 
+#pragma - mark Email and Feedback
+
+- (IBAction)sendFeedback:(id)sender {
+    
+    [self feedBackMail];
+}
+
+-(void)feedBackMail{
+    if ([MFMailComposeViewController canSendMail])
+    {
+        NSLog(@"It can send Mail");
+        
+        // Email Subject
+        NSString *emailTitle = @"All My Passwords iPhone App";
+        // Email Content
+        NSString *messageBody = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@" ,[NSString stringWithFormat:@"Country : %@\n<br>",[[NSLocale currentLocale] objectForKey:NSLocaleCountryCode]],
+                                 [NSString stringWithFormat:@"Devive language : %@\n<br>",[[NSLocale preferredLanguages] objectAtIndex:0]],
+                                 [NSString stringWithFormat:@"Unique Identifier: %@\n<br>", [UIDevice currentDevice].identifierForVendor],
+                                 [NSString stringWithFormat:@"Name: %@\n<br>", [[UIDevice currentDevice] name]],
+                                 [NSString stringWithFormat:@"System Name: %@\n<br>", [[UIDevice currentDevice] systemName]],
+                                 [NSString stringWithFormat:@"System Version: %@\n<br>", [[UIDevice currentDevice] systemVersion]],
+                                 [NSString stringWithFormat:@"Model: %@\n<br>", [[UIDevice currentDevice] model]],
+                                 [NSString stringWithFormat:@"localizedModel: %@<br>", [[UIDevice currentDevice] localizedModel]]];
+        // To address
+        NSArray *toRecipents = [NSArray arrayWithObject:@"mrnadaf2010@gmail.com"];
+        
+        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+        mc.mailComposeDelegate = self;
+        [mc setSubject:emailTitle];
+        [mc setMessageBody:messageBody isHTML:YES];
+        [mc setToRecipients:toRecipents];
+        
+        // Present mail view controller on screen
+        [self presentViewController:mc animated:YES completion:NULL];
+        
+    }
+    else
+    {
+        [self CreateAlert:@"Error" :@"Your device will not Support Mail"];
+    }
+    
+    
+}
 - (IBAction)mailFeedback:(id)sender {
     
     
@@ -284,19 +285,29 @@
     
     switch (result) {
         case MFMailComposeResultCancelled:
-            NSLog(@"Message Sending Cancelled");
+            
+            
+            [self CreateAlert:@"Error" :@"Message Sending Cancelled"];
+            
             break;
             
         case MFMailComposeResultFailed:
-            NSLog(@"Message Sending Failed");
+            
+            [self CreateAlert:@"Error" :@"Message Sending Failed"];
+            
             break;
             
         case MFMailComposeResultSent:
-            NSLog(@"Message Sent Sucsessfully...");
+            
+            [self CreateAlert:@"Message Alert" :@"Message Sent Sucsessfully..."];
+            
+            
             break;
             
         case MFMailComposeResultSaved:
-            NSLog(@"Message Saved Successfully");
+            
+            [self CreateAlert:@"Message Alert" :@"Message Saved Sucsessfully..."];
+           
             break;
             
         default:
@@ -315,19 +326,7 @@
             
         case MessageComposeResultFailed:
         {
-         
-            
-            UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Error"
-                                                                           message:@"Failed to send SMS!."
-                                                                    preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                                  handler:^(UIAlertAction * action) {}];
-            
-            [alert addAction:defaultAction];
-            [self presentViewController:alert animated:YES completion:nil];
-            
-            
+            [self CreateAlert:@"Error" :@"Failed to send SMS!."];
             
             break;
         }
@@ -342,45 +341,35 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)feedBackMail{
-    if ([MFMailComposeViewController canSendMail])
-    {
-        NSLog(@"It can send Mail");
-        
-        // Email Subject
-        NSString *emailTitle = @"All My Passwords iPhone App";
-        // Email Content
-        NSString *messageBody = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@" ,[NSString stringWithFormat:@"Country : %@\n<br>",[[NSLocale currentLocale] objectForKey:NSLocaleCountryCode]],
-                                 [NSString stringWithFormat:@"Devive language : %@\n<br>",[[NSLocale preferredLanguages] objectAtIndex:0]],
-                                 [NSString stringWithFormat:@"Unique Identifier: %@\n<br>", [UIDevice currentDevice].identifierForVendor],
-                                 [NSString stringWithFormat:@"Name: %@\n<br>", [[UIDevice currentDevice] name]],
-                                 [NSString stringWithFormat:@"System Name: %@\n<br>", [[UIDevice currentDevice] systemName]],
-                                 [NSString stringWithFormat:@"System Version: %@\n<br>", [[UIDevice currentDevice] systemVersion]],
-                                 [NSString stringWithFormat:@"Model: %@\n<br>", [[UIDevice currentDevice] model]],
-                                 [NSString stringWithFormat:@"localizedModel: %@<br>", [[UIDevice currentDevice] localizedModel]]];
-        // To address
-        NSArray *toRecipents = [NSArray arrayWithObject:@"mrnadaf2010@gmail.com"];
-        
-        MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
-        mc.mailComposeDelegate = self;
-        [mc setSubject:emailTitle];
-        [mc setMessageBody:messageBody isHTML:YES];
-        [mc setToRecipients:toRecipents];
-        
-        // Present mail view controller on screen
-        [self presentViewController:mc animated:YES completion:NULL];
-        
-    }
-    else
-    {
-        NSLog(@"It Cannot send mail");
-    }
 
-    
-}
+#pragma - mark Update and Reviews
 - (IBAction)checkUpdate:(id)sender {
     
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"itms-apps://itunes.apple.com/app/" stringByAppendingString: @"id547101139"]] options:@{} completionHandler:nil
      ];
+}
+- (IBAction)rateReveiew:(id)sender {
+    
+    NSString* url = [NSString stringWithFormat: @"http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=547101139&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8"];
+    
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: url ]options:@{} completionHandler:nil];
+    
+    
+}
+
+#pragma  - mark Alert Message
+
+-(void)CreateAlert : (NSString *)title :(NSString *)message {
+
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
 }
 @end

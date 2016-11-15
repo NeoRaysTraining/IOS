@@ -97,7 +97,7 @@
                                   UIAlertController* alert1 = [UIAlertController alertControllerWithTitle:@"Error"
                                                                                                   message:@"You are not the device owner."
                                                                                            preferredStyle:UIAlertControllerStyleAlert];
-                                  
+                                                
                                   UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
                                                                                         handler:^(UIAlertAction * action) {}];
                                   
