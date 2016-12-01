@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15028FB41DED8B5F00650E78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FB31DED8B5F00650E78 /* main.m */; };
+		15028FB71DED8B5F00650E78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FB61DED8B5F00650E78 /* AppDelegate.m */; };
+		15028FBA1DED8B5F00650E78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FB91DED8B5F00650E78 /* ViewController.m */; };
+		15028FBD1DED8B5F00650E78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15028FBB1DED8B5F00650E78 /* Main.storyboard */; };
+		15028FBF1DED8B5F00650E78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15028FBE1DED8B5F00650E78 /* Assets.xcassets */; };
+		15028FC21DED8B5F00650E78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15028FC01DED8B5F00650E78 /* LaunchScreen.storyboard */; };
+		15028FCD1DED8B6000650E78 /* myExampleOnGdriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FCC1DED8B6000650E78 /* myExampleOnGdriveTests.m */; };
+		15028FD81DED8B6000650E78 /* myExampleOnGdriveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FD71DED8B6000650E78 /* myExampleOnGdriveUITests.m */; };
+		15028FE71DEDD73200650E78 /* NoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FE61DEDD73200650E78 /* NoteListViewController.m */; };
+		15028FEA1DEDD7AE00650E78 /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15028FE91DEDD7AE00650E78 /* AddNoteViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15028FC91DED8B6000650E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15028FA71DED8B5E00650E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15028FAE1DED8B5F00650E78;
+			remoteInfo = myExampleOnGdrive;
+		};
+		15028FD41DED8B6000650E78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15028FA71DED8B5E00650E78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15028FAE1DED8B5F00650E78;
+			remoteInfo = myExampleOnGdrive;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15028FAF1DED8B5F00650E78 /* myExampleOnGdrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myExampleOnGdrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15028FB31DED8B5F00650E78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15028FB51DED8B5F00650E78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15028FB61DED8B5F00650E78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15028FB81DED8B5F00650E78 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		15028FB91DED8B5F00650E78 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		15028FBC1DED8B5F00650E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		15028FBE1DED8B5F00650E78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15028FC11DED8B5F00650E78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		15028FC31DED8B5F00650E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15028FC81DED8B6000650E78 /* myExampleOnGdriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myExampleOnGdriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15028FCC1DED8B6000650E78 /* myExampleOnGdriveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myExampleOnGdriveTests.m; sourceTree = "<group>"; };
+		15028FCE1DED8B6000650E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15028FD31DED8B6000650E78 /* myExampleOnGdriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myExampleOnGdriveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15028FD71DED8B6000650E78 /* myExampleOnGdriveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myExampleOnGdriveUITests.m; sourceTree = "<group>"; };
+		15028FD91DED8B6000650E78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15028FE51DEDD73200650E78 /* NoteListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListViewController.h; sourceTree = "<group>"; };
+		15028FE61DEDD73200650E78 /* NoteListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListViewController.m; sourceTree = "<group>"; };
+		15028FE81DEDD7AE00650E78 /* AddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		15028FE91DEDD7AE00650E78 /* AddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		15ED0AED1DEFEF4900DE3EBB /* myExampleOnGdrive.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = myExampleOnGdrive.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15028FAC1DED8B5F00650E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FC51DED8B6000650E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FD01DED8B6000650E78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		15028FA61DED8B5E00650E78 = {
+			isa = PBXGroup;
+			children = (
+				15028FB11DED8B5F00650E78 /* myExampleOnGdrive */,
+				15028FCB1DED8B6000650E78 /* myExampleOnGdriveTests */,
+				15028FD61DED8B6000650E78 /* myExampleOnGdriveUITests */,
+				15028FB01DED8B5F00650E78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		15028FB01DED8B5F00650E78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15028FAF1DED8B5F00650E78 /* myExampleOnGdrive.app */,
+				15028FC81DED8B6000650E78 /* myExampleOnGdriveTests.xctest */,
+				15028FD31DED8B6000650E78 /* myExampleOnGdriveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15028FB11DED8B5F00650E78 /* myExampleOnGdrive */ = {
+			isa = PBXGroup;
+			children = (
+				15ED0AED1DEFEF4900DE3EBB /* myExampleOnGdrive.entitlements */,
+				15028FB51DED8B5F00650E78 /* AppDelegate.h */,
+				15028FB61DED8B5F00650E78 /* AppDelegate.m */,
+				15028FB81DED8B5F00650E78 /* ViewController.h */,
+				15028FB91DED8B5F00650E78 /* ViewController.m */,
+				15028FBB1DED8B5F00650E78 /* Main.storyboard */,
+				15028FE81DEDD7AE00650E78 /* AddNoteViewController.h */,
+				15028FE91DEDD7AE00650E78 /* AddNoteViewController.m */,
+				15028FE51DEDD73200650E78 /* NoteListViewController.h */,
+				15028FE61DEDD73200650E78 /* NoteListViewController.m */,
+				15028FBE1DED8B5F00650E78 /* Assets.xcassets */,
+				15028FC01DED8B5F00650E78 /* LaunchScreen.storyboard */,
+				15028FC31DED8B5F00650E78 /* Info.plist */,
+				15028FB21DED8B5F00650E78 /* Supporting Files */,
+			);
+			path = myExampleOnGdrive;
+			sourceTree = "<group>";
+		};
+		15028FB21DED8B5F00650E78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				15028FB31DED8B5F00650E78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		15028FCB1DED8B6000650E78 /* myExampleOnGdriveTests */ = {
+			isa = PBXGroup;
+			children = (
+				15028FCC1DED8B6000650E78 /* myExampleOnGdriveTests.m */,
+				15028FCE1DED8B6000650E78 /* Info.plist */,
+			);
+			path = myExampleOnGdriveTests;
+			sourceTree = "<group>";
+		};
+		15028FD61DED8B6000650E78 /* myExampleOnGdriveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				15028FD71DED8B6000650E78 /* myExampleOnGdriveUITests.m */,
+				15028FD91DED8B6000650E78 /* Info.plist */,
+			);
+			path = myExampleOnGdriveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15028FAE1DED8B5F00650E78 /* myExampleOnGdrive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15028FDC1DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdrive" */;
+			buildPhases = (
+				15028FAB1DED8B5F00650E78 /* Sources */,
+				15028FAC1DED8B5F00650E78 /* Frameworks */,
+				15028FAD1DED8B5F00650E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myExampleOnGdrive;
+			productName = myExampleOnGdrive;
+			productReference = 15028FAF1DED8B5F00650E78 /* myExampleOnGdrive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		15028FC71DED8B6000650E78 /* myExampleOnGdriveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15028FDF1DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdriveTests" */;
+			buildPhases = (
+				15028FC41DED8B6000650E78 /* Sources */,
+				15028FC51DED8B6000650E78 /* Frameworks */,
+				15028FC61DED8B6000650E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15028FCA1DED8B6000650E78 /* PBXTargetDependency */,
+			);
+			name = myExampleOnGdriveTests;
+			productName = myExampleOnGdriveTests;
+			productReference = 15028FC81DED8B6000650E78 /* myExampleOnGdriveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		15028FD21DED8B6000650E78 /* myExampleOnGdriveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15028FE21DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdriveUITests" */;
+			buildPhases = (
+				15028FCF1DED8B6000650E78 /* Sources */,
+				15028FD01DED8B6000650E78 /* Frameworks */,
+				15028FD11DED8B6000650E78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				15028FD51DED8B6000650E78 /* PBXTargetDependency */,
+			);
+			name = myExampleOnGdriveUITests;
+			productName = myExampleOnGdriveUITests;
+			productReference = 15028FD31DED8B6000650E78 /* myExampleOnGdriveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15028FA71DED8B5E00650E78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.NeoRays;
+				TargetAttributes = {
+					15028FAE1DED8B5F00650E78 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4WXHX2LK83;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+					15028FC71DED8B6000650E78 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15028FAE1DED8B5F00650E78;
+					};
+					15028FD21DED8B6000650E78 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 15028FAE1DED8B5F00650E78;
+					};
+				};
+			};
+			buildConfigurationList = 15028FAA1DED8B5E00650E78 /* Build configuration list for PBXProject "myExampleOnGdrive" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15028FA61DED8B5E00650E78;
+			productRefGroup = 15028FB01DED8B5F00650E78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15028FAE1DED8B5F00650E78 /* myExampleOnGdrive */,
+				15028FC71DED8B6000650E78 /* myExampleOnGdriveTests */,
+				15028FD21DED8B6000650E78 /* myExampleOnGdriveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15028FAD1DED8B5F00650E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15028FC21DED8B5F00650E78 /* LaunchScreen.storyboard in Resources */,
+				15028FBF1DED8B5F00650E78 /* Assets.xcassets in Resources */,
+				15028FBD1DED8B5F00650E78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FC61DED8B6000650E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FD11DED8B6000650E78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15028FAB1DED8B5F00650E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15028FE71DEDD73200650E78 /* NoteListViewController.m in Sources */,
+				15028FBA1DED8B5F00650E78 /* ViewController.m in Sources */,
+				15028FB71DED8B5F00650E78 /* AppDelegate.m in Sources */,
+				15028FB41DED8B5F00650E78 /* main.m in Sources */,
+				15028FEA1DEDD7AE00650E78 /* AddNoteViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FC41DED8B6000650E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15028FCD1DED8B6000650E78 /* myExampleOnGdriveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15028FCF1DED8B6000650E78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15028FD81DED8B6000650E78 /* myExampleOnGdriveUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15028FCA1DED8B6000650E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15028FAE1DED8B5F00650E78 /* myExampleOnGdrive */;
+			targetProxy = 15028FC91DED8B6000650E78 /* PBXContainerItemProxy */;
+		};
+		15028FD51DED8B6000650E78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15028FAE1DED8B5F00650E78 /* myExampleOnGdrive */;
+			targetProxy = 15028FD41DED8B6000650E78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		15028FBB1DED8B5F00650E78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15028FBC1DED8B5F00650E78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		15028FC01DED8B5F00650E78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15028FC11DED8B5F00650E78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15028FDA1DED8B6000650E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15028FDB1DED8B6000650E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15028FDD1DED8B6000650E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = myExampleOnGdrive/myExampleOnGdrive.entitlements;
+				DEVELOPMENT_TEAM = 4WXHX2LK83;
+				INFOPLIST_FILE = myExampleOnGdrive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		15028FDE1DED8B6000650E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = myExampleOnGdrive/myExampleOnGdrive.entitlements;
+				DEVELOPMENT_TEAM = 4WXHX2LK83;
+				INFOPLIST_FILE = myExampleOnGdrive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdrive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		15028FE01DED8B6000650E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myExampleOnGdriveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdriveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myExampleOnGdrive.app/myExampleOnGdrive";
+			};
+			name = Debug;
+		};
+		15028FE11DED8B6000650E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = myExampleOnGdriveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdriveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myExampleOnGdrive.app/myExampleOnGdrive";
+			};
+			name = Release;
+		};
+		15028FE31DED8B6000650E78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myExampleOnGdriveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdriveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myExampleOnGdrive;
+			};
+			name = Debug;
+		};
+		15028FE41DED8B6000650E78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = myExampleOnGdriveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mahaboob.myExampleOnGdriveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = myExampleOnGdrive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15028FAA1DED8B5E00650E78 /* Build configuration list for PBXProject "myExampleOnGdrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15028FDA1DED8B6000650E78 /* Debug */,
+				15028FDB1DED8B6000650E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15028FDC1DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdrive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15028FDD1DED8B6000650E78 /* Debug */,
+				15028FDE1DED8B6000650E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15028FDF1DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdriveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15028FE01DED8B6000650E78 /* Debug */,
+				15028FE11DED8B6000650E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15028FE21DED8B6000650E78 /* Build configuration list for PBXNativeTarget "myExampleOnGdriveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15028FE31DED8B6000650E78 /* Debug */,
+				15028FE41DED8B6000650E78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15028FA71DED8B5E00650E78 /* Project object */;
+}
